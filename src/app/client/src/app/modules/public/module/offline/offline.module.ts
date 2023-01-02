@@ -2,7 +2,7 @@ import { ContentManagerService } from './services';
 import {
     SuiModalModule, SuiProgressModule, SuiAccordionModule,
     SuiTabsModule, SuiSelectModule, SuiDimmerModule, SuiCollapseModule, SuiDropdownModule
-} from 'ng2-semantic-ui-v9';
+} from 'ng2-semantic-ui-v12';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CoreModule } from '@sunbird/core';
@@ -14,10 +14,10 @@ import {
     LoadContentComponent, InfoCardComponent, TelemetryComponent, TelemetryImportComponent,
     AboutUsComponent
 } from './components';
-import { WebExtensionModule } from '@project-sunbird/web-extensions';
+import { WebExtensionModule } from 'web-extensions-v12';
 import { FileSizeModule } from 'ngx-filesize';
 import { OrderModule } from 'ngx-order-pipe';
-import { SlickModule } from 'ngx-slick';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
@@ -38,7 +38,7 @@ import { ContentSearchModule } from '@sunbird/content-search';
         SuiAccordionModule,
         SuiTabsModule,
         OrderModule,
-        SlickModule,
+        SlickCarouselModule,
         ReactiveFormsModule,
         CommonConsumptionModule,
         SuiDimmerModule,

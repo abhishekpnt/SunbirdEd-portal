@@ -2,17 +2,17 @@ import { SharedFeatureModule } from '@sunbird/shared-feature';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@sunbird/shared';
-import { SlickModule } from 'ngx-slick';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ProfileRoutingModule } from './profile-routing.module';
 import {
   ProfilePageComponent, ProfileBadgeComponent, UpdateContactDetailsComponent,
   AccountRecoveryInfoComponent, CreateUserComponent, ChooseUserComponent, SubmitTeacherDetailsComponent
 } from './components';
 import { SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule,
-  SuiProgressModule, SuiRatingModule, SuiCollapseModule } from 'ng2-semantic-ui-v9';
+  SuiProgressModule, SuiRatingModule, SuiCollapseModule } from 'ng2-semantic-ui-v12';
 import { CoreModule } from '@sunbird/core';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-// import { WebExtensionModule } from '@project-sunbird/web-extensions';
+// import { WebExtensionModule } from 'web-extensions-v12';
 import { TelemetryModule } from '@sunbird/telemetry';
 import { AvatarModule } from 'ngx-avatar';
 import { ContentSearchModule } from '@sunbird/content-search';
@@ -51,7 +51,7 @@ export const csCertificateServiceFactory = (csLibInitializerService: CsLibInitia
     ReactiveFormsModule,
     // WebExtensionModule,
     TelemetryModule,
-    SlickModule,
+    SlickCarouselModule,
     AvatarModule,
     SharedFeatureModule,
     ContentSearchModule,

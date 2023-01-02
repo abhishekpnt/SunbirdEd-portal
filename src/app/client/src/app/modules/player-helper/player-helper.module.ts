@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SuiModule } from 'ng2-semantic-ui-v9';
+import { SuiModule } from 'ng2-semantic-ui-v12';
 import { TelemetryModule } from '@sunbird/telemetry';
 import {
   ContentCreditsComponent, PlayerComponent, ContentPlayerMetadataComponent,
@@ -19,7 +19,7 @@ import { SunbirdVideoPlayerModule } from '@project-sunbird/sunbird-video-player-
 import { SunbirdEpubPlayerModule } from '@project-sunbird/sunbird-epub-player-v9';
 import { QumlPlayerService } from './service/quml-player/quml-player.service';
 import { QumlLibraryModule, QuestionCursor } from '@project-sunbird/sunbird-quml-player-v9';
-import { EditorCursor } from '@project-sunbird/sunbird-collection-editor-v9';
+import { EditorCursor } from '@project-sunbird/sunbird-collection-editor';
 
 
 

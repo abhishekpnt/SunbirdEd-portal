@@ -11,7 +11,7 @@ import { takeUntil, map, filter } from 'rxjs/operators';
 import { Ibatch } from './../../interfaces/';
 import { WorkSpaceService, BatchService } from '../../services';
 import * as _ from 'lodash-es';
-import { SuiModalService } from 'ng2-semantic-ui-v9';
+import { SuiModalService } from 'ng2-semantic-ui-v12';
 import { IImpressionEventInput, IInteractEventEdata } from '@sunbird/telemetry';
 
 /**

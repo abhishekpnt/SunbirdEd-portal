@@ -8,12 +8,12 @@ import {
   UserLocationComponent, UserOnboardingComponent, OnboardingUserSelectionComponent,
   ConfirmationPopupComponent, CertPreviewPopupComponent, ContentPlayerComponent, CollectionPlayerComponent, YearOfBirthComponent
 } from './components';
-import { SlickModule } from 'ngx-slick';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { TelemetryModule } from '@sunbird/telemetry';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule,
-  SuiProgressModule, SuiRatingModule, SuiCollapseModule, SuiDimmerModule } from 'ng2-semantic-ui-v9';
+  SuiProgressModule, SuiRatingModule, SuiCollapseModule, SuiDimmerModule } from 'ng2-semantic-ui-v12';
 import { GlobalConsentPiiComponent } from './components/global-consent-pii/global-consent-pii.component';
 import { CsModule } from '@project-sunbird/client-services';
 import { CsLibInitializerService } from '../../service/CsLibInitializer/cs-lib-initializer.service';
@@ -40,7 +40,7 @@ export const csNotificationServiceFactory = (csLibInitializerService: CsLibIniti
 @NgModule({
   imports: [
     CommonModule,
-    SlickModule,
+    SlickCarouselModule,
     SharedModule,
     CoreModule,
     TelemetryModule,

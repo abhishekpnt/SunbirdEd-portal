@@ -3,8 +3,8 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { CurriculumCoursesComponent } from './components';
 import { SharedModule } from '@sunbird/shared';
-import { SuiModule } from 'ng2-semantic-ui-v9';
-import { SlickModule } from 'ngx-slick';
+import { SuiModule } from 'ng2-semantic-ui-v12';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FormsModule } from '@angular/forms';
 import { CoreModule } from '@sunbird/core';
 import { NgInviewModule } from 'angular-inport';
@@ -18,7 +18,7 @@ import { ContentSearchModule } from '@sunbird/content-search';
     ResourceRoutingModule,
     SharedModule,
     SuiModule,
-    SlickModule,
+    SlickCarouselModule,
     FormsModule,
     CoreModule,
     TelemetryModule,

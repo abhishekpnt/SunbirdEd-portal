@@ -3,7 +3,7 @@ import { GroupsRoutingModule } from './groups-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@sunbird/shared';
-import { SuiModule, SuiModalModule, SuiRatingModule } from 'ng2-semantic-ui-v9';
+import { SuiModule, SuiModalModule, SuiRatingModule } from 'ng2-semantic-ui-v12';
 import { NgInviewModule } from 'angular-inport';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyGroupsComponent, AddMemberComponent, GroupHeaderComponent, NoGroupResultComponent,
@@ -16,7 +16,7 @@ import { SharedFeatureModule } from '@sunbird/shared-feature';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import { CsLibInitializerService } from '../../service/CsLibInitializer/cs-lib-initializer.service';
 import { ContentSearchModule } from '@sunbird/content-search';
-import { SlickModule } from 'ngx-slick';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { DiscussionModule } from '../discussion/discussion.module';
 import { ActivityDetailsComponent } from './components/activity/activity-details/activity-details.component';
@@ -36,7 +36,7 @@ import { ActivityDashboardDirective } from './directive/activity-dashboard/activ
     GroupsRoutingModule,
     CommonConsumptionModule,
     ContentSearchModule,
-    SlickModule,
+    SlickCarouselModule,
     SuiModalModule,
     SuiRatingModule,
     RecaptchaModule,

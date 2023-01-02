@@ -1774,6 +1774,13 @@
   resolved "https://registry.yarnpkg.com/@csstools/convert-colors/-/convert-colors-1.4.0.tgz#ad495dc41b12e75d588c6db8b9834f08fa131eb7"
   integrity sha512-5a6wqoJV/xEdbRNKVo6I4hO3VjyDq//8q2f9I6PBAvMesJHFauXDorcNCsr9RzvsZnaWi5NYCcfyqP1QeFHFbw==
 
+"@derekbaker/ngx-ace-editor-wrapper@12.2.16":
+  version "12.2.16"
+  resolved "https://registry.yarnpkg.com/@derekbaker/ngx-ace-editor-wrapper/-/ngx-ace-editor-wrapper-12.2.16.tgz#f803c3e4deb71953ea1107f48541e76495ea0935"
+  integrity sha512-Y1epM85Qb56YSbOtH20y33OYG2GZ7mB36zcLSRJeFXSdV69cy7qDRWKIlyxpqRwapQRAXBZhlmL2xgcQGkWnmw==
+  dependencies:
+    brace "^0.11.1"
+
 "@digitalbazaar/http-client@^1.1.0":
   version "1.2.0"
   resolved "https://registry.yarnpkg.com/@digitalbazaar/http-client/-/http-client-1.2.0.tgz#1ea3661e77000a15bd892a294f20dc6cc5d1c93b"
@@ -2152,10 +2159,10 @@
     node-gyp "^8.2.0"
     read-package-json-fast "^2.0.1"
 
-"@project-sunbird/chatbot-client@3.0.3":
-  version "3.0.3"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/chatbot-client/-/chatbot-client-3.0.3.tgz#da74b4ce70305e855ec0affac4ce706624e732a1"
-  integrity sha512-zq9MwsCJiGULXb9sjRRqx21upMaGz1ly6CHj3ZqCEV8DaTAfj9UHj09z6BuBI+W+rq6lzh6Ee8Evx3M3A1aB+g==
+"@project-sunbird/chatbot-client@3.0.4":
+  version "3.0.4"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/chatbot-client/-/chatbot-client-3.0.4.tgz#492b3e7a3b4473a7ffc7bf4a80e32e1848c781d1"
+  integrity sha512-O979t1Er0iYOf62pFYgnA613+2ZIHwcSLXj4P8tlk/dsOq3Yaxajrb5PgwAZvTZdN9k1SFZczyB+YRjjhlz7oQ==
   dependencies:
     tslib "^2.0.0"
 
@@ -2207,17 +2214,17 @@
     reflect-metadata "^0.1.13"
     whatwg-fetch "^3.1.0"
 
-"@project-sunbird/common-consumption@4.12.0":
-  version "4.12.0"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/common-consumption/-/common-consumption-4.12.0.tgz#ef4bdf7c77445b7b0d3b46cf6d44c49d68d061ec"
-  integrity sha512-ijX69lPrG4bIV9Dprzq/mFYnTXvqLwcyTG212tshXyeTMxiwCrJ314jRwjMD/jOnV5tyTptw7s0ogDlB1M8vJA==
+"@project-sunbird/common-consumption@5.1.0":
+  version "5.1.0"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/common-consumption/-/common-consumption-5.1.0.tgz#a9031629803e66e74ec3626fa7a10e3cc1c68b8d"
+  integrity sha512-sr6NvcWnlT5ppaUHO9z2GEdKm7kCLZP4GPV9nEmjH0v969gbxtkC0WfIsNgDqzDMmdBTaKXC19NBoAsYa7zmwg==
   dependencies:
-    tslib "^2.0.0"
+    tslib "^2.2.0"
 
-"@project-sunbird/common-form-elements@5.1.1":
-  version "5.1.1"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/common-form-elements/-/common-form-elements-5.1.1.tgz#4fff567e7e9f6d8bf3ba4378ef55a9e18c2549db"
-  integrity sha512-RiryQoA+PZGLfALAgAY1Ye+v1OgHrpWUNaO9XTPpvZcVu9QyWjMNfEFbWHe9K+8NkYA6twQv6J6OZxpdKsT46Q==
+"@project-sunbird/common-form-elements@5.1.2":
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/common-form-elements/-/common-form-elements-5.1.2.tgz#a8cc507ea09ffbb8ad9f52b441b9cada03b1e94e"
+  integrity sha512-B/U3B4o0MhU0PPEBJtT5eAG5TjDVge973A16UjWuIL+cB8KiECSx7egQyuTZNGapEpbb+Na3DJeZ1jdBmt0/7Q==
   dependencies:
     immutable "^4.0.0-rc.12"
     moment "^2.29.1"
@@ -2249,10 +2256,10 @@
     ngx-daterangepicker-material "^4.0.1"
     tslib "^1.10.0"
 
-"@project-sunbird/sb-notification@5.0.7":
-  version "5.0.7"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/sb-notification/-/sb-notification-5.0.7.tgz#9ba99e54d64f91e1228f47f72cbecd28908fa422"
-  integrity sha512-zwIDqe+jfgHwoZ3P1SuaYV6rNPH6OWeQVxJzV/lrVmH2N2NxZATonkz5v519/8SagpEX/BFPtM8WfeZDqX9Csw==
+"@project-sunbird/sb-notification@5.0.6":
+  version "5.0.6"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/sb-notification/-/sb-notification-5.0.6.tgz#4514617139213b1153b927c5bdc6f8c54f902b61"
+  integrity sha512-EmnnPrdgpoxWJsDhyMkn5E7r+wuel1nfNa6YJcxEExKW3PWis4p1bHuoINl0dJ+Hvq+Y5HCkJAOFkBgmaXl1Og==
   dependencies:
     tslib "^2.0.0"
 
@@ -2266,19 +2273,20 @@
   resolved "https://registry.yarnpkg.com/@project-sunbird/sb-themes/-/sb-themes-0.0.85.tgz#9d975aaf39d23100127faf37f2bdef33c0a17c0f"
   integrity sha512-wHPJwPn9TfWJ/lSb+loRDA6mEdD4BM5T+D14v/VF0OTkKC7cdVcjZwl5jTtg+YbpyWYCTGns6dMgIC3mCd5dfA==
 
-"@project-sunbird/sunbird-collection-editor-v9@5.0.14":
-  version "5.0.14"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-collection-editor-v9/-/sunbird-collection-editor-v9-5.0.14.tgz#a8c033e7acb8984f58c153046141606a48c4e13e"
-  integrity sha512-J0jMNx8bZHvaJsMqMdsq9EZdGZNcm4TRDR+sfc0JDiaIjFA/epjHRmM0NstxVgthWKgoOMFtPYvB+MQancwdZA==
+"@project-sunbird/sunbird-collection-editor@5.1.3":
+  version "5.1.3"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-collection-editor/-/sunbird-collection-editor-5.1.3.tgz#d593eaf4af9d4bae9e9920607bedbc9ca4f599bb"
+  integrity sha512-ugeLZ9FMFB31i3Qp2X3GqyXx2CJlLZF+yApAwbJigLR3Sp7qwtqJaQzt43ByT7G+OGstVkuUl5Z1z4jWmAJMgQ==
   dependencies:
-    tslib "^1.10.0"
+    tslib "^2.0.0"
 
-"@project-sunbird/sunbird-epub-player-v9@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-epub-player-v9/-/sunbird-epub-player-v9-5.1.0.tgz#c4cfe57a6aa8e36698d1995ddb15f8de8069c212"
-  integrity sha512-UdXlfYwvq2EVIONYqxhHPITmLSkv/Q7XOqzyVNS9UsHrgkCVqLHdJB/Jb3hxCflRVq0McZQ6kxYNIxG01QTi0A==
+"@project-sunbird/sunbird-epub-player-v9@5.2.1":
+  version "5.2.1"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-epub-player-v9/-/sunbird-epub-player-v9-5.2.1.tgz#f15e1a705a1bfb101edaf1f4458b8e71566658c8"
+  integrity sha512-hWF04dKXIWWueFsSyUXePhIt6JHHf2aNqeWnoZ0uA9G3yJTpVqWMuFZV0sqcDx02YinE1o676ZnhToolb2FX2g==
   dependencies:
     "@project-sunbird/sunbird-player-sdk-v9" "5.1.0"
+    tslib "^2.0.0"
 
 "@project-sunbird/sunbird-pdf-player-v9@5.1.1":
   version "5.1.1"
@@ -2295,21 +2303,6 @@
   dependencies:
     ally.js "1.4.1"
 
-"@project-sunbird/sunbird-question-editor@0.0.9":
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-question-editor/-/sunbird-question-editor-0.0.9.tgz#49f0c79397f35b993ab6f5ed6d05499db8fde91c"
-  integrity sha512-QZP/JBZoLAW7cj1MXDtI/vi2ovd1j/9ZrUNXI3wv4VYXC/JlG5ceHsBGmuxaiLQHkBbc/aLUM6BwlwULuiqP8w==
-  dependencies:
-    tslib "^1.9.0"
-
-"@project-sunbird/sunbird-quml-player-v9@5.1.5":
-  version "5.1.5"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-quml-player-v9/-/sunbird-quml-player-v9-5.1.5.tgz#a372503a91311d493cfcf628a6f37a0e235681de"
-  integrity sha512-6NUP6nLM+9D7HUwYYCFWEDpa+WDVveeT1cscySdpWq36OWjdVDUpt2JbeSn75YfYRGkGVZI+c+m+xSBSfi3nOg==
-  dependencies:
-    "@project-sunbird/sunbird-player-sdk-v9" "5.1.0"
-    tslib "^2.2.0"
-
 "@project-sunbird/sunbird-resource-library@0.0.19":
   version "0.0.19"
   resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-resource-library/-/sunbird-resource-library-0.0.19.tgz#cc9b12dbbd4ab1bce7d136f29bc567d2ae6e9e2d"
@@ -2317,12 +2310,13 @@
   dependencies:
     tslib "^1.10.0"
 
-"@project-sunbird/sunbird-video-player-v9@5.1.0":
-  version "5.1.0"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-video-player-v9/-/sunbird-video-player-v9-5.1.0.tgz#b4b5c964bd76bdc292926926b20035e83e6e4940"
-  integrity sha512-0F0an+MS7vYzGNP3IXDBMWKgJRoODLNn9CQ+GrlP5jmlAmSuCMSB1wG+WWKosCoN6qg7yPEzxVtXrwPkNlBMCA==
+"@project-sunbird/sunbird-video-player-v9@5.2.3":
+  version "5.2.3"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-video-player-v9/-/sunbird-video-player-v9-5.2.3.tgz#aa0cdcd5f19118464b7d0492ee763f3d3d363ee1"
+  integrity sha512-s6yaRB2Pq6g4wPPpUcnk55YYP7eyHUNEMt43TywbjOre1rZO199lg/MIBs9HW7ROnblWbp4lt3fZPtlkRBqlsw==
   dependencies:
     "@project-sunbird/sunbird-player-sdk-v9" "5.1.0"
+    tslib "^2.0.0"
 
 "@project-sunbird/telemetry-sdk@0.0.26":
   version "0.0.26"
@@ -2339,20 +2333,6 @@
   dependencies:
     grunt-karma "^0.12.2"
     karma "^3.0.0"
-
-"@project-sunbird/web-extensions@^0.0.2":
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/web-extensions/-/web-extensions-0.0.2.tgz#d61cd382713ce7f6bb7cb205d65f120bf145c16a"
-  integrity sha512-XVT0gN/qFSv+mgCQQ3Db1m1IGd4ARsDvLx+63Evp/T91tYt8vMq/oBpDGH0pJkE2mpb7kLh+GDWNupmBBIxX/A==
-  dependencies:
-    tslib "^1.9.0"
-
-"@samagra-x/uci-console@1.3.7":
-  version "1.3.7"
-  resolved "https://registry.yarnpkg.com/@samagra-x/uci-console/-/uci-console-1.3.7.tgz#8a995a8ee26ac8e8f819c5f9945a4ecb12aa547e"
-  integrity sha512-+h4asuJhCBZqw5xLWEnsP9onxURbiUB8/VUfQHEEiVrTP0XHv4LUPLmH9xBNYO7llnZNt345k+qUyjw+xXbLWw==
-  dependencies:
-    tslib "^1.10.0"
 
 "@scarf/scarf@0.1.5":
   version "0.1.5"
@@ -2413,24 +2393,24 @@
     semver "7.1.3"
     semver-intersect "1.4.0"
 
-"@shikshalokam/sl-questionnaire@1.5.0":
-  version "1.5.0"
-  resolved "https://registry.yarnpkg.com/@shikshalokam/sl-questionnaire/-/sl-questionnaire-1.5.0.tgz#e46571cf744aa2972e35accecdd611bafb7a8bac"
-  integrity sha512-eoSRYWDS4oxprWZUIJ/zqyElPvAm+3wz631Da1oH40ploKSJFua0ZonSts48BnF6vOuIwwiOgAzrzGuiNof2Yw==
+"@shikshalokam/sl-questionnaire@2.1.0":
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/@shikshalokam/sl-questionnaire/-/sl-questionnaire-2.1.0.tgz#07683cfc176d820ab6f8c92fbf0e8e0621c860ba"
+  integrity sha512-Y4R0FT5YYS0Zrhr6h0f6vlWSAqkuZuAUp2ptPtZpf2iCo4ELxPBspI3wuIoItQcg6JB8QyWPQg34DbCrmAgcnw==
   dependencies:
     "@angular-slider/ngx-slider" "^2.0.3"
     tslib "^2.0.0"
 
-"@shikshalokam/sl-reports-library@^1.0.7":
-  version "1.0.7"
-  resolved "https://registry.yarnpkg.com/@shikshalokam/sl-reports-library/-/sl-reports-library-1.0.7.tgz#8164cd522759be04dd66818f57ddd6f6ed972a5a"
-  integrity sha512-wyeUkXPaQWuGpe11VsEC5MS/3n9cuxbF6bVpcrG1OhnNKS6mFXCY4GsPsLnMyESjtvD+XRG0/ovmmJTd/9yvfg==
+"@shikshalokam/sl-reports-library@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@shikshalokam/sl-reports-library/-/sl-reports-library-2.0.0.tgz#67dd3e4f0fe6ae5572741cfa05611ef7bd854bd9"
+  integrity sha512-N8LSxJsxoJBvJ1EMcx/ejumSsAA3Qt2X9+aeOr21hI2DMzQx5HClTcoEq1l4JxB5XlcQIr/IfWNp2JZxsui8SA==
   dependencies:
     chart.js "^2.9.4"
     chartjs-plugin-datalabels "^0.7.0"
     chartjs-plugin-stacked100 "^0.7.1"
     ng2-charts "^2.4.2"
-    tslib "^1.10.0"
+    tslib "^2.0.0"
 
 "@sideway/address@^4.1.0":
   version "4.1.4"
@@ -2979,11 +2959,6 @@ accepts@~1.3.4, accepts@~1.3.5, accepts@~1.3.8:
   dependencies:
     mime-types "~2.1.34"
     negotiator "0.6.3"
-
-ace-builds@^1.4.2:
-  version "1.13.1"
-  resolved "https://registry.yarnpkg.com/ace-builds/-/ace-builds-1.13.1.tgz#8afa31a79bea3bb83fbbdf99c4176396a271ceca"
-  integrity sha512-HvkZv/AhDRSA4k5Co5Dg8dWOTfID0AQ7Sa5cU6V82fz/XfCA0A/icC3sdBoh9yg0WQoJqbFrRYc+ogr/971Vww==
 
 acorn-globals@^1.0.4:
   version "1.0.9"
@@ -5715,6 +5690,13 @@ ecc-jsbn@~0.1.1:
   dependencies:
     jsbn "~0.1.0"
     safer-buffer "^2.1.0"
+
+ed-uci-console@1.0.2:
+  version "1.0.2"
+  resolved "https://registry.yarnpkg.com/ed-uci-console/-/ed-uci-console-1.0.2.tgz#9c4778ffb5d4c4331b3fb4b8765826cbaed95c04"
+  integrity sha512-cKQfjrX7D85BVXPbceAsdQBN/nnv4vx1o+xDBfmpRMuEgPXRbMPH8a790mc/ZVUUPm8kJxPZ9Smw4vs8EJ2fQA==
+  dependencies:
+    tslib "^2.0.0"
 
 ee-first@1.1.1:
   version "1.1.1"
@@ -10362,14 +10344,6 @@ ng-svg-editor@0.0.24:
   dependencies:
     tslib "^2.3.0"
 
-ng2-ace-editor@0.3.9:
-  version "0.3.9"
-  resolved "https://registry.yarnpkg.com/ng2-ace-editor/-/ng2-ace-editor-0.3.9.tgz#5ae68712e9ca49591eda31df8fe02eca1c3634e1"
-  integrity sha512-e8Q4YCirlL/OEiekewmzupG+zV3prYsiYmQnRzQzd0wNgsPjOLOdb0it7cCbzFfIXKGyIIHKTW5584WxPr2LnQ==
-  dependencies:
-    ace-builds "^1.4.2"
-    brace "^0.11.1"
-
 ng2-cache-service@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ng2-cache-service/-/ng2-cache-service-1.1.1.tgz#e35e1e8dc60e415023d82df82e2157ad73bee9b6"
@@ -10400,10 +10374,10 @@ ng2-material-dropdown@0.11.0:
   dependencies:
     tslib "^1.9.0"
 
-ng2-semantic-ui-v9@0.0.6:
-  version "0.0.6"
-  resolved "https://registry.yarnpkg.com/ng2-semantic-ui-v9/-/ng2-semantic-ui-v9-0.0.6.tgz#08137b2610a10d8cf862cc718a22028f9f4c4ba8"
-  integrity sha512-EM+WCfwcJoI3+xyf2+5+WPTpMOn6GmXCdDhtkbAddnHEKjSkj6Ofm0ma3+3v0rcU5CzzLDlHq4hFXAVU/dcIdw==
+ng2-semantic-ui-v12@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/ng2-semantic-ui-v12/-/ng2-semantic-ui-v12-5.1.2.tgz#a89c15dde926a502e371eb54c38a91c402b909d3"
+  integrity sha512-/RBNMY8UbUCa1u0PxXDPT+yldTCb2kFOm3snURIHbLge38b8qT6u9FavqGWv6OSSj+xLHhYR+XjWAd0SQ3uFuA==
   dependencies:
     bowser "^1.7.2"
     date-fns "2.0.0-alpha.1"
@@ -10411,7 +10385,7 @@ ng2-semantic-ui-v9@0.0.6:
     extend "^3.0.1"
     is-ua-webview "^1.0.0"
     popper.js "^1.14.0"
-    tslib "^1.10.0"
+    tslib "^2.2.0"
 
 ngx-avatar@^3.7.0:
   version "3.7.0"
@@ -10442,10 +10416,12 @@ ngx-daterangepicker-material@^4.0.1:
   dependencies:
     tslib "^1.10.0"
 
-ngx-device-detector@1.3.5:
-  version "1.3.5"
-  resolved "https://registry.yarnpkg.com/ngx-device-detector/-/ngx-device-detector-1.3.5.tgz#febd134cc58c2a61e83bec5491d1e2f429bfde67"
-  integrity sha512-u/h/HGVTqOxweLSKQmXoOLHsYldSDAQePrMC6sa3WGAECoAR6S7W1QuwdNN1cj7NBdfY0wxar9MQ3MV7DiFfkg==
+ngx-device-detector@2.1.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/ngx-device-detector/-/ngx-device-detector-2.1.0.tgz#534a20e265e35b04b70882ee522e279a40e26a53"
+  integrity sha512-a0ThY21grkFDkZh9GDOK4Cw69LWb0rUqsC6rhx2Aaf8ALz/mJ+rhBnRH2AdedlqT/HiEAKVg/CUNSVIqyzUHyQ==
+  dependencies:
+    tslib "^2.0.0"
 
 ngx-filesize@^1.1.4:
   version "1.1.4"
@@ -10469,10 +10445,12 @@ ngx-order-pipe@^2.0.4:
   dependencies:
     tslib "^2.0.0"
 
-ngx-slick@0.2.1:
-  version "0.2.1"
-  resolved "https://registry.yarnpkg.com/ngx-slick/-/ngx-slick-0.2.1.tgz#63f2525b953977f7f8780dc8cebea46553642fec"
-  integrity sha512-1ynZi91njdTNuc0fkzpIceLWwlu4wyn8IGFZqxqLGup4z3Frl+d4fRgTtZYhSufqp8hSx263I699NloWJgbG0A==
+ngx-slick-carousel@0.6.0:
+  version "0.6.0"
+  resolved "https://registry.yarnpkg.com/ngx-slick-carousel/-/ngx-slick-carousel-0.6.0.tgz#c10d3b42d7ecef1b41802e2c52239dbea34f1eeb"
+  integrity sha512-UpQv7nB0sFEEpomtScsIgq4iPa8GxI6mdUA0b1Fx2GkIRXrs0Ehz1tCPO+NUcELyiUxpU/E3bgQI09LKUBzpsw==
+  dependencies:
+    tslib "^2.0.0"
 
 nice-napi@^1.0.2:
   version "1.0.2"
@@ -14951,6 +14929,13 @@ wcwidth@^1.0.1:
   integrity sha512-XHPEwS0q6TaxcvG85+8EYkbiCux2XtWG2mkc47Ng2A77BQu9+DqIOJldST4HgPkuea7dvKSj5VgX3P1d4rW8Tg==
   dependencies:
     defaults "^1.0.3"
+
+web-extensions-v12@5.1.2:
+  version "5.1.2"
+  resolved "https://registry.yarnpkg.com/web-extensions-v12/-/web-extensions-v12-5.1.2.tgz#4bbf6504a5d3f79d78a36530d2f7a198d29f3655"
+  integrity sha512-hg7S9x5MMJ9FXm9bkN94SotpmIuS6iNSPW2ZZ/lbtlLNYuVRrqdLnOt59IPGqcPWRef1t62j06X2p4t67yj6qg==
+  dependencies:
+    tslib "^2.0.0"
 
 webdriver-js-extender@2.1.0:
   version "2.1.0"

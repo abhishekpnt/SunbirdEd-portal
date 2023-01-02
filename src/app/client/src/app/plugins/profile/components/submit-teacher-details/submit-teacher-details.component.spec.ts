@@ -14,7 +14,7 @@ import {
 import { TelemetryModule, TelemetryService } from '@sunbird/telemetry';
 import { ServerResponse } from 'http';
 import { CacheService } from 'ng2-cache-service';
-import { SuiModule } from 'ng2-semantic-ui-v9';
+import { SuiModule } from 'ng2-semantic-ui-v12';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { Observable, of as observableOf, of, Subject, throwError } from 'rxjs';
 import { LayoutService, UtilService } from '../../../../modules/shared';

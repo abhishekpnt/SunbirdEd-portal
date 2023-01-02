@@ -9,11 +9,11 @@ import { SharedFeatureModule } from '@sunbird/shared-feature';
 import {
   SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule, SuiProgressModule,
   SuiRatingModule, SuiCollapseModule, SuiDimmerModule
-} from 'ng2-semantic-ui-v9';
-import { WebExtensionModule } from '@project-sunbird/web-extensions';
+} from 'ng2-semantic-ui-v12';
+import { WebExtensionModule } from 'web-extensions-v12';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import { ContentSearchModule } from '@sunbird/content-search';
-import { SlickModule } from 'ngx-slick';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ExplorePageComponent } from './components';
 import { ContentSectionModule } from 'content-section-v11';
 import {ObservationModule} from '../observation/observation.module';
@@ -30,7 +30,7 @@ import {ObservationModule} from '../observation/observation.module';
     SharedFeatureModule,
     SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule, SuiProgressModule,
     SuiRatingModule, SuiCollapseModule, SuiDimmerModule, WebExtensionModule,
-    CommonConsumptionModule, ContentSearchModule, SlickModule, ContentSectionModule, ObservationModule
+    CommonConsumptionModule, ContentSearchModule, SlickCarouselModule, ContentSectionModule, ObservationModule
   ]
 })
 export class ExplorePageModule { }

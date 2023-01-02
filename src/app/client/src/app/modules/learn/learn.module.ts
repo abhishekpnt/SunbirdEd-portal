@@ -3,7 +3,7 @@ import { LearnRoutingModule } from './learn-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SharedModule } from '@sunbird/shared';
-import { SlickModule } from 'ngx-slick';
+import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FormsModule } from '@angular/forms';
 import { CoursePageComponent } from './components';
 import { CoreModule } from '@sunbird/core';
@@ -14,13 +14,13 @@ import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import {
   SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule, SuiProgressModule,
   SuiRatingModule, SuiCollapseModule
-} from 'ng2-semantic-ui-v9';
+} from 'ng2-semantic-ui-v12';
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
-    SlickModule,
+    SlickCarouselModule,
     FormsModule,
     LearnRoutingModule,
     CoreModule,

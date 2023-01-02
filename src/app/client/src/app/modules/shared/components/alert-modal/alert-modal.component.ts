@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { SuiModal, ComponentModalConfig, ModalSize } from 'ng2-semantic-ui-v9';
+import { SuiModal, ComponentModalConfig, ModalSize } from 'ng2-semantic-ui-v12';
 import { Location, LocationStrategy } from '@angular/common';
 import {ResourceService} from '../../services';
 import * as _ from 'lodash-es';

@@ -5,7 +5,7 @@ import { CommonModule } from '@angular/common';
 import {
   SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule,
   SuiProgressModule, SuiRatingModule, SuiCollapseModule
-} from 'ng2-semantic-ui-v9';
+} from 'ng2-semantic-ui-v12';
 import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
 import { SharedModule } from '@sunbird/shared';
 import { AvatarModule } from 'ngx-avatar';
@@ -16,7 +16,7 @@ import {
 import { APP_BASE_HREF, PlatformLocation } from '@angular/common';
 import { AuthGuard } from './guard/auth-gard.service';
 import { CacheService } from 'ng2-cache-service';
-import { WebExtensionModule } from '@project-sunbird/web-extensions';
+import { WebExtensionModule } from 'web-extensions-v12';
 import { TelemetryModule } from '@sunbird/telemetry';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import { ContentTypeComponent } from './components/content-type/content-type.component';

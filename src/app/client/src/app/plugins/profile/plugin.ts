@@ -1,4 +1,4 @@
-// import { PluginConfig, PluginPlacement } from '@project-sunbird/web-extensions';
+// import { PluginConfig, PluginPlacement } from 'web-extensions-v12';
 // import { ProfileBadgeComponent } from './components/profile-badge/profile-badge.component';
 
 // @PluginConfig({
