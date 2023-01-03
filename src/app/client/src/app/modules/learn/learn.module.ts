@@ -1,14 +1,14 @@
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import { LearnRoutingModule } from './learn-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '@sunbird/shared';
+import { SharedModule } from '../shared/shared.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { FormsModule } from '@angular/forms';
 import { CoursePageComponent } from './components';
-import { CoreModule } from '@sunbird/core';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
-import { ContentSearchModule } from '@sunbird/content-search';
+import { CoreModule } from '../core/core.module';
+import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
+import { ContentSearchModule } from '../content-search/content-search.module';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 
 import {

@@ -1,5 +1,5 @@
-import { CoreModule } from '@sunbird/core';
-import { SharedModule } from '@sunbird/shared';
+import { CoreModule } from '../core/core.module';
+import { SharedModule } from '../shared/shared.module';
 import { SearchRoutingModule } from './search-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,13 +9,13 @@ import { UserSearchService } from './services';
 import { OrderModule } from 'ngx-order-pipe';
 import { UserFilterComponent, UserEditComponent, UserDeleteComponent, HomeSearchComponent,
    UserProfileComponent, UserSearchComponent } from './components';
-import { TelemetryModule } from '@sunbird/telemetry';
-import { NgInviewModule } from 'angular-inport';
+import { TelemetryModule } from '../telemetry/telemetry.module';
+import { NgInviewModule } from '@stockopedia/angular-inport';
 import { AvatarModule } from 'ngx-avatar';
-import {SharedFeatureModule} from '@sunbird/shared-feature';
+import {SharedFeatureModule} from '../shared-feature/shared-feature.module';
 // import { Angular2CsvModule } from 'angular2-csv'; Angular2CsvModule removed TODO: use Blob object to generate csv file
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
-import { ContentSearchModule } from '@sunbird/content-search';
+import { ContentSearchModule } from '../content-search/content-search.module';
 import { TranslateModule } from '@ngx-translate/core';
 
 @NgModule({

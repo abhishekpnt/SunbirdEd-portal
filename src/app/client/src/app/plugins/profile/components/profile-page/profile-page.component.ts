@@ -97,6 +97,8 @@ export class ProfilePageComponent implements OnInit, OnDestroy, AfterViewInit {
   subPersona: string[];
   isConnected = true;
   showFullScreenLoader = false;
+  isFullScreenView:any;
+
 
   constructor(@Inject('CS_COURSE_SERVICE') private courseCService: CsCourseService, private cacheService: CacheService,
   public resourceService: ResourceService, public coursesService: CoursesService,
@@ -106,6 +108,7 @@ export class ProfilePageComponent implements OnInit, OnDestroy, AfterViewInit {
     public navigationhelperService: NavigationHelperService, public certRegService: CertRegService,
     private telemetryService: TelemetryService, public layoutService: LayoutService, private formService: FormService,
     private certDownloadAsPdf: CertificateDownloadAsPdfService, private connectionService: ConnectionService,
+    private navigationHelperService: NavigationHelperService,
     @Inject('CS_CERTIFICATE_SERVICE') private CsCertificateService: CsCertificateService) {
     this.getNavParams();
   }
@@ -693,5 +696,9 @@ public onLocationModalClose(event) {
     }
   }, 5000);
 }
-
+checkFullScreenView() {
+  this.navigationHelperService.contentFullScreenEvent.pipe(takeUntil(this.unsubscribe$)).subscribe(isFullScreen => {
+    this.isFullScreenView = isFullScreen;
+  });
+}
 }

@@ -1,5 +1,5 @@
-import { CoreModule } from '@sunbird/core';
-import { SharedModule } from '@sunbird/shared';
+import { CoreModule } from '../core/core.module';
+import { SharedModule } from '../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
@@ -9,7 +9,7 @@ import {
   ConfirmationPopupComponent, CertPreviewPopupComponent, ContentPlayerComponent, CollectionPlayerComponent, YearOfBirthComponent
 } from './components';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import { RouterModule } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule,
@@ -17,10 +17,10 @@ import { SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, Su
 import { GlobalConsentPiiComponent } from './components/global-consent-pii/global-consent-pii.component';
 import { CsModule } from '@project-sunbird/client-services';
 import { CsLibInitializerService } from '../../service/CsLibInitializer/cs-lib-initializer.service';
-import { PlayerHelperModule } from '@sunbird/player-helper';
+import { PlayerHelperModule } from '../player-helper/player-helper.module';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import { CommonFormElementsModule } from '@project-sunbird/common-form-elements';
-import { LocationModule } from '../../plugins/location';
+import { LocationModule } from '../../plugins/location/location.module';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { DashletModule } from  '@project-sunbird/sb-dashlet-v9';
 import { FrameworkCatLabelTranslatePipe } from './pipe/framework-label-translate/framework-label-translate.pipe';

@@ -1,7 +1,7 @@
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import { SharedFeatureModule } from '../../modules/shared-feature/shared-feature.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '@sunbird/shared';
+import { SharedModule } from '../../modules/shared';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ProfileRoutingModule } from './profile-routing.module';
 import {
@@ -10,12 +10,12 @@ import {
 } from './components';
 import { SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule,
   SuiProgressModule, SuiRatingModule, SuiCollapseModule } from 'ng2-semantic-ui-v12';
-import { CoreModule } from '@sunbird/core';
+import { CoreModule } from '../../modules/core/core.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 // import { WebExtensionModule } from 'web-extensions-v12';
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../../modules/telemetry/telemetry.module';
 import { AvatarModule } from 'ngx-avatar';
-import { ContentSearchModule } from '@sunbird/content-search';
+import { ContentSearchModule } from '../../modules/content-search/content-search.module';
 import {CommonConsumptionModule} from '@project-sunbird/common-consumption';
 import { CertificateDirectivesModule } from 'sb-svg2pdf';
 import { CsModule } from '@project-sunbird/client-services';

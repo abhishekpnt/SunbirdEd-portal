@@ -33,6 +33,7 @@ export class GuestProfileComponent implements OnInit {
   deviceProfile;
   isDesktop = false;
   userRole: string;
+  isFullScreenView:any;
 
   editProfileInteractEdata: IInteractEventEdata;
   editFrameworkInteractEData: IInteractEventEdata;
@@ -156,5 +157,9 @@ export class GuestProfileComponent implements OnInit {
   goBack() {
     this.navigationHelperService.goBack();
   }
-
+  checkFullScreenView() {
+    this.navigationHelperService.contentFullScreenEvent.pipe(takeUntil(this.unsubscribe$)).subscribe(isFullScreen => {
+      this.isFullScreenView = isFullScreen;
+    });
+  }
 }

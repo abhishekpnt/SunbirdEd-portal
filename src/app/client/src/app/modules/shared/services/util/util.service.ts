@@ -1,13 +1,15 @@
 import * as TreeModel from 'tree-model';
 import { Injectable, EventEmitter } from '@angular/core';
 import * as _ from 'lodash-es';
-import { ICard, ILanguage } from '@sunbird/shared';
+import { ICard } from '../../interfaces/card';
+import { ILanguage } from '../../interfaces/language';
+
 import { BehaviorSubject, Subject } from 'rxjs';
 import { ResourceService } from '../resource/resource.service';
 import { GenericResourceService } from '../genericResource/genericResource.service';
 import dayjs from 'dayjs';
 import { ExportToCsv } from 'export-to-csv';
-import { environment } from '@sunbird/environment';
+import { environment } from '../../../../../environments/environment';
 import { TransposeTermsPipe } from '../../pipes/transposeTerms/transposeTerms.pipe';
 // Dependency injection creates new instance each time if used in router sub-modules
 @Injectable()

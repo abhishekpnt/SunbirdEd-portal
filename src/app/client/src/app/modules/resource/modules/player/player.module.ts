@@ -1,16 +1,16 @@
 import { PlayerRoutingModule } from './player-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TelemetryModule } from '@sunbird/telemetry';
-import { SharedModule } from '@sunbird/shared';
-import { BadgingModule } from '@sunbird/badge';
-import { CoreModule } from '@sunbird/core';
-import { PlayerHelperModule } from '@sunbird/player-helper';
+import { TelemetryModule } from '../../../telemetry/telemetry.module';
+import { SharedModule } from '../../../shared/shared.module';
+import { BadgingModule } from '../../../badging/badging.module';
+import { CoreModule } from '../../../core/core.module';
+import { PlayerHelperModule } from '../../../player-helper/player-helper.module';
 import { SuiModule } from 'ng2-semantic-ui-v12';
 import { FormsModule } from '@angular/forms';
 import { CommonConsumptionModule} from '@project-sunbird/common-consumption';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
-import { PendingchangesGuard } from '@sunbird/public';
+import { SharedFeatureModule } from '../../../shared-feature/shared-feature.module';
+import { PendingchangesGuard } from '../../../public/services/pending-changes-guard/pendingchanges.guard';
 
 @NgModule({
     imports: [

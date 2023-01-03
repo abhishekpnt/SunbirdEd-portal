@@ -1,10 +1,12 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ExploreContentComponent, ExploreCurriculumCoursesComponent } from './components';
-import { ViewAllComponent } from '@sunbird/content-search';
+import { ExploreContentComponent } from './components/explore-content/explore-content.component';
+import { ExploreCurriculumCoursesComponent } from './components/explore-curriculum-courses/explore-curriculum-courses.component';
+
+import { ViewAllComponent } from '../../../content-search/components/view-all/view-all.component';
 const routes: Routes = [
   {
-    path: '', loadChildren: () => import('../../../explore-page/explore-page.module').then(m => m.ExplorePageModule)
+    path: '', loadChildren: () => import('../../../explore-page/explore-page.module').then((m) => {return m.ExplorePageModule})
   },
   {
     path: 'view-all/:section/:pageNumber', component: ViewAllComponent,

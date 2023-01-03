@@ -1,8 +1,8 @@
 import { Inject, Injectable } from '@angular/core';
 import { ActivatedRoute, NavigationExtras, Router } from '@angular/router';
-import { SbNotificationService } from '@project-sunbird/sb-notification';
-import { ToasterService } from '@sunbird/shared';
-import { TelemetryService } from '@sunbird/telemetry';
+//import { SbNotificationService } from '@project-sunbird/sb-notification';
+import { ToasterService } from '../../../shared/services/toaster/toaster.service';
+import { TelemetryService } from '../../../telemetry/services/telemetry/telemetry.service';
 import { Subject, BehaviorSubject } from 'rxjs';
 import { UserService } from '../../../core/services/user/user.service';
 import * as _ from 'lodash-es';
@@ -12,7 +12,7 @@ import { CsNotificationService } from '@project-sunbird/client-services/services
 @Injectable({
   providedIn: 'root'
 })
-export class NotificationServiceImpl implements SbNotificationService {
+export class NotificationServiceImpl {
 
   notificationList$ = new BehaviorSubject([]);
   showNotificationModel$ = new Subject<boolean>();

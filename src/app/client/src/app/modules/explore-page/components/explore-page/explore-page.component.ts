@@ -1,20 +1,20 @@
 import { forkJoin, Subject, Observable, BehaviorSubject, merge, of, concat, combineLatest } from 'rxjs';
-import { OrgDetailsService, UserService, SearchService, FormService, PlayerService, CoursesService, ObservationUtilService } from '@sunbird/core';
-import { PublicPlayerService } from '@sunbird/public';
+import { OrgDetailsService, UserService, SearchService, FormService, PlayerService, CoursesService, ObservationUtilService } from '../../../core';
+import { PublicPlayerService } from '../../../public/services/public-player/public-player.service';
 import { Component, OnInit, OnDestroy, HostListener, AfterViewInit } from '@angular/core';
 import {
     ResourceService, ToasterService, ConfigService, NavigationHelperService, LayoutService, COLUMN_TYPE, UtilService,
     OfflineCardService, BrowserCacheTtlService, IUserData, GenericResourceService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import { cloneDeep, get, find, map as _map, pick, omit, groupBy, sortBy, replace, uniqBy, forEach, has, uniq, flatten, each, isNumber, toString, partition, toLower, includes } from 'lodash-es';
-import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import { map, tap, switchMap, skipWhile, takeUntil, catchError, startWith } from 'rxjs/operators';
-import { ContentSearchService } from '@sunbird/content-search';
+import { ContentSearchService } from '../../../content-search/services/content-search/content-search.service';
 import { ContentManagerService } from '../../../public/module/offline/services';
 import * as _ from 'lodash-es';
 import { CacheService } from 'ng2-cache-service';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 import { SegmentationTagService } from '../../../core/services/segmentation-tag/segmentation-tag.service';
 
 @Component({

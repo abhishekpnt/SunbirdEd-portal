@@ -47,6 +47,7 @@ export class SubmitTeacherDetailsComponent implements OnInit, OnDestroy {
   telemetryInteractObject: IInteractEventObject;
   instance: string;
   showTncPopup = false;
+  isFullScreenView:any;
   tncLatestVersion: any;
   termsAndConditionLink: any;
   otpData;
@@ -689,5 +690,10 @@ export class SubmitTeacherDetailsComponent implements OnInit, OnDestroy {
     if (_.get(this.modal, 'deny')) {
       this.modal.deny();
     }
+  }
+  checkFullScreenView() {
+    this.navigationHelperService.contentFullScreenEvent.pipe(takeUntil(this.unsubscribe)).subscribe(isFullScreen => {
+      this.isFullScreenView = isFullScreen;
+    });
   }
 }

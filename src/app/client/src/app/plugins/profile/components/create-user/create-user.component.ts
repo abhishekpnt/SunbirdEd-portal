@@ -36,6 +36,7 @@ export class CreateUserComponent implements OnInit {
   submitInteractEdata: IInteractEventEdata;
   submitCancelInteractEdata: IInteractEventEdata;
   layoutConfiguration: any;
+  isFullScreenView:any;
   
 
   public unsubscribe = new Subject<void>();
@@ -47,6 +48,7 @@ export class CreateUserComponent implements OnInit {
     public frameworkService: FrameworkService, public utilService: UtilService, public formService: FormService,
     private activatedRoute: ActivatedRoute, public navigationhelperService: NavigationHelperService,
     public tncService: TncService, private managedUserService: ManagedUserService, public layoutService: LayoutService,
+    private navigationHelperService: NavigationHelperService,
     public _sanitizer: DomSanitizer) {
     this.sbFormBuilder = formBuilder;
   }
@@ -193,5 +195,10 @@ export class CreateUserComponent implements OnInit {
         this.enableSubmitBtn = true;
       }
     );
+  }
+  checkFullScreenView() {
+    this.navigationHelperService.contentFullScreenEvent.pipe(takeUntil(this.unsubscribe)).subscribe(isFullScreen => {
+      this.isFullScreenView = isFullScreen;
+    });
   }
 }

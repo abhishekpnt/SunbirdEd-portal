@@ -5,7 +5,9 @@ import { CommonModule } from '@angular/common';
 import { ForumComponent } from './components/forum/forum.component';
 import { DiscussionUiModule, DiscussionEventsService } from '@project-sunbird/discussions-ui-v8';
 import { DiscussionTelemetryService } from '../shared/services/discussion-telemetry/discussion-telemetry.service';
-import { NavigationHelperService, SharedModule } from '@sunbird/shared';
+import { NavigationHelperService } from '../shared/services/navigation-helper/navigation-helper.service';
+import { SharedModule } from '../shared/shared.module';
+
 import { AccessDiscussionComponent } from './components/access-discussion/access-discussion.component';
 import { NavigationEnd, Router } from '@angular/router';
 import { CsModule } from '@project-sunbird/client-services';

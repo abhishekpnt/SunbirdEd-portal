@@ -267,7 +267,7 @@ export class CreateTemplateComponent implements OnInit, OnDestroy {
   }
 
   editSVG(logosArray, stateLogos) {
-    return new Promise(async (resolve, reject) => {
+    return new Promise<void>(async (resolve, reject) => {
       for (let i = 0; i < logosArray.length; i++) {
         const logo = logosArray[i];
         if (logo) {

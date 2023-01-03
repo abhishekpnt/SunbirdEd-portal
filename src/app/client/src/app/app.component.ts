@@ -1,17 +1,17 @@
-import { environment } from '@sunbird/environment';
+import { environment } from '../environments/environment';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
-import { TelemetryService, ITelemetryContext } from '@sunbird/telemetry';
+import { TelemetryService, ITelemetryContext } from '../app/modules/telemetry';
 import {
   UtilService, ResourceService, ToasterService, IUserData, IUserProfile, ConnectionService,
   NavigationHelperService, ConfigService, BrowserCacheTtlService, LayoutService, GenericResourceService
-} from '@sunbird/shared';
+} from './modules/shared';
 import { Component, HostListener, OnInit, ViewChild, Inject, OnDestroy, ChangeDetectorRef, ElementRef, Renderer2, NgZone } from '@angular/core';
 import {
   UserService, PermissionService, CoursesService, TenantService, OrgDetailsService, DeviceRegisterService,
   SessionExpiryInterceptor, FormService, GeneraliseLabelService
-} from '@sunbird/core';
+} from './modules/core';
 import * as _ from 'lodash-es';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from './plugins/profile';
 import { Observable, of, throwError, combineLatest, BehaviorSubject, forkJoin, zip, Subject } from 'rxjs';
 import { first, filter, mergeMap, tap, skipWhile, startWith, takeUntil, debounceTime } from 'rxjs/operators';
 import { CacheService } from 'ng2-cache-service';

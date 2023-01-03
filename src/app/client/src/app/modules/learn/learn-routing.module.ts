@@ -2,7 +2,7 @@ import { CoursePageComponent } from './components';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { RedirectComponent } from './../shared/components/redirect/redirect.component';
-import { ViewAllComponent } from '@sunbird/content-search';
+import { ViewAllComponent } from '../content-search/components/view-all/view-all.component';
 
 const telemetryEnv = 'Course';
 const objectType = 'Course';

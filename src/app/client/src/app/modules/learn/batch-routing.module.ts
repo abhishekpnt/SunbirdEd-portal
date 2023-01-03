@@ -3,7 +3,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { UpdateCourseBatchComponent } from './components/batch/update-course-batch/update-course-batch.component';
 import { CreateBatchComponent } from './components/batch/create-batch/create-batch.component';
 import { EnrollBatchComponent } from './components/batch/enroll-batch/enroll-batch.component';
-import { AuthGuard } from '@sunbird/core';
+import { AuthGuard } from '../core/guard/auth-gard.service';
 
 const telemetryEnv = 'Course';
 const objectType = 'Course';

@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from '@sunbird/core';
+import { AuthGuard } from '../core/guard/auth-gard.service';
 import { CertificateDetailsComponent, CertificateConfigurationComponent, CreateTemplateComponent, SvgEditorComponent} from './components';
 
 const routes: Routes = [

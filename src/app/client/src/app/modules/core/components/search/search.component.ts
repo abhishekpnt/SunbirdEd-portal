@@ -2,7 +2,13 @@ import { filter } from 'rxjs/operators';
 import { Component, OnInit, ChangeDetectorRef, OnDestroy, Input } from '@angular/core';
 import { ActivatedRoute, Router, NavigationEnd } from '@angular/router';
 import { UserService } from './../../services';
-import { ResourceService, ConfigService, IUserProfile, LayoutService, UtilService, ConnectionService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared/services/resource/resource.service';
+import { ConfigService } from '../../../shared/services/config/config.service';
+import {  IUserProfile } from '../../../shared/interfaces/userProfile';
+import { LayoutService } from '../../../shared/services/layoutconfig/layout.service';
+import {  UtilService } from '../../../shared/services/util/util.service';
+import {  ConnectionService } from '../../../shared/services/connection-service/connection.service';
+
 import { Subscription } from 'rxjs';
 import * as _ from 'lodash-es';
 /**

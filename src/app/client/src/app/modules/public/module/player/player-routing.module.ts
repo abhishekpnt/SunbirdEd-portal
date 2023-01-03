@@ -1,6 +1,8 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContentPlayerComponent, CollectionPlayerComponent } from '@sunbird/shared-feature';
+import { ContentPlayerComponent } from '../../../shared-feature/components/content-player/content-player.component';
+import { CollectionPlayerComponent } from '../../../shared-feature/components/collection-player/collection-player.component';
+
 import { PendingchangesGuard } from './../../services';
 
 const routes: Routes = [

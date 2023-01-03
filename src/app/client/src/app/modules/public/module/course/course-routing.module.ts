@@ -4,10 +4,10 @@ import {
   ExploreCourseComponent, PublicCoursePlayerComponent,
   PublicCourseConsumptionPageComponent
 } from './components';
-import { ViewAllComponent } from '@sunbird/content-search';
+import { ViewAllComponent } from '../../../content-search/components/view-all/view-all.component';
 const routes: Routes = [
   {
-    path: '', loadChildren: () => import('../../../learn/learn.module').then(m => m.LearnModule)
+    path: '', loadChildren: () => import('../../../learn/learn.module').then((m) => {return m.LearnModule})
   },
   {
     path: 'view-all/:section/:pageNumber', component: ViewAllComponent,

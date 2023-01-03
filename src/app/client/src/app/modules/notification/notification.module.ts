@@ -3,15 +3,15 @@ import { CommonModule } from '@angular/common';
 import { SuiModule } from 'ng2-semantic-ui-v12';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import { InAppNotificationComponent } from './components/in-app-notification/in-app-notification.component';
-import { SbNotificationModule } from '@project-sunbird/sb-notification';
+//import { SbNotificationModule } from '@project-sunbird/sb-notification';
 import { NotificationServiceImpl } from './services/notification/notification-service-impl';
-import { SharedModule } from '@sunbird/shared';
+import { SharedModule } from '../shared/shared.module';
 @NgModule({
   imports: [
     CommonModule,
     SuiModule,
     CommonConsumptionModule,
-    SbNotificationModule,
+   // SbNotificationModule,
     SharedModule
   ],
   declarations: [InAppNotificationComponent],

@@ -1,7 +1,7 @@
 import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {MergeAccountRoutingModule} from './merge-account-routing.module';
-import {SharedModule} from '@sunbird/shared';
+import {SharedModule} from '../shared/shared.module';
 import {
   SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule,
   SuiProgressModule, SuiRatingModule, SuiCollapseModule, SuiCheckboxModule

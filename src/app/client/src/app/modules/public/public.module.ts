@@ -1,9 +1,9 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CoreModule } from '@sunbird/core';
+import { CoreModule } from '../core/core.module';
 import { LandingPageComponent } from './components';
 import { PublicPlayerService, LandingpageGuard, PendingchangesGuard } from './services';
-import { SharedModule } from '@sunbird/shared';
+import { SharedModule } from '../shared/shared.module';
 import { PublicRoutingModule } from './public-routing.module';
 import { DeviceDetectorService } from 'ngx-device-detector';
 @NgModule({

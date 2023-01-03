@@ -1,9 +1,9 @@
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
- import { SharedModule } from '@sunbird/shared';
-import { CoreModule } from '@sunbird/core';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+ import { SharedModule } from '../shared/shared.module';
+import { CoreModule } from '../core/core.module';
+import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
 import { EnrollBatchComponent } from './components/batch/enroll-batch/enroll-batch.component';
 import { CreateBatchComponent } from './components/batch/create-batch/create-batch.component';
 import { UpdateCourseBatchComponent } from './components/batch/update-course-batch/update-course-batch.component';

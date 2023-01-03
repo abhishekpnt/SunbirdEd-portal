@@ -2,11 +2,11 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SsoRoutingModule } from './sso-routing.module';
 import {SelectOrgComponent, UpdateContactComponent, AuthFailedComponent} from './components';
-import {TelemetryModule} from '@sunbird/telemetry';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import {TelemetryModule} from '../../../../telemetry/telemetry.module';
+import { SharedFeatureModule } from '../../../../shared-feature/shared-feature.module';
 import { SuiModule } from 'ng2-semantic-ui-v12';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { SharedModule } from '@sunbird/shared';
+import { SharedModule } from '../../../../shared/shared.module';
 import { RecaptchaModule } from 'ng-recaptcha';
 @NgModule({
   imports: [

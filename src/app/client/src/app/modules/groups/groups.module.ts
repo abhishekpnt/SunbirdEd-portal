@@ -1,21 +1,21 @@
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import { GroupsRoutingModule } from './groups-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '@sunbird/shared';
+import { SharedModule } from '../shared/shared.module';
 import { SuiModule, SuiModalModule, SuiRatingModule } from 'ng2-semantic-ui-v12';
-import { NgInviewModule } from 'angular-inport';
+import { NgInviewModule } from '@stockopedia/angular-inport';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MyGroupsComponent, AddMemberComponent, GroupHeaderComponent, NoGroupResultComponent,
   AddActivityComponent, MemberActionsComponent, GroupMembersComponent, FtuPopupComponent,
   BackButtonComponent, ActivityListComponent, ActivityDashboardComponent, ActivitySearchComponent,
   GroupDetailsComponent, ActivityFormComponent, CreateEditGroupComponent, AddActivityContentTypesComponent,
   PopupComponent } from './components';
-import { CoreModule } from '@sunbird/core';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import { CoreModule } from '../core/core.module';
+import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import { CsLibInitializerService } from '../../service/CsLibInitializer/cs-lib-initializer.service';
-import { ContentSearchModule } from '@sunbird/content-search';
+import { ContentSearchModule } from '../content-search/content-search.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { DiscussionModule } from '../discussion/discussion.module';

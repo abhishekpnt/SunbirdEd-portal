@@ -1,10 +1,10 @@
 import { CourseConsumptionPageComponent, CoursePlayerComponent } from './components';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { AuthGuard } from '@sunbird/core';
+import { AuthGuard } from '../core/guard/auth-gard.service';
 import { UnEnrollBatchComponent } from './components/batch/unenroll-batch/unenroll-batch.component';
 import { AssessmentPlayerComponent } from './components/course-consumption/assessment-player/assessment-player.component';
-import { PendingchangesGuard } from '@sunbird/public';
+import { PendingchangesGuard } from '../public/services/pending-changes-guard/pendingchanges.guard';
 
 const telemetryEnv = 'Course';
 const objectType = 'Course';
@@ -35,11 +35,11 @@ const routes: Routes = [
           breadcrumbs: [{ label: 'Home', url: '/home' }, { label: 'Courses', url: '/learn' }]
         },
         children: [{
-          path: '', loadChildren: () => import('./batch.module').then(m => m.BatchModule)
+          path: '', loadChildren: () => import('./batch.module').then((m) => {return m.BatchModule})
         }]
       },
       {
-        path: ':courseId/dashboard', loadChildren: () => import('./../dashboard/dashboard.module').then(m => m.DashboardModule), canActivate: [AuthGuard],
+        path: ':courseId/dashboard', loadChildren: () => import('./../dashboard/dashboard.module').then((m) => {return m.DashboardModule}), canActivate: [AuthGuard],
         data: {
           roles: 'createBatchRole',
           telemetry: { env: telemetryEnv, pageid: 'course-stats', type: 'view', object: { ver: '1.0', type: 'course' } },

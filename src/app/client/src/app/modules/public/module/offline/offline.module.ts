@@ -5,8 +5,8 @@ import {
 } from 'ng2-semantic-ui-v12';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CoreModule } from '@sunbird/core';
-import { SharedModule } from '@sunbird/shared';
+import { CoreModule } from '../../../core/core.module';
+import { SharedModule } from '../../../shared/shared.module';
 import { OfflineRoutingModule } from './offline-routing.module';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import {
@@ -15,14 +15,14 @@ import {
     AboutUsComponent
 } from './components';
 import { WebExtensionModule } from 'web-extensions-v12';
-import { FileSizeModule } from 'ngx-filesize';
+import { NgxFilesizeModule } from 'ngx-filesize';
 import { OrderModule } from 'ngx-order-pipe';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormsModule } from '@angular/forms';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
-import { NgInviewModule } from 'angular-inport';
-import { ContentSearchModule } from '@sunbird/content-search';
+import { NgInviewModule } from '@stockopedia/angular-inport';
+import { ContentSearchModule } from '../../../content-search/content-search.module';
 @NgModule({
     imports: [
         CommonModule,
@@ -34,7 +34,7 @@ import { ContentSearchModule } from '@sunbird/content-search';
         SuiProgressModule,
         SuiSelectModule,
         WebExtensionModule,
-        FileSizeModule,
+        NgxFilesizeModule,
         SuiAccordionModule,
         SuiTabsModule,
         OrderModule,

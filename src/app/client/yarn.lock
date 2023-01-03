@@ -2256,13 +2256,6 @@
     ngx-daterangepicker-material "^4.0.1"
     tslib "^1.10.0"
 
-"@project-sunbird/sb-notification@5.0.6":
-  version "5.0.6"
-  resolved "https://registry.yarnpkg.com/@project-sunbird/sb-notification/-/sb-notification-5.0.6.tgz#4514617139213b1153b927c5bdc6f8c54f902b61"
-  integrity sha512-EmnnPrdgpoxWJsDhyMkn5E7r+wuel1nfNa6YJcxEExKW3PWis4p1bHuoINl0dJ+Hvq+Y5HCkJAOFkBgmaXl1Og==
-  dependencies:
-    tslib "^2.0.0"
-
 "@project-sunbird/sb-styles@0.0.10":
   version "0.0.10"
   resolved "https://registry.yarnpkg.com/@project-sunbird/sb-styles/-/sb-styles-0.0.10.tgz#45add8f8917e300dccadb893167703e1c2729290"
@@ -2302,6 +2295,22 @@
   integrity sha512-Vg3MXOkBC7c1px9pTX58T0wqkseLAw0kWLflA8CpttIUQYFJBxxu5wEB8z8Y5zb6zDFrykxWRbPEcbdYdfOKRw==
   dependencies:
     ally.js "1.4.1"
+
+"@project-sunbird/sunbird-quml-player-v9@5.1.5":
+  version "5.1.5"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-quml-player-v9/-/sunbird-quml-player-v9-5.1.5.tgz#a372503a91311d493cfcf628a6f37a0e235681de"
+  integrity sha512-6NUP6nLM+9D7HUwYYCFWEDpa+WDVveeT1cscySdpWq36OWjdVDUpt2JbeSn75YfYRGkGVZI+c+m+xSBSfi3nOg==
+  dependencies:
+    "@project-sunbird/sunbird-player-sdk-v9" "5.1.0"
+    tslib "^2.2.0"
+
+"@project-sunbird/sunbird-quml-player@5.1.1":
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/@project-sunbird/sunbird-quml-player/-/sunbird-quml-player-5.1.1.tgz#e6f4706e449fd9083345b6be29ae668bae67a11c"
+  integrity sha512-DVtGG0xE6GH9Gkt8WigMyZ/tUGXNS+da4m9BRikHu2oD0N/IAH3y4CRwPYYGU0AKeu9V2rjQeT+Dx9IEzsc4IA==
+  dependencies:
+    "@project-sunbird/sunbird-player-sdk-v9" "5.1.0"
+    tslib "^2.2.0"
 
 "@project-sunbird/sunbird-resource-library@0.0.19":
   version "0.0.19"
@@ -2442,6 +2451,11 @@
   integrity sha512-OAPJUAtgeINhh/TAlUID4QTs53Njm7xzddaVlEs/SXwgtiD1tW22zAB/W1wdqfrpmikgaWQ9Fw6Ws+hsiRm5Vg==
   dependencies:
     "@sinonjs/commons" "^1.7.0"
+
+"@stockopedia/angular-inport@3.0.0":
+  version "3.0.0"
+  resolved "https://registry.yarnpkg.com/@stockopedia/angular-inport/-/angular-inport-3.0.0.tgz#ce7f748bba227380f818bb5c2f4c7a2a9d966daa"
+  integrity sha512-QV64Uifj+iFWT+W3iWVVtJTZnmrNaQp9oI8Tzt9iD4Gv59yIkM838jkCwHFWF/qEf/5/18UXZl9YkWXWDET9Fg==
 
 "@swimlane/ngx-datatable@16.1.1":
   version "16.1.1"
@@ -2902,7 +2916,7 @@
     raw-loader "^4.0.2"
     uuid "^8.3.2"
 
-"@xmldom/xmldom@^0.7.2":
+"@xmldom/xmldom@^0.7.2", "@xmldom/xmldom@^0.7.5":
   version "0.7.9"
   resolved "https://registry.yarnpkg.com/@xmldom/xmldom/-/xmldom-0.7.9.tgz#7f9278a50e737920e21b297b8a35286e9942c056"
   integrity sha512-yceMpm/xd4W2a85iqZyO09gTnHvXF6pyiWjD2jcOJs7hRoZtNNOO1eJlhHj1ixA+xip2hOyGn+LgcvLCMo5zXA==
@@ -3161,11 +3175,6 @@ angular-datatables@9.1.0-rc1:
   integrity sha512-7M6Rd3bdJKQLkfp/1Jq6jLfOaHhR/yH1YgcU4/K3cJBzL3v70pv/LMyg7kZftoUWylH06jO1kzYM88GZtyjXKw==
   dependencies:
     "@angular/cli" "^9.0.6"
-
-angular-inport@^2.0.0:
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/angular-inport/-/angular-inport-2.0.1.tgz#f24c5c6fdbda6067862b67b562e4f79a8bb42bb8"
-  integrity sha512-nMcT/1T9J6YdtaFWwvNbsmx51yCL3OoRTFipjukD7q+lVH4jIcWrAcX4uQWO4fuRcu+UOCWzXAInqwJjyq+wkg==
 
 angular2-uuid@1.1.1:
   version "1.1.1"
@@ -4839,10 +4848,10 @@ core-js@^2.2.0, core-js@^2.4.1:
   resolved "https://registry.yarnpkg.com/core-js/-/core-js-2.6.12.tgz#d9333dfa7b065e347cc5682219d6f690859cc2ec"
   integrity sha512-Kb2wC0fvsWfQrgk8HU5lW6U/Lcs8+9aaYcy4ZFc6DDlo4nZ7n70dEgE5rtR0oG6ufKDUnrwfWL1mXR5ljDatrQ==
 
-core-js@^3.6.5:
-  version "3.26.1"
-  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.26.1.tgz#7a9816dabd9ee846c1c0fe0e8fcad68f3709134e"
-  integrity sha512-21491RRQVzUn0GGM9Z1Jrpr6PNPxPi+Za8OM9q4tksTSnlbXXGKK1nXNg/QvwFYettXvSX6zWKCtHHfjN4puyA==
+core-js@^3.18.3:
+  version "3.27.1"
+  resolved "https://registry.yarnpkg.com/core-js/-/core-js-3.27.1.tgz#23cc909b315a6bb4e418bf40a52758af2103ba46"
+  integrity sha512-GutwJLBChfGCpwwhbYoqfv03LAfmiz7e7D/BNxzeMxwQf10GRSzqiOjx7AmtEk+heiD/JWmBuyBPgFtx0Sg1ww==
 
 core-util-is@1.0.2:
   version "1.0.2"
@@ -5815,20 +5824,20 @@ env-paths@^2.2.0:
   resolved "https://registry.yarnpkg.com/env-paths/-/env-paths-2.2.1.tgz#420399d416ce1fbe9bc0a07c62fa68d67fd0f8f2"
   integrity sha512-+h1lkLKhZMTYjog1VEpJNG7NZJWcuc2DDk/qsqSTRRCOXiLjeQ1d1/udrUGhqMxUgAlwKNZ0cf2uqan5GLuS2A==
 
-epubjs@0.3.88:
-  version "0.3.88"
-  resolved "https://registry.yarnpkg.com/epubjs/-/epubjs-0.3.88.tgz#bc365e7e21893cf2d92717ce10927c1071275347"
-  integrity sha512-VRumULpUELYmYwzypyfbDwoSIqDp2LXOXCtY3o55o3YDW5Zm32UjtZuX/xaWFGqyZORNNMWWQ8VlMaY1djnDYg==
+epubjs@0.3.93:
+  version "0.3.93"
+  resolved "https://registry.yarnpkg.com/epubjs/-/epubjs-0.3.93.tgz#100c4597db152fc07d5246be38acca928b6b0b22"
+  integrity sha512-c06pNSdBxcXv3dZSbXAVLE1/pmleRhOT6mXNZo6INKmvuKpYB65MwU/lO7830czCtjIiK9i+KR+3S+p0wtljrw==
   dependencies:
     "@types/localforage" "0.0.34"
-    core-js "^3.6.5"
+    "@xmldom/xmldom" "^0.7.5"
+    core-js "^3.18.3"
     event-emitter "^0.3.5"
-    jszip "^3.4.0"
-    localforage "^1.7.3"
-    lodash "^4.17.15"
+    jszip "^3.7.1"
+    localforage "^1.10.0"
+    lodash "^4.17.21"
     marks-pane "^1.0.9"
     path-webpack "0.0.3"
-    xmldom "^0.3.0"
 
 err-code@^1.0.0:
   version "1.1.2"
@@ -6637,10 +6646,10 @@ file-uri-to-path@1.0.0:
   resolved "https://registry.yarnpkg.com/file-uri-to-path/-/file-uri-to-path-1.0.0.tgz#553a7b8446ff6f684359c445f1e37a05dacc33dd"
   integrity sha512-0Zt+s3L7Vf1biwWZ29aARiVYLx7iMGnEUl9x33fbB/j3jR81u/O2LbqK+Bm1CDSNDKVtJ/YjwY7TUd5SkeLQLw==
 
-filesize@^4.0.0:
-  version "4.2.1"
-  resolved "https://registry.yarnpkg.com/filesize/-/filesize-4.2.1.tgz#ab1cb2069db5d415911c1a13e144c0e743bc89bc"
-  integrity sha512-bP82Hi8VRZX/TUBKfE24iiUGsB/sfm2WUrwTQyAzQrhO3V9IhcBBNBXMyzLY5orACxRyYJ3d2HeRVX+eFv4lmA==
+"filesize@>= 4.0.0":
+  version "10.0.6"
+  resolved "https://registry.yarnpkg.com/filesize/-/filesize-10.0.6.tgz#5f4cd2721664cd925db3a7a5a87bbfd6ab5ebb1a"
+  integrity sha512-rzpOZ4C9vMFDqOa6dNpog92CoLYjD79dnjLk2TYDDtImRIyLTOzqojCb05Opd1WuiWjs+fshhCgTd8cl7y5t+g==
 
 fill-range@^4.0.0:
   version "4.0.0"
@@ -9200,7 +9209,7 @@ jsprim@^1.2.2:
     json-schema "0.4.0"
     verror "1.10.0"
 
-jszip@^3.1.3, jszip@^3.4.0, jszip@^3.7.1:
+jszip@^3.1.3, jszip@^3.7.1:
   version "3.10.1"
   resolved "https://registry.yarnpkg.com/jszip/-/jszip-3.10.1.tgz#34aee70eb18ea1faec2f589208a157d1feb091c2"
   integrity sha512-xXDvecyTpGLrqFrvkrUSoxxfJI5AH7U8zxxtVclpsUtMCq4JQ290LY8AW5c7Ggnr/Y/oK+bQMbqK2qmtk3pN4g==
@@ -9485,7 +9494,7 @@ loader-utils@^2.0.0:
     emojis-list "^3.0.0"
     json5 "^2.1.2"
 
-localforage@*, localforage@^1.7.3:
+localforage@*, localforage@^1.10.0:
   version "1.10.0"
   resolved "https://registry.yarnpkg.com/localforage/-/localforage-1.10.0.tgz#5c465dc5f62b2807c3a84c0c6a1b1b3212781dd4"
   integrity sha512-14/H1aX7hzBBmmh7sGPd+AOMkkIrHM3Z1PAyGgZigA1H1p5O5ANnMyWzvpAETtG68/dC4pC0ncy3+PPGzXZHPg==
@@ -10337,13 +10346,6 @@ ng-recaptcha@^5.0.0:
   optionalDependencies:
     "@types/grecaptcha" "^2.0.33"
 
-ng-svg-editor@0.0.24:
-  version "0.0.24"
-  resolved "https://registry.yarnpkg.com/ng-svg-editor/-/ng-svg-editor-0.0.24.tgz#00af3b8fe6afbc3a8d1c5beca32fe197b64d2d1e"
-  integrity sha512-3gmHuM/0Nh279tHi1sYoWPRpMZSEpaGunqQQtwL3a500IYKvvxOwlaZkx9eBg2s5goG13t7xeU7yoRe01kdVsw==
-  dependencies:
-    tslib "^2.3.0"
-
 ng2-cache-service@1.1.1:
   version "1.1.1"
   resolved "https://registry.yarnpkg.com/ng2-cache-service/-/ng2-cache-service-1.1.1.tgz#e35e1e8dc60e415023d82df82e2157ad73bee9b6"
@@ -10387,6 +10389,19 @@ ng2-semantic-ui-v12@5.1.2:
     popper.js "^1.14.0"
     tslib "^2.2.0"
 
+ng2-semantic-ui-v9@0.0.6:
+  version "0.0.6"
+  resolved "https://registry.yarnpkg.com/ng2-semantic-ui-v9/-/ng2-semantic-ui-v9-0.0.6.tgz#08137b2610a10d8cf862cc718a22028f9f4c4ba8"
+  integrity sha512-EM+WCfwcJoI3+xyf2+5+WPTpMOn6GmXCdDhtkbAddnHEKjSkj6Ofm0ma3+3v0rcU5CzzLDlHq4hFXAVU/dcIdw==
+  dependencies:
+    bowser "^1.7.2"
+    date-fns "2.0.0-alpha.1"
+    element-closest "^2.0.2"
+    extend "^3.0.1"
+    is-ua-webview "^1.0.0"
+    popper.js "^1.14.0"
+    tslib "^1.10.0"
+
 ngx-avatar@^3.7.0:
   version "3.7.0"
   resolved "https://registry.yarnpkg.com/ngx-avatar/-/ngx-avatar-3.7.0.tgz#43857ad017af42ed0ba26d0dafc45948285a8af7"
@@ -10423,12 +10438,13 @@ ngx-device-detector@2.1.0:
   dependencies:
     tslib "^2.0.0"
 
-ngx-filesize@^1.1.4:
-  version "1.1.4"
-  resolved "https://registry.yarnpkg.com/ngx-filesize/-/ngx-filesize-1.1.4.tgz#acd690ec20c7942254b3315fefabdcc65397645f"
-  integrity sha512-eqh9UCLX/lIsnc+IrdVL7bqmF945oBzEtaESM8jFHTriwZTD6dFd3gM53cdE4gFdARxNnHkzdE+eoxGehFP94A==
+ngx-filesize@2.0.16:
+  version "2.0.16"
+  resolved "https://registry.yarnpkg.com/ngx-filesize/-/ngx-filesize-2.0.16.tgz#fdaba04170edb6cfcdf7be932783cf913b03f016"
+  integrity sha512-VdaCirE7hSyfQh8ZEmhzNEhbddiTYUHF4V6OX+KyTmnQSVx4hp9kmzDX5YlkIlmClI6wI+LZmH9/q7XS3fsMPA==
   dependencies:
-    filesize "^4.0.0"
+    filesize ">= 4.0.0"
+    tslib "^2.0.0"
 
 ngx-infinite-scroll@^8.0.2:
   version "8.0.2"
@@ -15331,11 +15347,6 @@ xmldom@^0.1.22:
   version "0.1.31"
   resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.1.31.tgz#b76c9a1bd9f0a9737e5a72dc37231cf38375e2ff"
   integrity sha512-yS2uJflVQs6n+CyjHoaBmVSqIDevTAWrzMmjG1Gc7h1qQ7uVozNhEPJAwZXWyGQ/Gafo3fCwrcaokezLPupVyQ==
-
-xmldom@^0.3.0:
-  version "0.3.0"
-  resolved "https://registry.yarnpkg.com/xmldom/-/xmldom-0.3.0.tgz#e625457f4300b5df9c2e1ecb776147ece47f3e5a"
-  integrity sha512-z9s6k3wxE+aZHgXYxSTpGDo7BYOUfJsIRyoZiX6HTjwpwfS2wpQBQKa2fD+ShLyPkqDYo5ud7KitmLZ2Cd6r0g==
 
 xmlhttprequest-ssl@~1.5.4:
   version "1.5.5"

@@ -6,9 +6,9 @@ import { SuiModule } from 'ng2-semantic-ui-v12';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { RecaptchaModule } from 'ng-recaptcha';
 import { SignupService } from './services';
-import { TelemetryModule } from '@sunbird/telemetry';
-import { SharedModule } from '@sunbird/shared';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import { TelemetryModule } from '../../../telemetry/telemetry.module';
+import { SharedModule } from '../../../shared/shared.module';
+import { SharedFeatureModule } from '../../../shared-feature/shared-feature.module';
 import { LocationModule } from '../../../../plugins/location';
 
 @NgModule({

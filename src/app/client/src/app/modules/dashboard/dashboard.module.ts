@@ -7,7 +7,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChartsModule } from 'ng2-charts';
 import { SuiModule } from 'ng2-semantic-ui-v12';
 import { DashboardRoutingModule } from './dashboard-routing.module';
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 // Custome component(s) and services
 import {
   CourseConsumptionService, DashboardUtilsService, OrganisationService,
@@ -22,10 +22,10 @@ import {
 } from './components';
 import { NgxDaterangepickerMd } from 'ngx-daterangepicker-material';
 // SB core and shared services
-import { SearchService } from '@sunbird/core';
-import { SharedModule } from '@sunbird/shared';
+import { SearchService } from '../core/services/search/search.service';
+import { SharedModule } from '../shared/shared.module';
 import { OrderModule } from 'ngx-order-pipe';
-import { AceEditorModule } from 'ng2-ace-editor';
+import { AceEditorModule } from '@derekbaker/ngx-ace-editor-wrapper';
 import { DiscussionModule } from '../discussion/discussion.module';
 import { SbTableComponent } from './components/sb-table/sb-table.component';
 import { DashletModule } from '@project-sunbird/sb-dashlet-v9';
@@ -33,7 +33,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { MatTabsModule } from '@angular/material/tabs';
 import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 import { MatExpansionModule } from '@angular/material/expansion';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
 import { MatAutocompleteModule } from '@angular/material/autocomplete';
 
 

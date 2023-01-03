@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SuiModule } from 'ng2-semantic-ui-v12';
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import {
   ContentCreditsComponent, PlayerComponent, ContentPlayerMetadataComponent,
   FancyTreeComponent, CollectionPlayerMetadataComponent,
@@ -10,8 +10,8 @@ import {
   ContentPlayerPageComponent, ContentChapterlistComponent, ContentLicenceComponent,
   CurriculumInfoComponent, CourseInfoComponent
 } from './components';
-import { SharedModule } from '@sunbird/shared';
-import { CoreModule } from '@sunbird/core';
+import { SharedModule } from '../shared/shared.module';
+import { CoreModule } from '../core/core.module';
 import { FormsModule } from '@angular/forms';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
 import {SunbirdPdfPlayerModule} from '@project-sunbird/sunbird-pdf-player-v9';

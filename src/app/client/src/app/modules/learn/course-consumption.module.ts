@@ -1,15 +1,15 @@
-import { TelemetryModule } from '@sunbird/telemetry';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import { CourseConsumptionRoutingModule } from './course-consumption-routing.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { SharedModule } from '@sunbird/shared';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import { SharedModule } from '../shared/shared.module';
+import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
 import { FormsModule } from '@angular/forms';
 import {
   CoursePlayerComponent, CourseConsumptionHeaderComponent, CourseConsumptionPageComponent,
   CurriculumCardComponent  } from './components';
-import { CoreModule } from '@sunbird/core';
-import { PlayerHelperModule } from '@sunbird/player-helper';
+import { CoreModule } from '../core/core.module';
+import { PlayerHelperModule } from '../player-helper/player-helper.module';
 import {
   SuiSelectModule, SuiModalModule, SuiAccordionModule, SuiPopupModule, SuiDropdownModule,
   SuiProgressModule, SuiRatingModule, SuiCollapseModule
@@ -25,7 +25,7 @@ import { CsModule } from '@project-sunbird/client-services';
 import { CsLibInitializerService } from '../../service/CsLibInitializer/cs-lib-initializer.service';
 import { NotificationModule } from '../notification/notification.module';
 import { DiscussionModule } from '../discussion/discussion.module';
-import { PendingchangesGuard } from '@sunbird/public';
+import { PendingchangesGuard } from '../public/services/pending-changes-guard/pendingchanges.guard';
 import { GroupsModule } from '../groups';
 
 export const csUserServiceFactory = (csLibInitializerService: CsLibInitializerService) => {

@@ -1,17 +1,17 @@
-import { CoreModule } from '@sunbird/core';
-import { SharedModule } from '@sunbird/shared';
+import { CoreModule } from '../core/core.module';
+import { SharedModule } from '../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SuiModule, SuiModalModule, SuiSelectModule, SuiAccordionModule, SuiPopupModule, SuiDimmerModule, SuiTabsModule, SuiDropdownModule, SuiProgressModule, SuiRatingModule, SuiCollapseModule} from 'ng2-semantic-ui-v12';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ObservationRoutingModule } from './observation-routing.module';
 import { MlGuard } from './guards';
-import { TelemetryModule } from '@sunbird/telemetry';
-import { NgInviewModule } from 'angular-inport';
+import { TelemetryModule } from '../telemetry/telemetry.module';
+import { NgInviewModule } from '@stockopedia/angular-inport';
 import { AvatarModule } from 'ngx-avatar';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
 import { CommonConsumptionModule } from '@project-sunbird/common-consumption';
-import { ContentSearchModule } from '@sunbird/content-search';
+import { ContentSearchModule } from '../content-search/content-search.module';
 import { TranslateModule } from '@ngx-translate/core';
 import {
   AddEntityComponent, SubmissionsComponent, ObservationListingComponent, ObservationDetailsComponent,

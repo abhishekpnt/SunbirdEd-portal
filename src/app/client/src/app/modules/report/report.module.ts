@@ -1,11 +1,11 @@
-import { CoreModule } from '@sunbird/core';
-import { SharedModule } from '@sunbird/shared';
+import { CoreModule } from '../../modules/core/core.module';
+import { SharedModule } from '../shared/shared.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SuiModule, SuiModalModule } from 'ng2-semantic-ui-v12';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { TelemetryModule } from '@sunbird/telemetry';
-import { SharedFeatureModule } from '@sunbird/shared-feature';
+import { TelemetryModule } from '../telemetry/telemetry.module';
+import { SharedFeatureModule } from '../shared-feature/shared-feature.module';
 import { TranslateModule } from '@ngx-translate/core';
 import { ReportRoutingModule } from './report-routing.module';
 import { SolutionListingComponent, EntityListComponent, ReportViewComponent, AllEvidenceComponent } from './components';

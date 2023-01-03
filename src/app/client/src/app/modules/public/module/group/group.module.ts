@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TelemetryModule } from '@sunbird/telemetry';
-import { CoreModule } from '@sunbird/core';
-import { SharedModule } from '@sunbird/shared';
+import { TelemetryModule } from '../../../telemetry/telemetry.module';
+import { CoreModule } from '../../../core/core.module';
+import { SharedModule } from '../../../shared/shared.module';
 import { ExploreGroupComponent, ExploreFtuPopupComponent } from './components';
-import {SharedFeatureModule} from '@sunbird/shared-feature';
+import {SharedFeatureModule} from '../../../shared-feature/shared-feature.module';
 import { GroupRoutingModule } from './group-routing.module';
 
 @NgModule({

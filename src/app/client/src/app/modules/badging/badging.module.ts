@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { SuiModule } from 'ng2-semantic-ui-v12';
-import { SharedModule } from '@sunbird/shared';
-import { ContentBadgeComponent, AssignBadgesContentComponent } from './components';
-import { ContentBadgeService } from './services';
-import { TelemetryModule } from '@sunbird/telemetry';
+import { SharedModule } from '../shared/shared.module';
+import { ContentBadgeComponent } from './components/content-badge/content-badge.component';
+import { AssignBadgesContentComponent } from './components/assign-badges-content/assign-badges-content.component';
+import { ContentBadgeService } from './services/content-badge.service';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import { MatTooltipModule } from '@angular/material/tooltip';
 
 @NgModule({

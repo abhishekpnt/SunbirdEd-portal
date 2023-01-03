@@ -1,8 +1,8 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { CoreModule } from '@sunbird/core';
+import { CoreModule } from '../core/core.module';
 import { WorkspaceRoutingModule } from './workspace-routing.module';
-import { SharedModule } from '@sunbird/shared';
+import { SharedModule } from '../shared/shared.module';
 import { SlickCarouselModule } from 'ngx-slick-carousel';
 import { SuiModule } from 'ng2-semantic-ui-v12';
 import { FormsModule, ReactiveFormsModule, } from '@angular/forms';
@@ -20,12 +20,12 @@ import {
   CollaborationContentFilterComponent, WorkspaceContentFilterComponent, AllTextbooksComponent, NewCollectionEditorComponent
 } from './components';
 import { DateFilterXtimeAgoPipe } from './pipes';
-import { NgInviewModule } from 'angular-inport';
-import { TelemetryModule } from '@sunbird/telemetry';
+import { NgInviewModule } from '@stockopedia/angular-inport';
+import { TelemetryModule } from '../telemetry/telemetry.module';
 import { ReviewCommentsComponent } from './components/review-comments/review-comments.component';
 import { OrderModule } from 'ngx-order-pipe';
-import { PlayerHelperModule } from '@sunbird/player-helper';
-import { ContentSearchModule } from '@sunbird/content-search';
+import { PlayerHelperModule } from '../player-helper/player-helper.module';
+import { ContentSearchModule } from '../content-search/content-search.module';
 import { CollectionEditorLibraryModule } from '@project-sunbird/sunbird-collection-editor';
 import { MatTooltipModule } from '@angular/material/tooltip';
 

@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ContentPlayerComponent, CollectionPlayerComponent } from '@sunbird/shared-feature';
-import { PendingchangesGuard } from '@sunbird/public';
+import { ContentPlayerComponent, CollectionPlayerComponent } from '../../../shared-feature';
+import { PendingchangesGuard } from '../../../public/services/pending-changes-guard/pendingchanges.guard';
 const telemetryEnv = 'library';
 
 const routes: Routes = [
