@@ -1,8 +1,8 @@
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
 import { Location } from '@angular/common';
-import { ConfigService } from '@sunbird/shared';
-import { LearnerService, UserService } from '@sunbird/core';
+import { ConfigService } from '../../../shared';
+import { LearnerService, UserService } from '../../../core';
 import { ForumComponent } from './forum.component';
 import { of } from 'rxjs';
 

@@ -1,6 +1,6 @@
-import { BaseReportService } from '@sunbird/core';
+import { BaseReportService } from '../../../core';
 import { Injectable } from '@angular/core';
-import { ConfigService } from '@sunbird/shared';
+import { ConfigService } from '../../../shared';
 import { pluck } from 'rxjs/operators';
 
 @Injectable({

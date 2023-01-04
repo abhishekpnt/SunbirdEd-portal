@@ -1,6 +1,6 @@
-import { NavigationHelperService, ResourceService, ToasterService } from '@sunbird/shared';
-import { IImpressionEventInput } from '@sunbird/telemetry';
-import { UserService } from '@sunbird/core';
+import { NavigationHelperService, ResourceService, ToasterService } from '../../../shared';
+import { IImpressionEventInput } from '../../../telemetry';
+import { UserService } from '../../../core';
 import { Subject } from 'rxjs';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { IDashboardItems } from '../../interfaces';

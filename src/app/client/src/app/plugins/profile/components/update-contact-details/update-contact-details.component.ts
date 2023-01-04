@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy, Input, Output, EventEmitter } from '@angular/core';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 import * as _ from 'lodash-es';
-import { UserService, OtpService } from '@sunbird/core';
-import { ResourceService, ServerResponse, ToasterService, ConfigService } from '@sunbird/shared';
+import { UserService, OtpService } from '../../../../modules/core';
+import { ResourceService, ServerResponse, ToasterService, ConfigService } from '../../../../modules/shared';
 import { Subject } from 'rxjs';
 import { ProfileService } from './../../services';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventObject, IInteractEventEdata } from '../../../../modules/telemetry';
 import { MatDialog } from '@angular/material/dialog';
 
 @Component({

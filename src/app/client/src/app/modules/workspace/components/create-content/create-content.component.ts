@@ -1,8 +1,8 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { ResourceService, ConfigService, NavigationHelperService } from '@sunbird/shared';
-import { FrameworkService, PermissionService, UserService } from '@sunbird/core';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { ResourceService, ConfigService, NavigationHelperService } from '../../../shared';
+import { FrameworkService, PermissionService, UserService } from '../../../core';
+import { IImpressionEventInput } from '../../../telemetry';
 import { WorkSpaceService } from './../../services';
 @Component({
   selector: 'app-create-content',

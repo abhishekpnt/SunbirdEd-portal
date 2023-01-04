@@ -3,10 +3,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 import {
   ResourceService, ILoaderMessage, PlayerConfig, ContentData,
   WindowScrollService, ToasterService, NavigationHelperService, LayoutService
-} from '@sunbird/shared';
-import { PlayerService, PermissionService, UserService } from '@sunbird/core';
+} from '../../../shared';
+import { PlayerService, PermissionService, UserService } from '../../../core';
 import * as _ from 'lodash-es';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventObject, IInteractEventEdata } from '../../../telemetry';
 import { takeUntil } from 'rxjs/operators';
 import { Subject} from 'rxjs';
 @Component({

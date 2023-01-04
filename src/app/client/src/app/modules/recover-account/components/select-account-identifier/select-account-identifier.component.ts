@@ -1,9 +1,9 @@
 import { RecoverAccountService } from './../../services';
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import {ResourceService, ToasterService, ConfigService} from '@sunbird/shared';
+import {ResourceService, ToasterService, ConfigService} from '../../../shared';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { RecaptchaComponent } from 'ng-recaptcha';
 
 @Component({

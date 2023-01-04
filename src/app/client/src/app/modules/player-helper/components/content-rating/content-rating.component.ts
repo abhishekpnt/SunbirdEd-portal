@@ -1,10 +1,10 @@
 import {
   Component, OnInit, Input, ViewChild, OnDestroy, Output, EventEmitter
 } from '@angular/core';
-import { ResourceService, ToasterService } from '@sunbird/shared';
-import { TelemetryService } from '@sunbird/telemetry';
+import { ResourceService, ToasterService } from '../../../shared';
+import { TelemetryService } from '../../../telemetry';
 import { ActivatedRoute } from '@angular/router';
-import { FormService } from '@sunbird/core';
+import { FormService } from '../../../core';
 import * as _ from 'lodash-es';
 @Component({
   selector: 'app-content-rating',

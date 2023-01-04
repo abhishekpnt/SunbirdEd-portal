@@ -1,5 +1,5 @@
 import { map, mergeMap, switchMap } from 'rxjs/operators';
-import { ConfigService, ServerResponse, ContentData } from '@sunbird/shared';
+import { ConfigService, ServerResponse, ContentData } from '../../../shared';
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash-es';
 import { Router } from '@angular/router';

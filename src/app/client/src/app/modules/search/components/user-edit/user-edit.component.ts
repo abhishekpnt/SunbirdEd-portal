@@ -2,11 +2,11 @@ import { Component, OnInit, ViewChild, OnDestroy, AfterViewInit } from '@angular
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { UserSearchService } from './../../services';
-import { UserService, PermissionService, RolesAndPermissions, OrgDetailsService } from '@sunbird/core';
-import { IInteractEventObject, IInteractEventEdata, IImpressionEventInput } from '@sunbird/telemetry';
+import { UserService, PermissionService, RolesAndPermissions, OrgDetailsService } from '../../../core';
+import { IInteractEventObject, IInteractEventEdata, IImpressionEventInput } from '../../../telemetry';
 import { ResourceService, ToasterService, RouterNavigationService, ServerResponse, IUserData,
-  NavigationHelperService } from '@sunbird/shared';
-import { ProfileService } from '@sunbird/profile';
+  NavigationHelperService } from '../../../shared';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 import * as _ from 'lodash-es';
 
 @Component({

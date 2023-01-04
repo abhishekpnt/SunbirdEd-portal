@@ -9,12 +9,12 @@ import {
   NavigationHelperService,
   UtilService,
   RecaptchaService
-} from '@sunbird/shared';
+} from '../../../../../shared';
 import { SignupService } from './../../services';
-import { TenantService, TncService } from '@sunbird/core';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TenantService, TncService } from '../../../../../core';
+import { TelemetryService } from '../../../../../telemetry';
 import * as _ from 'lodash-es';
-import { IStartEventInput, IImpressionEventInput, IInteractEventEdata } from '@sunbird/telemetry';
+import { IStartEventInput, IImpressionEventInput, IInteractEventEdata } from '../../../../../telemetry';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { ActivatedRoute } from '@angular/router';
 import { RecaptchaComponent } from 'ng-recaptcha';

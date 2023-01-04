@@ -1,13 +1,13 @@
 import { Component, OnInit, NgZone, Renderer2, OnDestroy } from '@angular/core';
 import * as _ from 'lodash-es';
 import * as iziModal from 'izimodal/js/iziModal';
-import { NavigationHelperService, ResourceService, ConfigService, ToasterService, IUserProfile, ServerResponse } from '@sunbird/shared';
-import { UserService, TenantService, FrameworkService } from '@sunbird/core';
+import { NavigationHelperService, ResourceService, ConfigService, ToasterService, IUserProfile, ServerResponse } from '../../../../shared';
+import { UserService, TenantService, FrameworkService } from '../../../../core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EditorService } from './../../../services/editors/editor.service';
-import { environment } from '@sunbird/environment';
+import { environment } from '../../../../../../environments/environment';
 import { WorkSpaceService } from '../../../services';
-import { TelemetryService, IInteractEventEdata } from '@sunbird/telemetry';
+import { TelemetryService, IInteractEventEdata } from '../../../../telemetry';
 import { combineLatest, of, throwError } from 'rxjs';
 import { map, mergeMap, tap, delay, first } from 'rxjs/operators';
 jQuery.fn.iziModal = iziModal;

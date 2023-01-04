@@ -1,14 +1,14 @@
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { ResourceService, ToasterService, ConfigService, ContentUtilsServiceService, ITelemetryShare,
-  LayoutService, UtilService } from '@sunbird/shared';
-import { CourseBatchService, CourseConsumptionService } from '@sunbird/learn';
+  LayoutService, UtilService } from '../../../../../../shared';
+import { CourseBatchService, CourseConsumptionService } from '../../../../../../learn';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
-import { NavigationHelperService, ConnectionService, OfflineCardService, ServerResponse } from '@sunbird/shared';
-import { GeneraliseLabelService } from '@sunbird/core';
+import { IImpressionEventInput, TelemetryService } from '../../../../../../telemetry';
+import { NavigationHelperService, ConnectionService, OfflineCardService, ServerResponse } from '../../../../../../shared';
+import { GeneraliseLabelService } from '../../../../../../core';
 import { ContentManagerService } from '../../../../offline/services/content-manager/content-manager.service';
 import dayjs from 'dayjs';
 

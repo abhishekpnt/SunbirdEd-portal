@@ -1,6 +1,6 @@
-import { TelemetryService } from '@sunbird/telemetry';
-import { UserService, TncService } from '@sunbird/core';
-import { INoResultMessage, ResourceService, ToasterService, NavigationHelperService, LayoutService } from '@sunbird/shared';
+import { TelemetryService } from '../../../telemetry';
+import { UserService, TncService } from '../../../core';
+import { INoResultMessage, ResourceService, ToasterService, NavigationHelperService, LayoutService } from '../../../shared';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Component, OnInit, ViewChildren, QueryList, ViewChild, ChangeDetectorRef } from '@angular/core';
 import { ReportService } from '../../services';

@@ -1,4 +1,4 @@
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 import { CourseProgressService } from './../course-progress/course-progress.service';
 import { UserService, PermissionService, BaseReportService, SearchService, FrameworkService } from '../../../core';
 import { ReportService } from './report.service';

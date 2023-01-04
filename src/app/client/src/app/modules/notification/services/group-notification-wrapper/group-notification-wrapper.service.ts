@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { ConfigService, NavigationHelperService } from '@sunbird/shared';
+import { ConfigService, NavigationHelperService } from '../../../shared';
 import { CsModule } from '@project-sunbird/client-services';
 import * as _ from 'lodash-es';
 import { Router } from '@angular/router';

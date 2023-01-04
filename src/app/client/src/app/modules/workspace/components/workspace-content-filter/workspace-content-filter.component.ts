@@ -1,10 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ResourceService, ConfigService, NavigationHelperService } from '@sunbird/shared';
+import { ResourceService, ConfigService, NavigationHelperService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { Subject, of} from 'rxjs';
 import { debounceTime, distinctUntilChanged, delay, flatMap } from 'rxjs/operators';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 
 @Component({
   selector: 'app-workspace-content-filter',

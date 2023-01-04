@@ -1,8 +1,8 @@
 import { Injectable } from '@angular/core';
 import { CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, UrlTree, Router } from '@angular/router';
 import { Observable } from 'rxjs';
-import { UserService } from '@sunbird/core';
-import { IUserData, ToasterService, ResourceService } from '@sunbird/shared';
+import { UserService } from '../../../core';
+import { IUserData, ToasterService, ResourceService } from '../../../shared';
 import { take } from 'rxjs/operators';
 import * as _ from 'lodash-es';
 

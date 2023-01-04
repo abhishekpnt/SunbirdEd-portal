@@ -1,8 +1,8 @@
 
 import {map} from 'rxjs/operators';
 import { Injectable, EventEmitter } from '@angular/core';
-import { ConfigService } from '@sunbird/shared';
-import { LearnerService } from '@sunbird/core';
+import { ConfigService } from '../../../shared';
+import { LearnerService } from '../../../core';
 
 /**
  * Service to get course consumption dashboard

@@ -5,7 +5,7 @@ import { Component, OnInit, ViewChild, OnDestroy, Input } from '@angular/core';
 import { ResourceService, ConnectionService, ConfigService } from '../../services';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 @Component({
   selector: 'app-load-offline-content',
   templateUrl: './load-offline-content.component.html',

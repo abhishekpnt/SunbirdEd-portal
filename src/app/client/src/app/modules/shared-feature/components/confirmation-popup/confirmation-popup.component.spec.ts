@@ -1,4 +1,4 @@
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { ConfirmationPopupComponent } from './confirmation-popup.component';
 
 describe('ConfirmationPopup component', ()=> {

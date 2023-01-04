@@ -1,4 +1,4 @@
-import { ConfigService, ServerResponse, ToasterService, ResourceService, IUserData } from '@sunbird/shared';
+import { ConfigService, ServerResponse, ToasterService, ResourceService, IUserData } from '../../../shared';
 import { LearnerService } from './../learner/learner.service';
 import { UserService } from '../user/user.service';
 import { Injectable } from '@angular/core';

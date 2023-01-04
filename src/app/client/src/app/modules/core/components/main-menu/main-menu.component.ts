@@ -1,9 +1,9 @@
 import { EXPLORE_GROUPS, MY_GROUPS } from '../../../public/module/group/components/routerLinks';
-import { ConfigService, ResourceService, IUserData, IUserProfile, LayoutService, UtilService } from '@sunbird/shared';
+import { ConfigService, ResourceService, IUserData, IUserProfile, LayoutService, UtilService } from '../../../shared';
 import { Component, OnInit, Input } from '@angular/core';
 import { UserService, PermissionService } from '../../services';
 import { Router, ActivatedRoute, NavigationEnd } from '@angular/router';
-import { IInteractEventEdata, TelemetryService} from '@sunbird/telemetry';
+import { IInteractEventEdata, TelemetryService} from '../../../telemetry';
 import { CacheService } from 'ng2-cache-service';
 import { first, filter, tap } from 'rxjs/operators';
 import * as _ from 'lodash-es';

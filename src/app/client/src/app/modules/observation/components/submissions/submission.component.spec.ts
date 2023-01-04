@@ -1,4 +1,4 @@
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { SubmissionsComponent } from './submission.component';
 
 describe('Submission component', ()=>{

@@ -1,7 +1,7 @@
 import { ActivatedRoute } from "@angular/router";
 import { of, throwError } from "rxjs";
-import { BadgesService, UserService } from '@sunbird/core';
-import { ResourceService, ToasterService } from  '@sunbird/shared';
+import { BadgesService, UserService } from '../../../core';
+import { ResourceService, ToasterService } from  '../../../shared';
 import { ContentBadgeService } from "../../services";
 import { AssignBadgesContentComponent } from "./assign-badges-content.component";
 import { mockResponse } from "./assign-badges-content.component.spec.data"

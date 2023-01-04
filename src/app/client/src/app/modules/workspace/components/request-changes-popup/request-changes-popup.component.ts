@@ -1,11 +1,11 @@
 import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
-import { ContentService, FormService } from '@sunbird/core';
+import { ContentService, FormService } from '../../../core';
 import {
   ResourceService, ConfigService, ToasterService, ServerResponse, RouterNavigationService,
   NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService } from './../../services';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';

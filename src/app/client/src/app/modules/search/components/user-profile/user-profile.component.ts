@@ -1,11 +1,11 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ResourceService, ToasterService, RouterNavigationService, ServerResponse, ConfigService,
-NavigationHelperService } from '@sunbird/shared';
+NavigationHelperService } from '../../../shared';
 import { UserSearchService } from './../../services';
-import { BadgesService, LearnerService, UserService } from '@sunbird/core';
+import { BadgesService, LearnerService, UserService } from '../../../core';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 
 /**
  * The delete component deletes the announcement

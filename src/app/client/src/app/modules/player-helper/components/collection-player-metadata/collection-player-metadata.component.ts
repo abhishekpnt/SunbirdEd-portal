@@ -1,8 +1,8 @@
 import { Component, OnInit, Input } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
-import { ContentData } from '@sunbird/shared';
+import { ContentData } from '../../../shared';
 
 @Component({
   selector: 'app-collection-player-metadata',

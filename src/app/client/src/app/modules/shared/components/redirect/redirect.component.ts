@@ -1,7 +1,7 @@
 import { ToasterService } from '../../services/';
 import { ResourceService, NavigationHelperService } from '../../services';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({

@@ -1,5 +1,5 @@
-import { ConfigService, ResourceService, UtilService } from '@sunbird/shared';
-import { TelemetryService } from '@sunbird/telemetry';
+import { ConfigService, ResourceService, UtilService } from '../../../../../shared';
+import { TelemetryService } from '../../../../../telemetry';
 import { SignupBasicInfoComponent } from './signup-basic-info.component';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
 

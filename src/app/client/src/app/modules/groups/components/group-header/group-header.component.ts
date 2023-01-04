@@ -2,13 +2,13 @@ import { GroupEntityStatus } from '@project-sunbird/client-services/models/group
 import { actions } from './../../interfaces/group';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Component, ViewChild, Input, Renderer2, OnInit, OnDestroy, Output, EventEmitter } from '@angular/core';
-import { ResourceService, NavigationHelperService, ToasterService, LayoutService } from '@sunbird/shared';
+import { ResourceService, NavigationHelperService, ToasterService, LayoutService } from '../../../shared';
 import { MY_GROUPS, GROUP_DETAILS, IGroupCard, IFetchForumId, EDIT_GROUP, IFetchForumConfig } from './../../interfaces';
 import { GroupsService } from '../../services';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../core';
 import { DiscussionService } from '../../../discussion/services/discussion/discussion.service';
 import { DiscussionTelemetryService } from '../../../shared/services/discussion-telemetry/discussion-telemetry.service';
 import { UPDATE_GROUP, SELECT_DELETE, SELECT_DEACTIVATE, SELECT_NO, DELETE_SUCCESS } from '../../interfaces/telemetryConstants';

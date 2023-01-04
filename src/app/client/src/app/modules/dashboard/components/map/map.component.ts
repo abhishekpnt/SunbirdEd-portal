@@ -1,4 +1,4 @@
-import { ToasterService } from '@sunbird/shared';
+import { ToasterService } from '../../../shared';
 import { ReportService } from '../../services';
 import { IGeoJSON, ICustomMapObj, Properties, IInputMapData } from '../../interfaces';
 import { Component, OnInit, Input, Output, EventEmitter, AfterViewInit } from '@angular/core';

@@ -1,9 +1,9 @@
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { actionButtons } from './actionButtons';
 import { fullScreenActionButtons } from './actionButtons';
 import { Router, ActivatedRoute } from '@angular/router';
 import { ResourceService, ToasterService, ContentUtilsServiceService, ITelemetryShare, NavigationHelperService, OfflineCardService,
-  UtilService } from '@sunbird/shared';
+  UtilService } from '../../../shared';
 import { Component, OnInit, Input, Output, EventEmitter, OnChanges, SimpleChanges, OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs';
 import * as _ from 'lodash-es';

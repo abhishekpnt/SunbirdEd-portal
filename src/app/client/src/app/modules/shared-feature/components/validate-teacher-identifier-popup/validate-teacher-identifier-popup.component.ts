@@ -1,8 +1,8 @@
-import { IInteractEventObject, IImpressionEventInput } from '@sunbird/telemetry';
-import { ResourceService } from '@sunbird/shared';
+import { IInteractEventObject, IImpressionEventInput } from '../../../telemetry';
+import { ResourceService } from '../../../shared';
 import { Component, OnInit, ViewChild, Output, EventEmitter, Input, OnDestroy } from '@angular/core';
-import { UserService } from '@sunbird/core';
-import { ToasterService } from '@sunbird/shared';
+import { UserService } from '../../../core';
+import { ToasterService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { FormBuilder, Validators, FormGroup, FormControl } from '@angular/forms';
 import { Router } from '@angular/router';

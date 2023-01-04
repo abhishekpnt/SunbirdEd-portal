@@ -1,7 +1,7 @@
 import { EventEmitter, Injectable } from '@angular/core';
 import { ISharelink } from './../../interfaces';
 import { ConfigService } from './../config/config.service';
-import { environment } from '@sunbird/environment';
+import { environment } from '../../../../../environments/environment';
 import * as _ from 'lodash-es';
 
 @Injectable()

@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import * as _ from 'lodash-es';
-import { ContentData, ResourceService } from '@sunbird/shared';
+import { ContentData, ResourceService } from '../../../shared';
 
 @Component({
   selector: 'app-content-player-metadata',

@@ -1,7 +1,7 @@
 import { Component, OnDestroy, ViewChild, Input, Output, EventEmitter } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
-import { GeneraliseLabelService } from '@sunbird/core';
-import { TelemetryService, IInteractEventInput } from '@sunbird/telemetry';
+import { ResourceService } from '../../../../shared';
+import { GeneraliseLabelService } from '../../../../core';
+import { TelemetryService, IInteractEventInput } from '../../../../telemetry';
 import * as _ from 'lodash-es';
 import { ActivatedRoute } from '@angular/router';
 

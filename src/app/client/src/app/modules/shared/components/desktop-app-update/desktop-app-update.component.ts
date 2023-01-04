@@ -1,5 +1,5 @@
-import { ServerResponse } from '@sunbird/shared';
-import { IInteractEventEdata, IInteractEventObject } from '@sunbird/telemetry';
+import { ServerResponse } from '../../../shared';
+import { IInteractEventEdata, IInteractEventObject } from '../../../telemetry';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { Component, OnInit, OnDestroy } from '@angular/core';

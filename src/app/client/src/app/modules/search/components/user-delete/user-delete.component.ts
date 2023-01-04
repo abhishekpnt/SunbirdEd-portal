@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, OnDestroy } from '@angular/core';
 import { ActivatedRoute , Router } from '@angular/router';
-import { ResourceService, ToasterService, RouterNavigationService, ServerResponse } from '@sunbird/shared';
+import { ResourceService, ToasterService, RouterNavigationService, ServerResponse } from '../../../shared';
 import { UserSearchService } from './../../services';
 
 @Component({

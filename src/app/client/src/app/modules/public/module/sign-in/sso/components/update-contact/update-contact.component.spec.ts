@@ -1,12 +1,12 @@
 import { FormControl, FormGroup } from '@angular/forms';
 import { UpdateContactComponent } from './update-contact.component';
 import { ActivatedRoute } from '@angular/router';
-import { ToasterService } from '@sunbird/shared';
-import { TncService } from '@sunbird/core';
-import { TelemetryService } from '@sunbird/telemetry';
-import { ResourceService } from '@sunbird/shared';
+import { ToasterService } from '../../../../../../shared';
+import { TncService } from '../../../../../../core';
+import { TelemetryService } from '../../../../../../telemetry';
+import { ResourceService } from '../../../../../../shared';
 import { of as observableOf, Observable, throwError as observableThrowError } from 'rxjs';
-import { TenantService, UserService, OtpService, OrgDetailsService } from '@sunbird/core';
+import { TenantService, UserService, OtpService, OrgDetailsService } from '../../../../../../core';
 import { mockUpdateContactData } from './update-contact.mock.spec.data'
 import { NavigationHelperService, UtilService } from '../../../../../../shared/services';
 import { SignupService } from '../../../../signup';

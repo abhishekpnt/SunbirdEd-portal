@@ -7,7 +7,7 @@ import * as _ from 'lodash-es';
 
 import { LocationService } from '../../services/location/location.service';
 import { UserService } from '../../../../modules/core/services/user/user.service';
-import { OrgDetailsService } from '@sunbird/core';
+import { OrgDetailsService } from '../../../../modules/core';
 
 export class SbFormLocationOptionsFactory {
   private userLocationCache: {[request: string]: SbLocation[] | undefined} = {};

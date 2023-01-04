@@ -4,8 +4,8 @@ import {
   ResourceService, ILoaderMessage, PlayerConfig, ContentData,
   WindowScrollService, ToasterService, NavigationHelperService,
   ConfigService, RouterNavigationService
-} from '@sunbird/shared';
-import { PlayerService, ContentService, PermissionService, UserService } from '@sunbird/core';
+} from '../../../shared';
+import { PlayerService, ContentService, PermissionService, UserService } from '../../../core';
 @Component({
   selector: 'app-flag-conentplayer',
   templateUrl: './flag-conentplayer.component.html',

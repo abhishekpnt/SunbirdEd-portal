@@ -1,6 +1,6 @@
 import { Component, Input } from '@angular/core';
-import {ResourceService } from '@sunbird/shared';
-import { GeneraliseLabelService } from '@sunbird/core';
+import {ResourceService } from '../../../../shared';
+import { GeneraliseLabelService } from '../../../../core';
 
 @Component({
   selector: 'app-course-details',

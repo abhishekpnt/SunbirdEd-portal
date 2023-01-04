@@ -1,8 +1,8 @@
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
-import { INoResultMessage, ToasterService, IUserData, IUserProfile, LayoutService, ResourceService, ConfigService, OnDemandReportService } from '@sunbird/shared';
-import { TelemetryService } from '@sunbird/telemetry';
+import { INoResultMessage, ToasterService, IUserData, IUserProfile, LayoutService, ResourceService, ConfigService, OnDemandReportService } from '../../../shared';
+import { TelemetryService } from '../../../telemetry';
 import { Subject, Subscription, throwError ,Observable, of} from 'rxjs';
-import { KendraService, UserService, FormService } from '@sunbird/core';
+import { KendraService, UserService, FormService } from '../../../core';
 import { mergeMap, switchMap, takeUntil,map, catchError } from 'rxjs/operators';
 import { ActivatedRoute, Router } from '@angular/router';
 import { FormGroup, FormControl, Validators } from '@angular/forms';

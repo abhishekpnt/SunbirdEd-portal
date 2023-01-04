@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../../shared';
 @Component({
   selector: 'app-curriculum-card',
   templateUrl: './curriculum-card.component.html'

@@ -1,7 +1,7 @@
-import { ResourceService, NavigationHelperService } from '@sunbird/shared';
-import { TelemetryService } from '@sunbird/telemetry';
+import { ResourceService, NavigationHelperService } from '../../../../../shared';
+import { TelemetryService } from '../../../../../telemetry';
 import { SignupComponent } from './signup.component';
-import { TenantService } from '@sunbird/core';
+import { TenantService } from '../../../../../core';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { ActivatedRoute, Router } from '@angular/router';
 import { of } from 'rxjs';

@@ -1,4 +1,4 @@
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Input, ViewChild, ElementRef, OnDestroy } from '@angular/core';
 import { IDataset } from '../../interfaces';

@@ -3,11 +3,11 @@ import { Subject, Subscription } from 'rxjs';
 import {
   ResourceService,
   NavigationHelperService
-} from '@sunbird/shared';
-import { TenantService } from '@sunbird/core';
-import { TelemetryService } from '@sunbird/telemetry';
+} from '../../../../../shared';
+import { TenantService } from '../../../../../core';
+import { TelemetryService } from '../../../../../telemetry';
 import * as _ from 'lodash-es';
-import { IStartEventInput, IImpressionEventInput, IInteractEventEdata } from '@sunbird/telemetry';
+import { IStartEventInput, IImpressionEventInput, IInteractEventEdata } from '../../../../../telemetry';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { Router, ActivatedRoute } from '@angular/router';
 import { RecaptchaComponent } from 'ng-recaptcha';

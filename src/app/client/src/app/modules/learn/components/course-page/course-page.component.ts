@@ -2,19 +2,19 @@ import { combineLatest, Subject, of, merge, throwError, forkJoin } from 'rxjs';
 import {
   PageApiService, OrgDetailsService, FormService, UserService, CoursesService, FrameworkService,
   PlayerService, SearchService
-} from '@sunbird/core';
+} from '../../../core';
 import { Component, OnInit, OnDestroy, EventEmitter, HostListener, AfterViewInit } from '@angular/core';
 import {
   ResourceService, ToasterService, INoResultMessage, ConfigService, UtilService, ICaraouselData, BrowserCacheTtlService, ServerResponse,
   NavigationHelperService, LayoutService, COLUMN_TYPE
-} from '@sunbird/shared';
+} from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import { CacheService } from 'ng2-cache-service';
-import { PublicPlayerService } from '@sunbird/public';
+import { PublicPlayerService } from '../../../public';
 import { takeUntil, map, mergeMap, filter, catchError, tap, pluck, switchMap, delay } from 'rxjs/operators';
-import { OfflineCardService } from '@sunbird/shared';
+import { OfflineCardService } from '../../../shared';
 import { ContentManagerService } from '../../../public/module/offline/services/content-manager/content-manager.service';
 
 @Component({

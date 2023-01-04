@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { FormBuilder, FormGroup, FormControl } from '@angular/forms';
-import { SearchService, UserService, PermissionService, RolesAndPermissions } from '@sunbird/core';
-import { ToasterService, ResourceService, ServerResponse } from '@sunbird/shared';
+import { SearchService, UserService, PermissionService, RolesAndPermissions } from '../../../core';
+import { ToasterService, ResourceService, ServerResponse } from '../../../shared';
 import { ManageService } from '../../services/manage/manage.service';
 import * as _ from 'lodash-es';
 @Component({

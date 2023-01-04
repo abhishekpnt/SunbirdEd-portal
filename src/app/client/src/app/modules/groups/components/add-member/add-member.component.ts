@@ -2,15 +2,15 @@
 import { Location } from '@angular/common';
 import { ActivatedRoute, Router } from '@angular/router';
 import { takeUntil } from 'rxjs/operators';
-import {ResourceService, ToasterService, RecaptchaService, LayoutService} from '@sunbird/shared';
+import {ResourceService, ToasterService, RecaptchaService, LayoutService} from '../../../shared';
 import { Component, OnInit, Output, EventEmitter, OnDestroy, ViewChild } from '@angular/core';
 import * as _ from 'lodash-es';
 import { IGroupMember, IGroupCard, IMember } from '../../interfaces';
 import { GroupsService } from '../../services';
 import { Subject } from 'rxjs';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { RecaptchaComponent } from 'ng-recaptcha';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { VERIFY_USER, USER_SEARCH } from '../../interfaces/telemetryConstants';
 import { sessionKeys } from '../../../../modules/groups';
 @Component({

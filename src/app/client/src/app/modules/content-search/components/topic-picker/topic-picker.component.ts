@@ -1,10 +1,10 @@
 import { Component, OnInit, Output, Input, EventEmitter, OnDestroy, AfterViewInit } from '@angular/core';
 import * as _ from 'lodash-es';
 import { Subscription, combineLatest } from 'rxjs';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import * as  treePicker from './../../../../../assets/libs/semantic-ui-tree-picker/semantic-ui-tree-picker';
 import { tap } from 'rxjs/operators';
-import { LazzyLoadScriptService } from 'LazzyLoadScriptService';
+import { LazzyLoadScriptService } from '../../../../service/LazzyLoadScript/lazzy-load-script.service';
 $.fn.treePicker = treePicker;
 interface TopicTreeNode {
   id: string;

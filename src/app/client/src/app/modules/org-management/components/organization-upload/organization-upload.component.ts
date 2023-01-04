@@ -1,9 +1,9 @@
 import { Component, ViewChild, ElementRef, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
-import { ResourceService, ToasterService, ServerResponse, ConfigService, NavigationHelperService } from '@sunbird/shared';
+import { ResourceService, ToasterService, ServerResponse, ConfigService, NavigationHelperService } from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import { OrgManagementService } from '../../services';
-import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject } from '@sunbird/telemetry';
-import { UserService } from '@sunbird/core';
+import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject } from '../../../telemetry';
+import { UserService } from '../../../core';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import * as _ from 'lodash-es';

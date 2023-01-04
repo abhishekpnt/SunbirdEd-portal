@@ -1,7 +1,7 @@
 import {throwError, of, Observable, BehaviorSubject } from 'rxjs';
 import { mergeMap, map, catchError, skipWhile, shareReplay } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { ConfigService, ServerResponse, ToasterService, ResourceService, BrowserCacheTtlService } from '@sunbird/shared';
+import { ConfigService, ServerResponse, ToasterService, ResourceService, BrowserCacheTtlService } from '../../../shared';
 import { Router } from '@angular/router';
 import { ContentService } from './../content/content.service';
 import { PublicDataService } from './../public-data/public-data.service';

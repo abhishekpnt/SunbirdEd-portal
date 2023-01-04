@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
-import { DeviceRegisterService, UserService } from '@sunbird/core';
-import { ResourceService, UtilService, NavigationHelperService, ToasterService } from '@sunbird/shared';
-import { IInteractEventEdata, IImpressionEventInput } from '@sunbird/telemetry';
+import { DeviceRegisterService, UserService } from '../../../../../core';
+import { ResourceService, UtilService, NavigationHelperService, ToasterService } from '../../../../../shared';
+import { IInteractEventEdata, IImpressionEventInput } from '../../../../../telemetry';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

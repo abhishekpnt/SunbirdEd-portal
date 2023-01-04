@@ -1,8 +1,8 @@
 import { ActivatedRoute } from '@angular/router';
-import { ResourceService, ConfigService, ICaraouselData } from '@sunbird/shared';
+import { ResourceService, ConfigService, ICaraouselData } from '../../../shared';
 import { Component, Input, EventEmitter, Output, OnDestroy, ChangeDetectorRef, OnChanges, OnInit } from '@angular/core';
 import * as _ from 'lodash-es';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 import { Subscription } from 'rxjs';
 import * as slick from './../../../../../assets/libs/slick-carousel';
 slick(jQuery);

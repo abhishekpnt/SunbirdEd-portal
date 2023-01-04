@@ -1,11 +1,11 @@
 import { CurriculumCoursesComponent } from './components';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
-import { ViewAllComponent } from '@sunbird/content-search';
+import { ViewAllComponent } from '../content-search';
 const telemetryEnv = 'library';
 const routes: Routes = [
   {
-    path: '', loadChildren: () => import('./../explore-page/explore-page.module').then(m => m.ExplorePageModule)
+    path: '', loadChildren: () => import('./../explore-page/explore-page.module').then(m => m.ExplorePageModule).catch( err => console.log('Oh no!', err) )
   },
   {
     path: 'view-all/:section/:pageNumber', component: ViewAllComponent,
@@ -21,7 +21,7 @@ const routes: Routes = [
     }
   },
   {
-    path: 'play', loadChildren: () => import('./modules/player/player.module').then(m => m.PlayerModule)
+    path: 'play', loadChildren: () => import('./modules/player/player.module').then(m => m.PlayerModule).catch( err => console.log('Oh no!', err) )
   },
   {
     path: 'curriculum-courses', component: CurriculumCoursesComponent, data: {

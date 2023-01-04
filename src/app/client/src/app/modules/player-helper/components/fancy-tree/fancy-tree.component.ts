@@ -1,9 +1,9 @@
 import { Component, AfterViewInit, Input, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
 import 'jquery.fancytree';
 import * as _ from 'lodash-es';
-import { TelemetryInteractDirective } from '@sunbird/telemetry';
+import { TelemetryInteractDirective } from '../../../telemetry';
 import { ActivatedRoute } from '@angular/router';
-import { LazzyLoadScriptService } from 'LazzyLoadScriptService';
+import { LazzyLoadScriptService } from '../../../../service/LazzyLoadScript/lazzy-load-script.service';
 
 @Component({
   selector: 'app-fancy-tree',

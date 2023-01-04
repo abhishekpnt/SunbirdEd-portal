@@ -1,5 +1,5 @@
-import { SearchService, UserService, PermissionService } from "@sunbird/core";
-import { ToasterService, ResourceService } from "@sunbird/shared";
+import { SearchService, UserService, PermissionService } from "../../../core";
+import { ToasterService, ResourceService } from "../../../shared";
 import { Router } from "@angular/router";
 import { ManageService } from "../../services/manage/manage.service";
 import { FormBuilder } from "@angular/forms";

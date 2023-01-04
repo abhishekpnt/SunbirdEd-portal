@@ -1,6 +1,6 @@
 import { YearOfBirthComponent } from './year-of-birth.component';
-import { ProfileService } from '@sunbird/profile';
-import { ConfigService, ResourceService } from '@sunbird/shared';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
+import { ConfigService, ResourceService } from '../../../shared';
 import { Observable, of } from 'rxjs';
 import { MatDialog } from '@angular/material/dialog';
 

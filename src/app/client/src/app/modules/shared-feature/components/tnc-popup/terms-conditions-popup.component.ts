@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, EventEmitter, Output, OnDestroy } from '@angular/core';
-import { UserService, TenantService } from '@sunbird/core';
+import { UserService, TenantService } from '../../../core';
 import { Subscription, Subject } from 'rxjs';
-import { ResourceService, ToasterService } from '@sunbird/shared';
-import { IUserProfile, ILoaderMessage } from '@sunbird/shared';
+import { ResourceService, ToasterService } from '../../../shared';
+import { IUserProfile, ILoaderMessage } from '../../../shared';
 import { DomSanitizer } from '@angular/platform-browser';
 import * as _ from 'lodash-es';
 import { PopupControlService } from '../../../../service/popup-control.service';

@@ -1,15 +1,15 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkSpace } from '../../classes/workspace';
-import { SearchService, UserService, PageApiService } from '@sunbird/core';
+import { SearchService, UserService, PageApiService } from '../../../core';
 import {
   ServerResponse, ConfigService, ToasterService, IPagination,
   ResourceService, ILoaderMessage, INoResultMessage, ICaraouselData, NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService, BatchService } from '../../services';
 import * as _ from 'lodash-es';
 import { SuiModalService } from 'ng2-semantic-ui-v12';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

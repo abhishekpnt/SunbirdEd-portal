@@ -3,7 +3,7 @@ import { map } from 'rxjs/operators';
 import { Injectable } from '@angular/core';
 import { UserService } from './../user/user.service';
 import { ContentService } from './../content/content.service';
-import { ConfigService, ServerResponse, ResourceService } from '@sunbird/shared';
+import { ConfigService, ServerResponse, ResourceService } from '../../../shared';
 import { Observable } from 'rxjs';
 import { SearchParam } from './../../interfaces/search';
 import { LearnerService } from './../learner/learner.service';

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash-es';
-import { ResourceService, ConfigService } from '@sunbird/shared';
+import { ResourceService, ConfigService } from '../../../shared';
 import { FormService } from '../form/form.service';
 import { map } from 'rxjs/operators';
 import { UsageService } from '../../../dashboard/services/usage/usage.service';

@@ -1,9 +1,9 @@
-import { FormService, UserService } from '@sunbird/core';
+import { FormService, UserService } from '../../../core';
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ResourceService, UtilService, ConnectionService, ToasterService } from '@sunbird/shared';
+import { ResourceService, UtilService, ConnectionService, ToasterService } from '../../../shared';
 import * as _ from 'lodash-es';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

@@ -1,7 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { UciComponent } from './uci.component';
-import { ConfigService } from '@sunbird/shared';
+import { ConfigService } from '../../../shared';
 import { UserService } from '../../../core/services/user/user.service';
 import { ResourceService } from '../../../shared';
 import { of } from 'rxjs';

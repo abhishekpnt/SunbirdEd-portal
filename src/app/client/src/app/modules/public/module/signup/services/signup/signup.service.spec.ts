@@ -1,5 +1,5 @@
 import { SignupService } from "./signup.service";
-import { LearnerService } from "@sunbird/core";
+import { LearnerService } from "../../../../../core";
 import { HttpClient } from "@angular/common/http";
 import { of } from "rxjs";
 import { ConfigService } from "../../../../../../modules/shared";

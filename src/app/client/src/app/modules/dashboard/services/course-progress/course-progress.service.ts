@@ -1,13 +1,13 @@
 import { Injectable } from '@angular/core';
-import { ServerResponse, ConfigService } from '@sunbird/shared';
-import { LearnerService } from '@sunbird/core';
+import { ServerResponse, ConfigService } from '../../../shared';
+import { LearnerService } from '../../../core';
 // Rxjs
 import { Observable } from 'rxjs';
 
 import * as _ from 'lodash-es';
 import { UsageService } from '../usage/usage.service';
 import { map } from 'rxjs/operators';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 
 /**
  * Service to get course progress dashboard

@@ -1,6 +1,6 @@
 import { LandingpageGuard } from './landingpage.guard';
 import { Router, RouterStateSnapshot } from '@angular/router';
-import { environment } from '@sunbird/environment';
+import { environment } from '../../../../../environments/environment';
 
 describe('LandingpageGuard', () => {
     let landingpageGuard: LandingpageGuard;

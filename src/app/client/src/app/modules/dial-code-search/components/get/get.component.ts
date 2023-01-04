@@ -1,7 +1,7 @@
 import { Component, OnInit, AfterViewInit, OnDestroy } from '@angular/core';
-import {ResourceService, NavigationHelperService, LayoutService} from '@sunbird/shared';
+import {ResourceService, NavigationHelperService, LayoutService} from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import * as _ from 'lodash-es';
 import {takeUntil} from 'rxjs/operators';
 import {Subject} from 'rxjs';

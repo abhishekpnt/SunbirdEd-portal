@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy, Input } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
-import { OrgDetailsService, UserService } from '@sunbird/core';
+import { ResourceService } from '../../../shared';
+import { OrgDetailsService, UserService } from '../../../core';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

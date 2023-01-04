@@ -2,14 +2,14 @@ import { takeUntil, mergeMap } from 'rxjs/operators';
 import { Subject, combineLatest } from 'rxjs';
 import { Component, OnInit, ViewChild, OnDestroy, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ResourceService, ToasterService, NavigationHelperService } from '@sunbird/shared';
+import { ResourceService, ToasterService, NavigationHelperService } from '../../../shared';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../core';
 import { BatchService } from '../../services';
-import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject } from '@sunbird/telemetry';
+import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject } from '../../../telemetry';
 import * as _ from 'lodash-es';
 import dayjs from 'dayjs';
-import { LazzyLoadScriptService } from 'LazzyLoadScriptService';
+import { LazzyLoadScriptService } from '../../../../service/LazzyLoadScript/lazzy-load-script.service';
 
 @Component({
   selector: 'app-update-batch',

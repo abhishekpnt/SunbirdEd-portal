@@ -1,9 +1,9 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { ResourceService, ToasterService, UtilService } from '@sunbird/shared';
+import { ResourceService, ToasterService, UtilService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { PopupControlService } from '../../../../service/popup-control.service';
 import { Observable, of, Subject } from 'rxjs';
-import { TenantService, UserService } from '@sunbird/core';
+import { TenantService, UserService } from '../../../core';
 import { catchError, map, takeUntil, tap } from 'rxjs/operators';
 import { IDeviceProfile } from '../../interfaces';
 import { ITenantData } from './../../../core/services/tenant/interfaces/tenant';

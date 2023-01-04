@@ -1,7 +1,7 @@
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../../telemetry';
 import { takeUntil } from 'rxjs/operators';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ResourceService, ConnectionService } from '@sunbird/shared';
+import { ResourceService, ConnectionService } from '../../../../../shared';
 import { Component, OnInit, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs';
 import * as _ from 'lodash-es';

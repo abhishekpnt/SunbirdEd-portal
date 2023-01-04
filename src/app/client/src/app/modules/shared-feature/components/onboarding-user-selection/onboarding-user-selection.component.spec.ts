@@ -1,7 +1,7 @@
-import { ResourceService,ToasterService,NavigationHelperService} from "@sunbird/shared";
-import { TelemetryService } from "@sunbird/telemetry";
-import { TenantService, FormService, UserService } from "@sunbird/core";
-import { ProfileService } from "@sunbird/profile";
+import { ResourceService,ToasterService,NavigationHelperService} from "../../../shared";
+import { TelemetryService } from "../../../telemetry";
+import { TenantService, FormService, UserService } from "../../../core";
+import { ProfileService } from "../../../../plugins/profile";
 import { isObservable, Observable, of, throwError } from "rxjs";
 import { ActivatedRoute, Router } from "@angular/router";
 import { OnboardingUserSelectionComponent } from "./onboarding-user-selection.component";

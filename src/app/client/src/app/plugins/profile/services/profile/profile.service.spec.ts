@@ -1,6 +1,6 @@
 import { of } from 'rxjs';
-import { ProfileService } from '@sunbird/profile';
-import { LearnerService, UserService, FormService } from '@sunbird/core';
+import { ProfileService } from '../../../profile';
+import { LearnerService, UserService, FormService } from '../../../../modules/core';
 import { mockRes } from './profile.service.spec.data';
 import { ConfigService } from '../../../../modules/shared';
 describe('ProfileService', () => {

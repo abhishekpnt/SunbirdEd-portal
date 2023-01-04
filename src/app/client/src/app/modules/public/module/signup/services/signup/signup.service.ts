@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { LearnerService } from '@sunbird/core';
-import { ConfigService } from '@sunbird/shared';
+import { LearnerService } from '../../../../../core';
+import { ConfigService } from '../../../../../shared';
 import {HttpClient} from '@angular/common/http';
 
 @Injectable({

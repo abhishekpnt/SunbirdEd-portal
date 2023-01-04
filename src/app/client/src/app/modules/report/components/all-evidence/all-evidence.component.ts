@@ -6,8 +6,8 @@ import {
   Output,
   ViewChild,
 } from '@angular/core';
-import { ResourceService, ConfigService } from '@sunbird/shared';
-import { DhitiService } from '@sunbird/core';
+import { ResourceService, ConfigService } from '../../../shared';
+import { DhitiService } from '../../../core';
 import { LocationStrategy } from '@angular/common';
 
 @Component({

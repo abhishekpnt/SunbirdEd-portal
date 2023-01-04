@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, Output, EventEmitter, Input, HostListener } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 @Component({
   selector: 'app-confirmation-popup',
   templateUrl: './confirmation-popup.component.html',

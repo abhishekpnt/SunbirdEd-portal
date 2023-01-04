@@ -1,6 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
-import { ServerResponse } from '@sunbird/shared';
+import { ServerResponse } from '../../../shared';
 import { Observable, throwError as observableThrowError } from 'rxjs';
 import { catchError, map } from 'rxjs/operators';
 import { ConfigService } from '../../../shared/services/config/config.service';

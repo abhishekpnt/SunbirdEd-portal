@@ -1,16 +1,16 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, AfterViewInit, ViewChild } from '@angular/core';
-import { TenantService, UserService, OtpService, OrgDetailsService, TncService } from '@sunbird/core';
+import { TenantService, UserService, OtpService, OrgDetailsService, TncService } from '../../../../../../core';
 import { first, delay } from 'rxjs/operators';
 import {
   ResourceService, ToasterService, NavigationHelperService,
   ServerResponse, UtilService
-} from '@sunbird/shared';
+} from '../../../../../../shared';
 import * as _ from 'lodash-es';
 import {SignupService} from '../../../../signup/services';
 import { map } from 'rxjs/operators';
 import { combineLatest } from 'rxjs';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../../../telemetry';
 import { RecaptchaComponent } from 'ng-recaptcha';
 
 @Component({

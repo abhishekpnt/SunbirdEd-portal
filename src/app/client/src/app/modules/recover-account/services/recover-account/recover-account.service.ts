@@ -1,6 +1,6 @@
-import { ConfigService } from '@sunbird/shared';
+import { ConfigService } from '../../../shared';
 import { Injectable } from '@angular/core';
-import { TenantService, LearnerService } from '@sunbird/core';
+import { TenantService, LearnerService } from '../../../core';
 import { first } from 'rxjs/operators';
 
 @Injectable({

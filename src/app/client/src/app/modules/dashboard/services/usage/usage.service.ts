@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { HttpOptions } from '@sunbird/shared';
+import { HttpOptions } from '../../../shared';
 import { map } from 'rxjs/operators';
 import { get } from 'lodash-es';
 

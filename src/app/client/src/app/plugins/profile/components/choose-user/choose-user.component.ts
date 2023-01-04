@@ -1,14 +1,14 @@
 import {Component, OnDestroy, OnInit} from '@angular/core';
-import {CoursesService, ManagedUserService, UserService} from '@sunbird/core';
+import {CoursesService, ManagedUserService, UserService} from '../../../../modules/core';
 import {
   ConfigService,
   ResourceService,
   ToasterService, ConnectionService,
   IUserData, NavigationHelperService, UtilService, LayoutService
-} from '@sunbird/shared';
+} from '../../../../modules/shared';
 import {ActivatedRoute, Router} from '@angular/router';
-import {IInteractEventEdata, TelemetryService} from '@sunbird/telemetry';
-import {environment} from '@sunbird/environment';
+import {IInteractEventEdata, TelemetryService} from '../../../../modules/telemetry';
+import {environment} from '../../../../../environments/environment';
 import * as _ from 'lodash-es';
 import { zip, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

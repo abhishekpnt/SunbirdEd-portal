@@ -2,14 +2,14 @@ import {
     PaginationService, ResourceService, ConfigService, ToasterService, INoResultMessage,
     ICard, ILoaderMessage, UtilService, BrowserCacheTtlService, NavigationHelperService, IPagination,
     LayoutService, COLUMN_TYPE
-} from '@sunbird/shared';
-import { SearchService, OrgDetailsService, UserService, FormService } from '@sunbird/core';
+} from '../../../../../shared';
+import { SearchService, OrgDetailsService, UserService, FormService } from '../../../../../core';
 import { PublicPlayerService } from '../../../../services';
 import { combineLatest, Subject, of } from 'rxjs';
 import { Component, OnInit, OnDestroy, EventEmitter, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
-import { IInteractEventEdata, IImpressionEventInput } from '@sunbird/telemetry';
+import { IInteractEventEdata, IImpressionEventInput } from '../../../../../telemetry';
 import { takeUntil, map, mergeMap, first, debounceTime, catchError, tap, delay } from 'rxjs/operators';
 import { CacheService } from 'ng2-cache-service';
 

@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { ConfigService, RequestParam, ServerResponse } from '@sunbird/shared';
-import { LearnerService } from '@sunbird/core';
+import { ConfigService, RequestParam, ServerResponse } from '../../../shared';
+import { LearnerService } from '../../../core';
 import { Observable } from 'rxjs';
   /**
  * This service is used to manage bulk upload of users data or organization data.

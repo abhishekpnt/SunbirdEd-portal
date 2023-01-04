@@ -1,9 +1,9 @@
 import { first } from 'rxjs/operators';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { FormService } from '@sunbird/core';
+import { FormService } from '../../../../../../core';
 import { ActivatedRoute } from '@angular/router';
-import { TenantService } from '@sunbird/core';
-import { ResourceService, NavigationHelperService } from '@sunbird/shared';
+import { TenantService } from '../../../../../../core';
+import { ResourceService, NavigationHelperService } from '../../../../../../shared';
 import { get } from 'lodash-es';
 @Component({
   templateUrl: './select-org.component.html',

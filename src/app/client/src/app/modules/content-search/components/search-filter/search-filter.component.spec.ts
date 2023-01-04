@@ -1,5 +1,5 @@
 import { SearchFilterComponent } from './search-filter.component';
-import { ResourceService, LayoutService, UtilService } from '@sunbird/shared';
+import { ResourceService, LayoutService, UtilService } from '../../../shared';
 import { CacheService } from 'ng2-cache-service';
 import { FormService } from '../../../../modules/core';
 import { ChangeDetectorRef } from '@angular/core';

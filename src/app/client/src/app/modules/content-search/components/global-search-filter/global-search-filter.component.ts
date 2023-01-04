@@ -10,13 +10,13 @@ import {
   SimpleChanges, ViewChild
 } from '@angular/core';
 import * as _ from 'lodash-es';
-import { ResourceService, UtilService, ConnectionService } from '@sunbird/shared';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { ResourceService, UtilService, ConnectionService } from '../../../shared';
+import { IInteractEventEdata } from '../../../telemetry';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subject } from 'rxjs';
 import { debounceTime, map, takeUntil, filter } from 'rxjs/operators';
 import { LibraryFiltersLayout } from '@project-sunbird/common-consumption';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../core';
 import { IFacetFilterFieldTemplateConfig } from '@project-sunbird/common-form-elements';
 import { CacheService } from 'ng2-cache-service';
 

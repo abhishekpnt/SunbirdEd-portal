@@ -1,6 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
-import { LayoutService, COLUMN_TYPE } from '@sunbird/shared';
+import { LayoutService, COLUMN_TYPE } from '../../../shared';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

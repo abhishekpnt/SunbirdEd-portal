@@ -2,8 +2,8 @@ import {Component, AfterViewInit, OnInit, OnDestroy} from '@angular/core';
 import { UserService } from '../../../core/services/user/user.service';
 import { ManageService } from '../../services/manage/manage.service';
 import { ResourceService } from '../../../shared/services/resource/resource.service';
-import {ToasterService, NavigationHelperService, LayoutService} from '@sunbird/shared';
-import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject, TelemetryService } from '@sunbird/telemetry';
+import {ToasterService, NavigationHelperService, LayoutService} from '../../../shared';
+import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject, TelemetryService } from '../../../telemetry';
 import { Router, ActivatedRoute } from '@angular/router';
 import { takeUntil} from 'rxjs/operators';
 import * as _ from 'lodash-es';
@@ -11,7 +11,7 @@ import * as $ from 'jquery';
 import 'datatables.net';
 import dayjs from 'dayjs';
 import {Subject} from 'rxjs';
-import { TncService } from '@sunbird/core';
+import { TncService } from '../../../core';
 
 @Component({
   selector: 'app-user-org-management',

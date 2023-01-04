@@ -3,7 +3,7 @@ import { Injectable, EventEmitter } from '@angular/core';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { LearnerService } from './../learner/learner.service';
 import { UserService } from './../user/user.service';
-import { ConfigService, ServerResponse } from '@sunbird/shared';
+import { ConfigService, ServerResponse } from '../../../shared';
 import { IEnrolledCourses, ICourses } from './../../interfaces';
 import { ContentService } from '../content/content.service';
 import {throwError as observableThrowError, of } from 'rxjs';

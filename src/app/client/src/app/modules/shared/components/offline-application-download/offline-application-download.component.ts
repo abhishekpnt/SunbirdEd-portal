@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ResourceService } from './../../services';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import * as _ from 'lodash-es';
 

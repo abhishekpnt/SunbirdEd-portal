@@ -1,13 +1,13 @@
 import { of, throwError, Subscription, Subject } from 'rxjs';
 import { first, mergeMap, map, catchError, filter } from 'rxjs/operators';
 import {
-  ConfigService, ResourceService, Framework, BrowserCacheTtlService, UtilService, LayoutService} from '@sunbird/shared';
+  ConfigService, ResourceService, Framework, BrowserCacheTtlService, UtilService, LayoutService} from '../../../shared';
 import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectorRef, OnChanges, OnDestroy, ViewRef } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { FrameworkService, FormService, PermissionService, UserService, OrgDetailsService } from '@sunbird/core';
+import { FrameworkService, FormService, PermissionService, UserService, OrgDetailsService } from '../../../core';
 import * as _ from 'lodash-es';
 import { CacheService } from 'ng2-cache-service';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 
 @Component({
   selector: 'app-data-driven-filter',

@@ -1,11 +1,11 @@
 import { Component, OnInit, Input, Output, EventEmitter, OnDestroy } from '@angular/core';
-import {ResourceService, ServerResponse, UtilService, ConfigService, ToasterService} from '@sunbird/shared';
+import {ResourceService, ServerResponse, UtilService, ConfigService, ToasterService} from '../../../shared';
 import { Validators, FormGroup, FormControl } from '@angular/forms';
 import * as _ from 'lodash-es';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { Subscription, Subject } from 'rxjs';
-import { TenantService, OtpService, UserService } from '@sunbird/core';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { TenantService, OtpService, UserService } from '../../../core';
+import { IInteractEventObject, IInteractEventEdata } from '../../../telemetry';
 
 @Component({
   selector: 'app-otp-popup',

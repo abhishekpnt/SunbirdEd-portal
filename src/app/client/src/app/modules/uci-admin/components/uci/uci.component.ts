@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {first} from 'rxjs/operators';
 import {UserService} from '../../../core/services/user/user.service';
-import {ConfigService, ResourceService} from '@sunbird/shared';
+import {ConfigService, ResourceService} from '../../../shared';
 
 @Component({
   selector: 'app-uci',

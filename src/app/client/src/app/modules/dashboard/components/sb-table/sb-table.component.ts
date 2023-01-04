@@ -1,5 +1,5 @@
 import { Component, Input, AfterViewInit, ChangeDetectorRef, ViewChild } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 
 
 @Component({

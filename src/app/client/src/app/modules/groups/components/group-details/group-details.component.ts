@@ -1,14 +1,14 @@
 import { GroupEntityStatus, CsGroup } from '@project-sunbird/client-services/models/group';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../core';
 import { Component, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ResourceService, ToasterService, LayoutService } from '@sunbird/shared';
+import { ResourceService, ToasterService, LayoutService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 import { GroupsService } from '../../services';
 import { IGroupMemberConfig, IGroupCard, IGroupMember, ADD_ACTIVITY_CONTENT_TYPES } from '../../interfaces';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { ADD_ACTIVITY, PAGE_LOADED} from '../../interfaces/telemetryConstants';
 import { sessionKeys } from '../../../../modules/groups';
 

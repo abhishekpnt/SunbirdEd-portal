@@ -1,8 +1,8 @@
 import { GroupsService } from './../../services';
-import { ResourceService } from '@sunbird/shared';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { ResourceService } from '../../../shared';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import { Router, ActivatedRoute } from '@angular/router';
-import { NavigationHelperService } from '@sunbird/shared';
+import { NavigationHelperService } from '../../../shared';
 import { MatDialog } from '@angular/material/dialog';
 import { PopupComponent } from './popup.component';
 import { DELETE_POPUP, POP_DEACTIVATE } from '../../interfaces/telemetryConstants';

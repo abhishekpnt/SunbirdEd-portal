@@ -3,14 +3,14 @@ import {combineLatest as observableCombineLatest, Subject} from 'rxjs';
 import {
   ServerResponse, PaginationService, ResourceService, ConfigService, ToasterService, INoResultMessage,
   NavigationHelperService, IPagination, LayoutService
-} from '@sunbird/shared';
-import { SearchService, UserService, PermissionService } from '@sunbird/core';
+} from '../../../shared';
+import { SearchService, UserService, PermissionService } from '../../../core';
 import {Component, OnInit, NgZone, AfterViewInit, OnDestroy} from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { UserSearchService } from './../../services';
-import { IInteractEventEdata, IImpressionEventInput } from '@sunbird/telemetry';
-import { ProfileService } from '@sunbird/profile';
+import { IInteractEventEdata, IImpressionEventInput } from '../../../telemetry';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 import {takeUntil} from 'rxjs/operators';
 
 @Component({

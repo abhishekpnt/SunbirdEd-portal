@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Router, CanActivate, ActivatedRouteSnapshot, RouterStateSnapshot, CanLoad } from '@angular/router';
 import { PermissionService } from './../services';
-import { ConfigService, ResourceService, ToasterService } from '@sunbird/shared';
+import { ConfigService, ResourceService, ToasterService } from '../../shared';
 import { Observable } from 'rxjs';
 import { UserService } from './../services/user/user.service';
 import * as _ from 'lodash-es';

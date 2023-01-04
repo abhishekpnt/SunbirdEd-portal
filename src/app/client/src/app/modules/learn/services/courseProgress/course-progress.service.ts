@@ -1,8 +1,8 @@
 import { of as observableOf, Observable, of } from 'rxjs';
 import { catchError, map, retry } from 'rxjs/operators';
 import { Injectable, EventEmitter } from '@angular/core';
-import { ConfigService, ServerResponse, ToasterService, ResourceService } from '@sunbird/shared';
-import { ContentService, UserService, CoursesService } from '@sunbird/core';
+import { ConfigService, ServerResponse, ToasterService, ResourceService } from '../../../shared';
+import { ContentService, UserService, CoursesService } from '../../../core';
 import * as _ from 'lodash-es';
 import dayjs from 'dayjs';
 

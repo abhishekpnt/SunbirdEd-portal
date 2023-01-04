@@ -1,8 +1,8 @@
 
 import { map} from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { UserService, LearnerService, FormService } from '@sunbird/core';
-import { ConfigService, ServerResponse } from '@sunbird/shared';
+import { UserService, LearnerService, FormService } from '../../../../modules/core';
+import { ConfigService, ServerResponse } from '../../../../modules/shared';
 @Injectable({
   providedIn: 'root'
 })

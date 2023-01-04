@@ -4,10 +4,10 @@ import {
   LayoutService,
   ResourceService,
   ConfigService,
-} from '@sunbird/shared';
+} from '../../shared';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import { ActivatedRoute } from '@angular/router';
-import { ObservationService, ObservationUtilService } from '@sunbird/core';
+import { ObservationService, ObservationUtilService } from '../../core';
 import { Location } from '@angular/common';
 import { ComponentDeactivate } from '../guard/can-deactivate.guard';
 import { AssessmentInfo, Evidence, IAssessmentDetails, Section, SlQuestionnaireService } from '@shikshalokam/sl-questionnaire';

@@ -3,16 +3,16 @@ import { combineLatest } from 'rxjs';
 import { WorkSpace } from './../../classes/workspace';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { SearchService, UserService, PermissionService, FrameworkService } from '@sunbird/core';
+import { SearchService, UserService, PermissionService, FrameworkService } from '../../../core';
 import {
   ServerResponse, PaginationService, ConfigService, ToasterService,
   ResourceService, IContents, ILoaderMessage, INoResultMessage, IUserData,
   NavigationHelperService, IPagination
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService } from '../../services';
 import * as _ from 'lodash-es';
 import { SuiModalService } from 'ng2-semantic-ui-v12';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 /**
  * The upforReview component search for all the upforreview content
 */

@@ -2,10 +2,10 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { Component, OnInit, Output, EventEmitter, ViewChild, OnDestroy } from '@angular/core';
 import { ElectronDialogService } from './../../services';
-import { ResourceService, ConnectionService } from '@sunbird/shared';
+import { ResourceService, ConnectionService } from '../../../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../../../telemetry';
 
 @Component({
   selector: 'app-load-content',

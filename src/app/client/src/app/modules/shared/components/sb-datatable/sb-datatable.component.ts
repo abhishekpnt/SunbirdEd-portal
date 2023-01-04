@@ -4,7 +4,7 @@ import * as _ from 'lodash-es';
 import dayjs from 'dayjs';
 import {ResourceService} from '../../services/resource/resource.service';
 import { Subject } from 'rxjs';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 
 export const multiFilter = (arr: Object[], filters: Object) => {
   const filterKeys = Object.keys(filters);

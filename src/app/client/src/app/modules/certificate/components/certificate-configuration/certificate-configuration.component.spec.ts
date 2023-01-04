@@ -1,9 +1,9 @@
 import { BehaviorSubject, of, throwError } from "rxjs";
-import { CertificateService, UserService, PlayerService, CertRegService, FormService } from '@sunbird/core';
+import { CertificateService, UserService, PlayerService, CertRegService, FormService } from '../../../core';
 import { CertificateConfigurationComponent } from "./certificate-configuration.component";
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { DomSanitizer } from '@angular/platform-browser';
-import { ResourceService, NavigationHelperService, ToasterService, LayoutService, COLUMN_TYPE } from '@sunbird/shared';
+import { ResourceService, NavigationHelperService, ToasterService, LayoutService, COLUMN_TYPE } from '../../../shared';
 import { UploadCertificateService } from "../../services/upload-certificate/upload-certificate.service";
 import { ActivatedRoute, Router } from "@angular/router";
 import { response as CertMockResponse } from './certificate-configuration.component.spec.data';

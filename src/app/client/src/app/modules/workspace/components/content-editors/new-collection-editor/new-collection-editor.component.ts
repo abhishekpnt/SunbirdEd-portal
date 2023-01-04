@@ -1,13 +1,13 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
-import { UserService, PublicDataService, ContentService, FrameworkService } from '@sunbird/core';
-import { TelemetryService, IInteractEventEdata } from '@sunbird/telemetry';
-import { ConfigService, NavigationHelperService, ToasterService, ResourceService, LayoutService, ServerResponse} from '@sunbird/shared';
+import { UserService, PublicDataService, ContentService, FrameworkService } from '../../../../core';
+import { TelemetryService, IInteractEventEdata } from '../../../../telemetry';
+import { ConfigService, NavigationHelperService, ToasterService, ResourceService, LayoutService, ServerResponse} from '../../../../shared';
 import { EditorService, WorkSpaceService } from './../../../services';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { combineLatest, of, throwError } from 'rxjs';
 import { map, mergeMap, tap, first } from 'rxjs/operators';
-import { LazzyLoadScriptService } from 'LazzyLoadScriptService';
+import { LazzyLoadScriptService } from '../../../../../service/LazzyLoadScript/lazzy-load-script.service';
 
 @Component({
   selector: 'app-new-collection-editor',

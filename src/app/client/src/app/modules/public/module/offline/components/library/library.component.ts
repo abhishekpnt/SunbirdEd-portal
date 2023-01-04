@@ -6,10 +6,10 @@ import * as _ from 'lodash-es';
 import {
     OfflineCardService, ResourceService, ToasterService, ConfigService, UtilService, ICaraouselData,
     NavigationHelperService, ILanguage,  LayoutService, COLUMN_TYPE, ConnectionService
-} from '@sunbird/shared';
-import { SearchService, UserService, OrgDetailsService } from '@sunbird/core';
-import { PublicPlayerService } from '@sunbird/public';
-import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+} from '../../../../../shared';
+import { SearchService, UserService, OrgDetailsService } from '../../../../../core';
+import { PublicPlayerService } from '../../../../../public';
+import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '../../../../../telemetry';
 import { ContentManagerService, SystemInfoService } from '../../services';
 @Component({
     selector: 'app-library',

@@ -1,4 +1,4 @@
-import { ICourses } from '@sunbird/core';
+import { ICourses } from '../../core';
 import {ICard} from './card';
 /**
  * ICaraouselData interface

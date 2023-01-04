@@ -4,14 +4,14 @@ import { first, takeUntil, map, debounceTime, distinctUntilChanged, switchMap, t
 import { Component, OnInit, OnDestroy, AfterViewInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
-import { UserService, FormService } from '@sunbird/core';
+import { UserService, FormService } from '../../../core';
 import {
   ResourceService, ToasterService, ServerResponse, PaginationService, ConfigService,
   NavigationHelperService, IPagination, OnDemandReportsComponent
-} from '@sunbird/shared';
+} from '../../../shared';
 import { CourseProgressService, UsageService } from './../../services';
 import { ICourseProgressData, IBatchListData, IForumContext } from './../../interfaces';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import { OnDemandReportService } from './../../../shared/services/on-demand-report/on-demand-report.service';
 
 /**
@@ -245,7 +245,7 @@ export class CourseProgressComponent implements OnInit, OnDestroy, AfterViewInit
       this.courseProgressService.getBatches(searchParamsMentor),
     ).pipe(takeUntil(this.unsubscribe))
       .subscribe((results) => {
-        this.batchlist = _.union(results[0].result.response.content, results[1].result.response.content);
+        this.batchlist = _.union(results[0]['result'].response.content, results[1]['result'].response.content);
         this.showLoader = false;
         const isBatchExist = _.find(this.batchlist, (batch) => batch.id === this.queryParams.batchIdentifier);
         if (this.batchlist.length === 0) {

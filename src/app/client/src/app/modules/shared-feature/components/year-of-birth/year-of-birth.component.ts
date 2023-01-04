@@ -1,7 +1,7 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ProfileService } from '@sunbird/profile';
-import { ConfigService, ResourceService } from '@sunbird/shared';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
+import { ConfigService, ResourceService } from '../../../shared';
 import * as _ from 'lodash-es';
 
 @Component({

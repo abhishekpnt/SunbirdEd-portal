@@ -3,15 +3,15 @@ import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import {combineLatest } from 'rxjs';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkSpace } from '../../classes/workspace';
-import { SearchService, UserService, FrameworkService } from '@sunbird/core';
+import { SearchService, UserService, FrameworkService } from '../../../core';
 import {
     ServerResponse, PaginationService, ConfigService, ToasterService, IPagination,
     ResourceService, ILoaderMessage, INoResultMessage, ICard, NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService } from '../../services';
 import * as _ from 'lodash-es';
 import { SuiModalService, TemplateModalConfig, ModalTemplate } from 'ng2-semantic-ui-v12';
-import { IImpressionEventInput, IInteractEventObject } from '@sunbird/telemetry';
+import { IImpressionEventInput, IInteractEventObject } from '../../../telemetry';
 
 /**
  * The draft component search for all the drafts

@@ -9,7 +9,7 @@ import { UserService, PermissionService, ManagedUserService, CoursesService, Ele
 import { mockUserData } from './../../services/user/user.mock.spec.data';
 import { ActivatedRoute, Router } from '@angular/router';
 import { CacheService } from 'ng2-cache-service';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { ChangeDetectorRef } from '@angular/core';
 import { mockResponse } from './search.component.spec.data';
 

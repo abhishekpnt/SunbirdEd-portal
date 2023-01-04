@@ -10,7 +10,7 @@ import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { CsGroupService } from '@project-sunbird/client-services/services/group/interface';
 import { CsModule } from '@project-sunbird/client-services';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { SELECT_ACTIVITY } from '../../../groups/interfaces/telemetryConstants';
 import { ActivityDashboardService } from '../../services';
 // import { sessionKeys } from '../../../../modules/groups';

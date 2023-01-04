@@ -8,7 +8,7 @@ import {
   SearchService,
   UserService,
   FormService
-} from '@sunbird/core';
+} from '../../../../modules/core';
 import {
   ConfigService,
   IUserData, LayoutService,
@@ -18,10 +18,10 @@ import {
   ToasterService,
   UtilService,
   ConnectionService
-} from '@sunbird/shared';
+} from '../../../../modules/shared';
 import * as _ from 'lodash-es';
 import {Subject, Subscription} from 'rxjs';
-import {IImpressionEventInput, IInteractEventEdata, TelemetryService} from '@sunbird/telemetry';
+import {IImpressionEventInput, IInteractEventEdata, TelemetryService} from '../../../../modules/telemetry';
 import {ActivatedRoute, Router} from '@angular/router';
 import {CacheService} from 'ng2-cache-service';
 import {takeUntil} from 'rxjs/operators';

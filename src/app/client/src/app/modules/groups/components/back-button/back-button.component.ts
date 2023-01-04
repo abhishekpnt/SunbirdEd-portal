@@ -1,4 +1,4 @@
-import { ResourceService, LayoutService } from '@sunbird/shared';
+import { ResourceService, LayoutService } from '../../../shared';
 import { Component, OnInit } from '@angular/core';
 import { GroupsService } from '../../services';
 import { ActivatedRoute } from '@angular/router';

@@ -1,4 +1,4 @@
-import { IUserProfile } from '@sunbird/shared';
+import { IUserProfile } from '../../shared';
 
 export interface IStartEventData {
   'type': string;

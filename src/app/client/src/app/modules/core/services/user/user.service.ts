@@ -1,5 +1,5 @@
 /* eslint-disable */
-import { ConfigService, ServerResponse, IUserProfile, IUserData, IOrganization } from '@sunbird/shared';
+import { ConfigService, ServerResponse, IUserProfile, IUserData, IOrganization } from '../../../shared';
 import { LearnerService } from './../learner/learner.service';
 import { ContentService } from './../content/content.service';
 import { Injectable, Inject, EventEmitter } from '@angular/core';
@@ -13,7 +13,7 @@ import { skipWhile, tap } from 'rxjs/operators';
 import { APP_BASE_HREF } from '@angular/common';
 import { CacheService } from 'ng2-cache-service';
 import { DataService } from './../data/data.service';
-import { environment } from '@sunbird/environment';
+import { environment } from '../../../../../environments/environment';
 
 
 /**

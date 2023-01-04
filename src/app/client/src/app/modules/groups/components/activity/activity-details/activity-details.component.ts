@@ -1,14 +1,14 @@
 import { Component, OnInit, OnDestroy, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { UserService, SearchService } from '@sunbird/core';
-import { ResourceService, ToasterService, LayoutService, UtilService, ConfigService } from '@sunbird/shared';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { UserService, SearchService } from '../../../../core';
+import { ResourceService, ToasterService, LayoutService, UtilService, ConfigService } from '../../../../shared';
+import { IImpressionEventInput } from '../../../../telemetry';
 import * as _ from 'lodash-es';
 import { combineLatest, Subject } from 'rxjs';
 import { debounceTime, delay, map, takeUntil, tap } from 'rxjs/operators';
 import { GroupsService } from './../../../services';
 import { IActivity } from '../activity-list/activity-list.component';
-import { PublicPlayerService } from '@sunbird/public';
+import { PublicPlayerService } from '../../../../public';
 import { ACTIVITY_DASHBOARD, MY_GROUPS, GROUP_DETAILS } from '../../../interfaces/routerLinks';
 @Component({
   selector: 'app-activity-details',

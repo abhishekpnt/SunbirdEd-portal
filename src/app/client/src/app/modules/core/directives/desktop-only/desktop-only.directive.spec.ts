@@ -1,6 +1,5 @@
 import { DesktopOnlyDirective } from './desktop-only.directive';
 import { TemplateRef, ViewContainerRef, Component } from '@angular/core';
-import { environment } from '@sunbird/environment';
 
 @Component({
   template: '<p *appDesktopOnly>Testing Directives is awesome!</p>'

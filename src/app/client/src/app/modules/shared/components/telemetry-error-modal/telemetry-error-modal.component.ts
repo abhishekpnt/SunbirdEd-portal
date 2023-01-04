@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 
 /**
  * This is to show the telemetry events generated

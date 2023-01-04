@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { GroupsService } from '../../../services';
-import { ToasterService, ResourceService } from '@sunbird/shared';
+import { ToasterService, ResourceService } from '../../../../shared';
 import * as _ from 'lodash-es';
 import { Router, ActivatedRoute } from '@angular/router';
 import { MY_GROUPS, GROUP_DETAILS } from '../../../interfaces/routerLinks';

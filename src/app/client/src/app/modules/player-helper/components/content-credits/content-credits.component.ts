@@ -1,7 +1,7 @@
 import { Component, OnInit, Input, EventEmitter, Output, OnChanges, ViewChild } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import * as _ from 'lodash-es';
-import { ContentData, ContentCreditsData } from '@sunbird/shared';
+import { ContentData, ContentCreditsData } from '../../../shared';
 import { fromEvent, Subject } from 'rxjs';
 
 @Component({

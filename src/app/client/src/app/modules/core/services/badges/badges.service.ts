@@ -1,4 +1,4 @@
-import { ConfigService } from '@sunbird/shared';
+import { ConfigService } from '../../../shared';
 import { LearnerService } from './../learner/learner.service';
 import { Injectable } from '@angular/core';
 import { Observable ,  BehaviorSubject } from 'rxjs';

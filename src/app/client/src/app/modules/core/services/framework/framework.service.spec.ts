@@ -4,11 +4,11 @@ import dayjs from "dayjs";
 import { of, throwError } from "rxjs";
 import { FrameworkService } from "./framework.service";
 import { PublicDataService } from './../public-data/public-data.service';
-import { UserService, LearnerService, FormService } from '@sunbird/core';
+import { UserService, LearnerService, FormService } from '../../../core';
 import {
   ConfigService, ToasterService, ResourceService, ServerResponse, Framework, FrameworkData,
   BrowserCacheTtlService
-} from '@sunbird/shared';
+} from '../../../shared';
 
 describe('FrameworkService', () => {
   let frameworkService: FrameworkService;

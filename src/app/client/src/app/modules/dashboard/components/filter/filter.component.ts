@@ -1,6 +1,6 @@
 import { Component, OnInit, EventEmitter, Input, Output, OnDestroy, ViewChild, ElementRef, ChangeDetectorRef} from '@angular/core';
-import { IInteractEventObject } from '@sunbird/telemetry';
-import { ResourceService } from '@sunbird/shared';
+import { IInteractEventObject } from '../../../telemetry';
+import { ResourceService } from '../../../shared';
 import { FormGroup, FormBuilder } from '@angular/forms';
 import * as _ from 'lodash-es';
 import * as moment from 'moment';

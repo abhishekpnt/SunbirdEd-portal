@@ -1,14 +1,14 @@
 import { UploadCertificateService } from './../../services/upload-certificate/upload-certificate.service';
 import { CertConfigModel } from './../../models/cert-config-model/cert-config-model';
 import { Component, OnInit, OnDestroy, ViewChild, HostListener } from '@angular/core';
-import { CertificateService, UserService, PlayerService, CertRegService, FormService } from '@sunbird/core';
+import { CertificateService, UserService, PlayerService, CertRegService, FormService } from '../../../core';
 import * as _ from 'lodash-es';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { ResourceService, NavigationHelperService, ToasterService, LayoutService, COLUMN_TYPE } from '@sunbird/shared';
+import { ResourceService, NavigationHelperService, ToasterService, LayoutService, COLUMN_TYPE } from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import { combineLatest, of, Subject } from 'rxjs';
 import { catchError, tap, map } from 'rxjs/operators';
-import { TelemetryService, IImpressionEventInput } from '@sunbird/telemetry';
+import { TelemetryService, IImpressionEventInput } from '../../../telemetry';
 import { DomSanitizer } from '@angular/platform-browser';
 
 export interface IConfigLabels {

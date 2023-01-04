@@ -3,14 +3,14 @@ import { FormGroup } from '@angular/forms';
 import {
   ResourceService, ConfigService, ToasterService, ServerResponse, Framework,
   ILoaderMessage, NavigationHelperService , BrowserCacheTtlService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EditorService } from './../../services';
-import { SearchService, UserService, FrameworkService, FormService, PublicDataService, ContentService } from '@sunbird/core';
+import { SearchService, UserService, FrameworkService, FormService, PublicDataService, ContentService } from '../../../core';
 import * as _ from 'lodash-es';
 import { CacheService } from 'ng2-cache-service';
 import { DefaultTemplateComponent } from '../content-creation-default-template/content-creation-default-template.component';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import { WorkSpace } from '../../classes/workspace';
 import { WorkSpaceService } from '../../services';
 import { Subject } from 'rxjs';

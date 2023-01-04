@@ -1,5 +1,5 @@
 import { ITenantData, ITenantInfo, ITenantSettings } from './interfaces';
-import { ConfigService, ServerResponse } from '@sunbird/shared';
+import { ConfigService, ServerResponse } from '../../../shared';
 import { BehaviorSubject ,  Observable, of, iif, combineLatest } from 'rxjs';
 import { DataService } from '../data/data.service';
 import { LearnerService } from './../learner/learner.service';

@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { PublicDataService } from '@sunbird/core';
+import { PublicDataService } from '../../../../../core';
 import { map, catchError } from 'rxjs/operators';
 import { throwError as observableThrowError, Observable } from 'rxjs';
 
-import { ConfigService, ServerResponse } from '@sunbird/shared';
+import { ConfigService, ServerResponse } from '../../../../../shared';
 
 
 @Injectable({

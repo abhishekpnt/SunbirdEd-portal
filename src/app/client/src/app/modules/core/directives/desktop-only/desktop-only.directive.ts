@@ -1,5 +1,5 @@
 import { Directive, TemplateRef, ViewContainerRef, OnInit } from '@angular/core';
-import { environment } from '@sunbird/environment';
+import { environment } from '../../../../../environments/environment';
 
 @Directive({
   selector: '[appDesktopOnly]'

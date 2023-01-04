@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild, Output, EventEmitter } from '@angular/core';
-import { GroupsService } from '@sunbird/groups';
-import { ToasterService, ResourceService } from '@sunbird/shared';
+import { GroupsService } from '../../../groups';
+import { ToasterService, ResourceService } from '../../../shared';
 import 'datatables.net';
 
 export interface IColumnConfig {

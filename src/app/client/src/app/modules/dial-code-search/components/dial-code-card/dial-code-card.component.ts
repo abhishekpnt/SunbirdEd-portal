@@ -1,5 +1,5 @@
 import { Component, Input, EventEmitter, Output, OnInit } from '@angular/core';
-import { ResourceService, ICard } from '@sunbird/shared';
+import { ResourceService, ICard } from '../../../shared';
 
 @Component({
   selector: 'app-dial-code-card',

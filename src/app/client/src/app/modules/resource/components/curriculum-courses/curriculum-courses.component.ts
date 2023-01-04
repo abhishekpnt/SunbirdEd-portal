@@ -1,15 +1,15 @@
 import { Location } from '@angular/common';
 // import { DatePipe } from '@angular/common';
 import { Subject } from 'rxjs';
-import { SearchService, CoursesService } from '@sunbird/core';
+import { SearchService, CoursesService } from '../../../core';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import {
   ResourceService, ToasterService, NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
 import { map } from 'rxjs/operators';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
 
 @Component({
   selector: 'app-curriculum-courses',

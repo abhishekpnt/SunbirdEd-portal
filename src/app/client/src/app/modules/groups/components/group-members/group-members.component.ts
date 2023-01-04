@@ -1,8 +1,8 @@
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../core';
 import { Component, ElementRef, Input, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { GroupMemberRole, GroupEntityStatus } from '@project-sunbird/client-services/models/group';
-import { ResourceService, ToasterService } from '@sunbird/shared';
+import { ResourceService, ToasterService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { fromEvent, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

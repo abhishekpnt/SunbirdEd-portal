@@ -1,5 +1,5 @@
 import { Component, OnInit, Input, Output, EventEmitter, ViewChild, HostListener } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { DomSanitizer } from '@angular/platform-browser';
 
 @Component({

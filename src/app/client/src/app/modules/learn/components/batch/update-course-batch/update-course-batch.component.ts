@@ -4,14 +4,14 @@ import { Component, OnInit, ViewChild, OnDestroy, AfterViewInit } from '@angular
 import { ActivatedRoute, Router } from '@angular/router';
 import {combineLatest, Subject, forkJoin} from 'rxjs';
 import { takeUntil, mergeMap } from 'rxjs/operators';
-import { RouterNavigationService, ResourceService, ToasterService, NavigationHelperService } from '@sunbird/shared';
+import { RouterNavigationService, ResourceService, ToasterService, NavigationHelperService } from '../../../../shared';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../../core';
 import { CourseConsumptionService, CourseBatchService } from './../../../services';
-import { IImpressionEventInput, IInteractEventObject, TelemetryService } from '@sunbird/telemetry';
+import { IImpressionEventInput, IInteractEventObject, TelemetryService } from '../../../../telemetry';
 import * as _ from 'lodash-es';
 import dayjs from 'dayjs';
-import { LazzyLoadScriptService } from 'LazzyLoadScriptService';
+import { LazzyLoadScriptService } from '../../../../../service/LazzyLoadScript/lazzy-load-script.service';
 import { CsModule } from '@project-sunbird/client-services';
 import { CsLibInitializerService } from '../../../../../service/CsLibInitializer/cs-lib-initializer.service';
 import { IFetchForumConfig } from '../../../../groups/interfaces';

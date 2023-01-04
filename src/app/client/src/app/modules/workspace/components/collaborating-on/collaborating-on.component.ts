@@ -2,14 +2,14 @@ import {combineLatest as observableCombineLatest } from 'rxjs';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkSpace } from '../../classes/workspace';
-import { SearchService, UserService, ISort, FrameworkService } from '@sunbird/core';
+import { SearchService, UserService, ISort, FrameworkService } from '../../../core';
 import {
   ServerResponse, PaginationService, ConfigService, ToasterService, IPagination,
   ResourceService, ILoaderMessage, INoResultMessage, IContents, NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService } from '../../services';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { SuiModalService } from 'ng2-semantic-ui-v12';
 @Component({
   selector: 'app-collaborating-on',

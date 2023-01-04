@@ -1,4 +1,4 @@
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { NavigationHelperService } from './../navigation-helper/navigation-helper.service';
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash-es';

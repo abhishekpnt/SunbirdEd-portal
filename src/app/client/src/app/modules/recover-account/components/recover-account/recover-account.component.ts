@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { RecoverAccountService } from './../../services';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 
 @Component({
   templateUrl: './recover-account.component.html',

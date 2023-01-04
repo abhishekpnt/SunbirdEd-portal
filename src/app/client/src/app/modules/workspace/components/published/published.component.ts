@@ -2,15 +2,15 @@ import { debounceTime, map } from 'rxjs/operators';
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkSpace } from '../../classes/workspace';
-import { SearchService, UserService, CoursesService, FrameworkService } from '@sunbird/core';
+import { SearchService, UserService, CoursesService, FrameworkService } from '../../../core';
 import {
   ServerResponse, ConfigService, PaginationService, IPagination,
   IContents, ToasterService, ResourceService, ILoaderMessage, INoResultMessage,
   NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService } from '../../services';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { combineLatest, forkJoin } from 'rxjs';
 import { ContentIDParam } from '../../interfaces/delteparam';
 

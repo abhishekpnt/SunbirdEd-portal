@@ -1,5 +1,5 @@
-import {ResourceService} from '@sunbird/shared';
-import {TenantService} from '@sunbird/core';
+import {ResourceService} from '../../../shared';
+import {TenantService} from '../../../core';
 import { SsoMergeConfirmationComponent } from '..';
 import { of } from 'rxjs';
 

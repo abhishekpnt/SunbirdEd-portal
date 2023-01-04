@@ -1,7 +1,7 @@
 import { takeUntil, filter } from 'rxjs/operators';
 import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
-import { TelemetryService, IImpressionEventInput } from '@sunbird/telemetry';
-import { ResourceService, ToasterService, ConnectionService } from '@sunbird/shared';
+import { TelemetryService, IImpressionEventInput } from '../../../../../telemetry';
+import { ResourceService, ToasterService, ConnectionService } from '../../../../../shared';
 import { TelemetryActionsService } from './../../../offline/services';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import * as _ from 'lodash-es';

@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {ConfigService} from '@sunbird/shared';
+import {ConfigService} from '../../../shared';
 import {DataService} from './../data/data.service';
 import {HttpClient} from '@angular/common/http';
 

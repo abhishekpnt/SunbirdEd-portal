@@ -1,4 +1,4 @@
-import { ServerResponse, IAction } from '@sunbird/shared';
+import { ServerResponse, IAction } from '../../shared';
 export interface IEnrolledCourses {
     err: ServerResponse;
     enrolledCourses: ICourses[];

@@ -1,6 +1,6 @@
 import { Component, OnInit, ViewChild, Input, EventEmitter, Output } from '@angular/core';
-import { ObservationService, KendraService, ObservationUtilService } from '@sunbird/core';
-import { ConfigService, ResourceService, ILoaderMessage, INoResultMessage } from '@sunbird/shared';
+import { ObservationService, KendraService, ObservationUtilService } from '../../../core';
+import { ConfigService, ResourceService, ILoaderMessage, INoResultMessage } from '../../../shared';
 import { LocationStrategy } from '@angular/common';
 
 @Component({

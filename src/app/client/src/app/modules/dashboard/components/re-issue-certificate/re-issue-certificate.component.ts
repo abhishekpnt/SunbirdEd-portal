@@ -1,6 +1,6 @@
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
-import { CertRegService, UserService } from '@sunbird/core';
-import { ResourceService, ToasterService, NavigationHelperService } from '@sunbird/shared';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
+import { CertRegService, UserService } from '../../../core';
+import { ResourceService, ToasterService, NavigationHelperService } from '../../../shared';
 import { Subject } from 'rxjs';
 import { Component, OnInit, OnDestroy, Input, ViewChild, HostListener } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';

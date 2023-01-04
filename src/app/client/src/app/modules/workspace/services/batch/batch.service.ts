@@ -2,8 +2,8 @@
 import { of as observableOf, Observable } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Injectable, EventEmitter } from '@angular/core';
-import { ConfigService, ServerResponse } from '@sunbird/shared';
-import { SearchParam, LearnerService, UserService, PlayerService } from '@sunbird/core';
+import { ConfigService, ServerResponse } from '../../../shared';
+import { SearchParam, LearnerService, UserService, PlayerService } from '../../../core';
 import * as _ from 'lodash-es';
 /**
  * Service for batch

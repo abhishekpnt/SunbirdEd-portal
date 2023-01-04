@@ -6,7 +6,7 @@ import { EventEmitter, Output } from '@angular/core';
 import { UsageService, ReportService } from './../../services';
 import { DomSanitizer } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { ResourceService, ToasterService } from '@sunbird/shared';
+import { ResourceService, ToasterService } from '../../../shared';
 import { BaseChartDirective } from 'ng2-charts';
 import { Component, OnInit, Input, ViewChild, OnDestroy, ElementRef, ChangeDetectorRef, TemplateRef } from '@angular/core';
 import * as _ from 'lodash-es';
@@ -14,7 +14,7 @@ import { FormBuilder } from '@angular/forms';
 import { Subscription, Subject, timer, of } from 'rxjs';
 import { map, takeUntil, switchMap } from 'rxjs/operators';
 import * as moment from 'moment';
-import { IInteractEventObject } from '@sunbird/telemetry';
+import { IInteractEventObject } from '../../../telemetry';
 import { IBigNumberChart } from '../../interfaces/chartData';
 import { MatDialog } from '@angular/material/dialog';
 

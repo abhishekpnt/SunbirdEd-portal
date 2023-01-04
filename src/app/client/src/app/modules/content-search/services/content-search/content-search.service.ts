@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { FrameworkService, ChannelService } from '@sunbird/core';
+import { FrameworkService, ChannelService } from '../../../core';
 import { Observable, BehaviorSubject, of } from 'rxjs';
 import { skipWhile, mergeMap, first, map } from 'rxjs/operators';
 import * as _ from 'lodash-es';

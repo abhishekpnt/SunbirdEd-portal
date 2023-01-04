@@ -1,11 +1,11 @@
 import { combineLatest, Subject, throwError, BehaviorSubject } from 'rxjs';
 import { map, mergeMap, first, takeUntil, delay, switchMap } from 'rxjs/operators';
-import { ResourceService, ToasterService, ConfigService, NavigationHelperService, LayoutService } from '@sunbird/shared';
+import { ResourceService, ToasterService, ConfigService, NavigationHelperService, LayoutService } from '../../../..//shared';
 import { CourseConsumptionService, CourseBatchService } from './../../../services';
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
-import { CoursesService, PermissionService, GeneraliseLabelService } from '@sunbird/core';
+import { CoursesService, PermissionService, GeneraliseLabelService } from '../../../..//core';
 import dayjs from 'dayjs';
 import { GroupsService } from '../../../../groups/services/groups/groups.service';
 @Component({

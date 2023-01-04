@@ -1,4 +1,4 @@
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { Component, Input, EventEmitter, ViewChild, Output, OnDestroy, OnInit } from '@angular/core';
 import * as _ from 'lodash-es';
 import { IGroupMember } from '../../interfaces';

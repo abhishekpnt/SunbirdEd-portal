@@ -1,6 +1,6 @@
 import { of, throwError } from "rxjs";
-import { UserService } from'@sunbird/core';
-import { ResourceService, ToasterService } from '@sunbird/shared';
+import { UserService } from'../../../core';
+import { ResourceService, ToasterService } from '../../../shared';
 import { UploadCertificateService } from "../../services/upload-certificate/upload-certificate.service";
 import { BrowseImagePopupComponent } from "./browse-image-popup.component";
 import {MockData} from './browse-image-popup.component.spec.data'

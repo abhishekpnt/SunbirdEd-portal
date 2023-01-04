@@ -1,8 +1,8 @@
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../plugins/profile/services';
 import { CourseProgressService } from './../course-progress/course-progress.service';
 import { IListReportsFilter, IReportsApiResponse, IDataSource } from './../../interfaces';
-import { ConfigService, IUserData } from '@sunbird/shared';
-import { UserService, BaseReportService, PermissionService, SearchService, FrameworkService } from '@sunbird/core';
+import { ConfigService, IUserData } from '../../../shared';
+import { UserService, BaseReportService, PermissionService, SearchService, FrameworkService } from '../../../core';
 import { Injectable } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { UsageService } from '../usage/usage.service';

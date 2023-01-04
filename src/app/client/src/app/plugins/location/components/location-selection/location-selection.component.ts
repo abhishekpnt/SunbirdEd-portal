@@ -1,9 +1,9 @@
 import { AfterViewInit, Component, EventEmitter, Input, OnDestroy, OnInit, Output, ViewChild } from '@angular/core';
-import { ResourceService, ToasterService, NavigationHelperService, UtilService } from '@sunbird/shared';
+import { ResourceService, ToasterService, NavigationHelperService, UtilService } from '../../../../modules/shared';
 import { DeviceRegisterService, FormService, OrgDetailsService, UserService } from '../../../../modules/core/services';
 import { Router } from '@angular/router';
 import { LocationService } from '../../services/location/location.service';
-import { IImpressionEventInput, IInteractEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IImpressionEventInput, IInteractEventInput, TelemetryService } from '../../../../modules/telemetry';
 import { PopupControlService } from '../../../../service/popup-control.service';
 import { IDeviceProfile } from '../../../../modules/shared-feature/interfaces/deviceProfile';
 import { SbFormLocationSelectionDelegate } from '../delegate/sb-form-location-selection.delegate';

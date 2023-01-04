@@ -1,12 +1,12 @@
 import { Component, Output, EventEmitter, Input, OnInit, OnDestroy, ChangeDetectorRef, ViewChild } from '@angular/core';
 import * as _ from 'lodash-es';
 import { LibraryFiltersLayout } from '@project-sunbird/common-consumption';
-import { ResourceService, LayoutService, UtilService } from '@sunbird/shared';
+import { ResourceService, LayoutService, UtilService } from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Subject, merge, of, zip, BehaviorSubject, defer } from 'rxjs';
 import { debounceTime, map, tap, switchMap, takeUntil, retry, catchError } from 'rxjs/operators';
 import { ContentSearchService } from '../../services';
-import { FormService } from '@sunbird/core';
+import { FormService } from '../../../core';
 import { IFrameworkCategoryFilterFieldTemplateConfig } from '@project-sunbird/common-form-elements';
 import { CacheService } from 'ng2-cache-service';
 

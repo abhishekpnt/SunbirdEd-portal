@@ -1,7 +1,7 @@
 import { CanDeactivate } from '@angular/router';
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 
 export interface ComponentCanDeactivate {
   canDeactivate: () => boolean | Observable<boolean>;

@@ -1,6 +1,6 @@
-import { UserService, TncService } from '@sunbird/core';
-import { TelemetryService } from '@sunbird/telemetry';
-import { ResourceService, NavigationHelperService, LayoutService } from '@sunbird/shared';
+import { UserService, TncService } from '../../../core';
+import { TelemetryService } from '../../../telemetry';
+import { ResourceService, NavigationHelperService, LayoutService } from '../../../shared';
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { catchError, mergeMap, map, first } from 'rxjs/operators';
 import * as _ from 'lodash-es';

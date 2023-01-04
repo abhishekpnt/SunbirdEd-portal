@@ -1,12 +1,12 @@
 import {takeUntil} from 'rxjs/operators';
 import { Subscription ,  Subject } from 'rxjs';
 import { Component, OnInit, Input, OnDestroy } from '@angular/core';
-import { ResourceService, IUserData, IUserProfile, ToasterService } from '@sunbird/shared';
-import { UserService, BadgesService } from '@sunbird/core';
+import { ResourceService, IUserData, IUserProfile, ToasterService } from '../../../shared';
+import { UserService, BadgesService } from '../../../core';
 import { ContentBadgeService } from './../../services';
 import * as _ from 'lodash-es';
 import { ActivatedRoute } from '@angular/router';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventObject, IInteractEventEdata } from '../../../telemetry';
 @Component({
   selector: 'app-assign-badges-content',
   templateUrl: './assign-badges-content.component.html'

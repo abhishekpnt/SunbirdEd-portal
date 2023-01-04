@@ -1,8 +1,8 @@
 import {Component, OnInit, OnDestroy} from '@angular/core';
-import {ResourceService} from '@sunbird/shared';
+import {ResourceService} from '../../../../../../shared';
 import {ActivatedRoute} from '@angular/router';
 import {Subscription} from 'rxjs';
-import {TenantService} from '@sunbird/core';
+import {TenantService} from '../../../../../../core';
 
 @Component({
   selector: 'app-auth-failed',

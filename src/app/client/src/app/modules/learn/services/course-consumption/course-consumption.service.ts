@@ -2,13 +2,13 @@
 import { of as observableOf } from 'rxjs';
 import { map } from 'rxjs/operators';
 import { Injectable, EventEmitter } from '@angular/core';
-import { PlayerService, PermissionService, UserService, GeneraliseLabelService } from '@sunbird/core';
-import { ServerResponse, ResourceService, ToasterService } from '@sunbird/shared';
+import { PlayerService, PermissionService, UserService, GeneraliseLabelService } from '../../../core';
+import { ServerResponse, ResourceService, ToasterService } from '../../../shared';
 import { CourseProgressService } from '../courseProgress/course-progress.service';
 import * as _ from 'lodash-es';
 import * as TreeModel from 'tree-model';
 import { Router } from '@angular/router';
-import { NavigationHelperService } from '@sunbird/shared';
+import { NavigationHelperService } from '../../../shared';
 import dayjs from 'dayjs';
 
 @Injectable({

@@ -1,8 +1,8 @@
 import { Component, Inject, Input, OnInit, ViewChild, Output, EventEmitter } from '@angular/core';
 import { Consent, ConsentStatus } from '@project-sunbird/client-services/models';
 import { CsUserService } from '@project-sunbird/client-services/services/user/interface';
-import { TncService, UserService, CoursesService, GeneraliseLabelService } from '@sunbird/core';
-import { ResourceService, ServerResponse, ToasterService, UtilService } from '@sunbird/shared';
+import { TncService, UserService, CoursesService, GeneraliseLabelService } from '../../../core';
+import { ResourceService, ServerResponse, ToasterService, UtilService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

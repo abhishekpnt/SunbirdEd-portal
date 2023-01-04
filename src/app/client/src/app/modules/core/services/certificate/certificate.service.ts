@@ -1,6 +1,6 @@
 import { LearnerService } from './../learner/learner.service';
 import { Injectable } from '@angular/core';
-import { ConfigService, ServerResponse } from '@sunbird/shared';
+import { ConfigService, ServerResponse } from '../../../shared';
 import { Observable } from 'rxjs';
 
 

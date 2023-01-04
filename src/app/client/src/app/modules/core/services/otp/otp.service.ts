@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { LearnerService } from './../learner/learner.service';
-import { ConfigService } from '@sunbird/shared';
+import { ConfigService } from '../../../shared';
 
 @Injectable({
   providedIn: 'root'

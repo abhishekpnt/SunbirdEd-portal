@@ -1,7 +1,7 @@
 import { Component, Inject, OnDestroy, OnInit, ViewChild } from '@angular/core';
 import { FormControl, ValidationErrors } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
-import { FormService, OtpService, TncService, UserService } from '@sunbird/core';
+import { FormService, OtpService, TncService, UserService } from '../../../../modules/core';
 import { Consent, ConsentStatus } from '@project-sunbird/client-services/models';
 import { CsUserService } from '@project-sunbird/client-services/services/user/interface';
 import {
@@ -11,8 +11,8 @@ import {
   ServerResponse,
   ToasterService,
   UtilService, LayoutService
-} from '@sunbird/shared';
-import { IInteractEventEdata, IInteractEventObject, TelemetryService } from '@sunbird/telemetry';
+} from '../../../../modules/shared';
+import { IInteractEventEdata, IInteractEventObject, TelemetryService } from '../../../../modules/telemetry';
 import { FieldConfig } from '@project-sunbird/common-form-elements';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';

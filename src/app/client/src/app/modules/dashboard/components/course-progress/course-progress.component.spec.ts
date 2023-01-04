@@ -5,7 +5,7 @@ import { UserService, FormService } from '../../../core';
 import { ResourceService, ConfigService, PaginationService, ToasterService, IUserProfile, NavigationHelperService } from '../../../shared';
 import { CourseProgressService, UsageService } from './../../services';
 import * as testData from './course-progress.component.spec.data';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { OnDemandReportService } from './../../../shared/services/on-demand-report/on-demand-report.service';
 
 describe('CourseProgressComponent', () => {

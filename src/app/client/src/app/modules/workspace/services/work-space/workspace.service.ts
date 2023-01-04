@@ -3,8 +3,8 @@ import { BehaviorSubject, Observable, of as observableOf } from 'rxjs';
 import { map, skipWhile } from 'rxjs/operators';
 import {
   ConfigService, ServerResponse, ICard, NavigationHelperService, ResourceService, BrowserCacheTtlService
-} from '@sunbird/shared';
-import { ContentService, PublicDataService, UserService, ActionService } from '@sunbird/core';
+} from '../../../shared';
+import { ContentService, PublicDataService, UserService, ActionService } from '../../../core';
 import { IDeleteParam, ContentIDParam } from '../../interfaces/delteparam';
 import { Router } from '@angular/router';
 import * as _ from 'lodash-es';

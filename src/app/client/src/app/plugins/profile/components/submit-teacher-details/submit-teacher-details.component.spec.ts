@@ -4,14 +4,14 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { CsUserService } from '@project-sunbird/client-services/services/user/interface';
-import { CoreModule, FormService, OtpService, SearchService, TncService, UserService } from '@sunbird/core';
-import { ProfileService } from '@sunbird/profile';
+import { CoreModule, FormService, OtpService, SearchService, TncService, UserService } from '../../../../modules/core';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 import {
     BrowserCacheTtlService, ConfigService,
     NavigationHelperService, ResourceService,
     SharedModule, ToasterService
-} from '@sunbird/shared';
-import { TelemetryModule, TelemetryService } from '@sunbird/telemetry';
+} from '../../../../modules/shared';
+import { TelemetryModule, TelemetryService } from '../../../../modules/telemetry';
 import { ServerResponse } from 'http';
 import { CacheService } from 'ng2-cache-service';
 import { SuiModule } from 'ng2-semantic-ui-v12';

@@ -1,6 +1,6 @@
 import { Component, Input, OnChanges, OnInit, SimpleChanges, TemplateRef, ViewChild } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import * as _ from "lodash-es";
 @Component({
   selector: 'app-sb-chart',

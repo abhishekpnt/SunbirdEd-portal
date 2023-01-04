@@ -1,6 +1,6 @@
 import { Component, Output, EventEmitter, OnInit } from '@angular/core';
-import { ResourceService, ToasterService } from '@sunbird/shared';
-import { FormService } from '@sunbird/core';
+import { ResourceService, ToasterService } from '../../../../shared';
+import { FormService } from '../../../../core';
 import { GroupsService } from '../../../services';
 import { ActivatedRoute } from '@angular/router';
 @Component({

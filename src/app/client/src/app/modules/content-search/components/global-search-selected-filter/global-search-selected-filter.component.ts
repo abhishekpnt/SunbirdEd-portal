@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter, OnInit } from '@angular/core';
 import * as _ from 'lodash-es';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ResourceService, UtilService } from '@sunbird/shared';
+import { ResourceService, UtilService } from '../../../shared';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs/internal/Subject';
 

@@ -3,8 +3,8 @@ import { doesNotReject } from "assert";
 import dayjs from "dayjs";
 import { of, throwError } from "rxjs";
 import { GeneraliseLabelService } from "./generaliseLable.service";
-import { FormService } from '@sunbird/core';
-import { ConfigService, ResourceService } from '@sunbird/shared';
+import { FormService } from '../../../core';
+import { ConfigService, ResourceService } from '../../../shared';
 import { UsageService } from '../../../dashboard/services/usage/usage.service';
 import { MockResponse } from './generaliseLable.service.spec.data'
 

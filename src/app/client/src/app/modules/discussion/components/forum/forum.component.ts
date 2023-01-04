@@ -1,7 +1,7 @@
-import { ConfigService } from '@sunbird/shared';
+import { ConfigService } from '../../../shared';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { ActivatedRoute } from '@angular/router';
-import { LearnerService, UserService } from '@sunbird/core';
+import { LearnerService, UserService } from '../../../core';
 import { Component, OnInit, OnDestroy, HostListener, ViewChild, AfterViewInit } from '@angular/core';
 import * as _ from 'lodash-es';
 import { Location } from '@angular/common';

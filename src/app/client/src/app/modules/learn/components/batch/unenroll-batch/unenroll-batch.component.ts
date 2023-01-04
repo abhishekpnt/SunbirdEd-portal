@@ -1,14 +1,14 @@
 
 import { takeUntil } from 'rxjs/operators';
-import { UserService, CoursesService, GeneraliseLabelService } from '@sunbird/core';
-import { ResourceService, ToasterService, ConfigService, NavigationHelperService } from '@sunbird/shared';
+import { UserService, CoursesService, GeneraliseLabelService } from '../../../../core';
+import { ResourceService, ToasterService, ConfigService, NavigationHelperService } from '../../../../shared';
 import { CourseBatchService } from '../../../services';
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../../telemetry';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
-import { TelemetryService, IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { TelemetryService, IInteractEventObject, IInteractEventEdata } from '../../../../telemetry';
 @Component({
   selector: 'app-unenroll-batch',
   templateUrl: './unenroll-batch.component.html'

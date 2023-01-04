@@ -2,11 +2,11 @@
 import { of as observableOf, Observable } from 'rxjs';
 import { mergeMap, map } from 'rxjs/operators';
 import { Router } from '@angular/router';
-import { UserService, CollectionHierarchyAPI, PublicDataService, OrgDetailsService } from '@sunbird/core';
+import { UserService, CollectionHierarchyAPI, PublicDataService, OrgDetailsService } from '../../../core';
 import { Injectable } from '@angular/core';
 import {
   ConfigService, ServerResponse, ContentDetails, PlayerConfig, ContentData, NavigationHelperService, ResourceService, UtilService
-} from '@sunbird/shared';
+} from '../../../shared';
 import * as _ from 'lodash-es';
 import { CsModule } from '@project-sunbird/client-services';
 import { CsLibInitializerService } from './../../../../service/CsLibInitializer/cs-lib-initializer.service';

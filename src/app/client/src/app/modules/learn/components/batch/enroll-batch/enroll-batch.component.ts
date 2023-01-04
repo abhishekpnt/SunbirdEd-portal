@@ -1,11 +1,11 @@
 
 import { takeUntil } from 'rxjs/operators';
-import { UserService, CoursesService, GeneraliseLabelService } from '@sunbird/core';
-import { ResourceService, ToasterService, ConfigService, NavigationHelperService } from '@sunbird/shared';
+import { UserService, CoursesService, GeneraliseLabelService } from '../../../../core';
+import { ResourceService, ToasterService, ConfigService, NavigationHelperService } from '../../../../shared';
 import { CourseBatchService } from './../../../services';
 import { Component, OnInit, ViewChild, OnDestroy, AfterViewInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { TelemetryService, IImpressionEventInput, IInteractEventObject, IInteractEventEdata, IAuditEventInput } from '@sunbird/telemetry';
+import { TelemetryService, IImpressionEventInput, IInteractEventObject, IInteractEventEdata, IAuditEventInput } from '../../../../telemetry';
 import { Subject } from 'rxjs';
 
 @Component({

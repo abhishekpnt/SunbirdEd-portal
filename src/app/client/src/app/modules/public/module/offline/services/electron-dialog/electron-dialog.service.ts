@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { ConfigService } from '@sunbird/shared';
-import { DataService } from '@sunbird/core';
+import { ConfigService } from '../../../../../shared';
+import { DataService } from '../../../../../core';
 
 @Injectable({
   providedIn: 'root'

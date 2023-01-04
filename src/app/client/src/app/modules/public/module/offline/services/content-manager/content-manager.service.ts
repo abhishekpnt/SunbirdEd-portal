@@ -1,13 +1,13 @@
 import { ElectronDialogService } from '../electron-dialog/electron-dialog.service';
 import { Injectable, EventEmitter } from '@angular/core';
-import { ConfigService, ToasterService, ResourceService } from '@sunbird/shared';
-import { PublicDataService } from '@sunbird/core';
+import { ConfigService, ToasterService, ResourceService } from '../../../../../shared';
+import { PublicDataService } from '../../../../../core';
 import { throwError as observableThrowError, BehaviorSubject } from 'rxjs';
 import { catchError, map, mergeMap, tap } from 'rxjs/operators';
 import * as _ from 'lodash-es';
 import { SystemInfoService } from '../system-info/system-info.service';
 import { ActivatedRoute } from '@angular/router';
-import { TelemetryService, IErrorEventInput } from '@sunbird/telemetry';
+import { TelemetryService, IErrorEventInput } from '../../../../../telemetry';
 
 @Injectable({
   providedIn: 'root'

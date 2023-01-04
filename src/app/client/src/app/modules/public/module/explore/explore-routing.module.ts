@@ -6,7 +6,7 @@ import { ExploreCurriculumCoursesComponent } from './components/explore-curricul
 import { ViewAllComponent } from '../../../content-search/components/view-all/view-all.component';
 const routes: Routes = [
   {
-    path: '', loadChildren: () => import('../../../explore-page/explore-page.module').then((m) => {return m.ExplorePageModule})
+    path: '', loadChildren: () => import('../../../explore-page/explore-page.module').then((m) => {return m.ExplorePageModule}).catch( err => console.log('Oh no!', err) )
   },
   {
     path: 'view-all/:section/:pageNumber', component: ViewAllComponent,

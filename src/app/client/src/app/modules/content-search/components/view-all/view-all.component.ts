@@ -1,16 +1,16 @@
-import { PublicPlayerService } from '@sunbird/public';
+import { PublicPlayerService } from '../../../public';
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { combineLatest, Observable, of, Subject } from 'rxjs';
 import {
   ServerResponse, PaginationService, ResourceService, ConfigService, ToasterService, INoResultMessage,
   ILoaderMessage, UtilService, ICard, BrowserCacheTtlService, NavigationHelperService, IPagination,
   LayoutService, COLUMN_TYPE
-} from '@sunbird/shared';
-import { SearchService, CoursesService, ISort, PlayerService, OrgDetailsService, UserService, FormService } from '@sunbird/core';
+} from '../../../shared';
+import { SearchService, CoursesService, ISort, PlayerService, OrgDetailsService, UserService, FormService } from '../../../core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { takeUntil, map, tap, filter } from 'rxjs/operators';
-import { IInteractEventEdata, IImpressionEventInput } from '@sunbird/telemetry';
+import { IInteractEventEdata, IImpressionEventInput } from '../../../telemetry';
 
 
 @Component({

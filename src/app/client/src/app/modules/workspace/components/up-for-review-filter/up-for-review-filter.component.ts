@@ -1,10 +1,10 @@
 import { Subject, of} from 'rxjs';
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
-import { ResourceService, ConfigService } from '@sunbird/shared';
+import { ResourceService, ConfigService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { debounceTime, distinctUntilChanged, delay, flatMap } from 'rxjs/operators';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 @Component({
   selector: 'app-up-for-review-filter',
   templateUrl: './up-for-review-filter.component.html',

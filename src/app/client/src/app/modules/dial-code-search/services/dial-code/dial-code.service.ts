@@ -1,5 +1,5 @@
-import { ConfigService } from '@sunbird/shared';
-import { SearchService, PlayerService, UserService, PublicDataService } from '@sunbird/core';
+import { ConfigService } from '../../../shared';
+import { SearchService, PlayerService, UserService, PublicDataService } from '../../../core';
 import { Injectable } from '@angular/core';
 import * as _ from 'lodash-es';
 import { map, catchError } from 'rxjs/operators';

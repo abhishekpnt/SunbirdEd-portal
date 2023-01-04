@@ -1,10 +1,10 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ResourceService, ToasterService } from '@sunbird/shared';
+import { ResourceService, ToasterService } from '../../../../../shared';
 import { ElectronDialogService } from '../../../offline/services';
 import { TelemetryActionsService } from './../../../offline/services';
 import * as _ from 'lodash-es';
 import { ActivatedRoute } from '@angular/router';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../../telemetry';
 import { timer, Subject, combineLatest } from 'rxjs';
 import { switchMap, filter, takeUntil, tap} from 'rxjs/operators';
 @Component({

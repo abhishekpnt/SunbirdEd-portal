@@ -3,8 +3,8 @@ import {throwError as observableThrowError,  Observable } from 'rxjs';
 
 import {catchError, map} from 'rxjs/operators';
 import { Injectable } from '@angular/core';
-import { LearnerService } from '@sunbird/core';
-import { ServerResponse, ConfigService } from '@sunbird/shared';
+import { LearnerService } from '../../../core';
+import { ServerResponse, ConfigService } from '../../../shared';
 import { DashboardUtilsService } from './../dashboard-utils/dashboard-utils.service';
 import { DashboardParams, DashboardData } from './../../interfaces';
 

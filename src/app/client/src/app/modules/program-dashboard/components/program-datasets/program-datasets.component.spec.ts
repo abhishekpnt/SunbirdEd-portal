@@ -1,10 +1,10 @@
 import { fakeAsync, tick, flush } from '@angular/core/testing';
 import { of} from 'rxjs';
 import { DatasetsComponent } from './program-datasets.component';
-import { KendraService, UserService, FormService } from '@sunbird/core';
-import { ResourceService, LayoutService, ConfigService, OnDemandReportService, ToasterService } from '@sunbird/shared';
+import { KendraService, UserService, FormService } from '../../../core';
+import { ResourceService, LayoutService, ConfigService, OnDemandReportService, ToasterService } from '../../../shared';
 import { ActivatedRoute, Router } from '@angular/router';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../telemetry';
 import { mockData } from './program-datasets.component.spec.data';
 import { ReportService } from '../../../dashboard';
 import { Location } from '@angular/common';

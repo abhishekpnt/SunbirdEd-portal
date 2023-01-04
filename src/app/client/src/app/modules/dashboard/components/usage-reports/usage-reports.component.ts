@@ -1,17 +1,17 @@
-import { IInteractEventEdata, TelemetryInteractDirective, IImpressionEventInput } from '@sunbird/telemetry';
+import { IInteractEventEdata, TelemetryInteractDirective, IImpressionEventInput } from '../../../telemetry';
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { CourseProgressService, UsageService } from './../../services';
 import * as _ from 'lodash-es';
 import dayjs from 'dayjs';
 import { DomSanitizer } from '@angular/platform-browser';
-import { UserService, TncService } from '@sunbird/core';
+import { UserService, TncService } from '../../../core';
 import {
   ToasterService,
   ResourceService,
   INoResultMessage,
   NavigationHelperService,
   LayoutService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { ActivatedRoute, Router } from '@angular/router';
 import {Subject} from 'rxjs';
 import {first, takeUntil} from 'rxjs/operators';

@@ -1,10 +1,10 @@
 import { OnboardingPopupComponent } from "./onboarding-popup.component"
 import { DomSanitizer } from '@angular/platform-browser';
-import { DeviceRegisterService, FormService, UserService } from '@sunbird/core';
+import { DeviceRegisterService, FormService, UserService } from '../../../core';
 import { of } from "rxjs";
 import { mockData } from './onboarding-popup.component.spec.data'
 import { MatStepper } from '@angular/material/stepper';
-import { ResourceService } from '@sunbird/shared'
+import { ResourceService } from '../../../shared'
 
 describe("Onboarding Component", () => {
   let onboardingPopupComponent: OnboardingPopupComponent;

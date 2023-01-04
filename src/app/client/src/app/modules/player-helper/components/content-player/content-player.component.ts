@@ -1,8 +1,8 @@
 import { Component, AfterViewInit, ViewChild, ElementRef, Input, Output, EventEmitter, OnChanges, OnInit, OnDestroy } from '@angular/core';
 import * as _ from 'lodash-es';
-import { PlayerConfig, LayoutService, NavigationHelperService, ResourceService, UtilService } from '@sunbird/shared';
+import { PlayerConfig, LayoutService, NavigationHelperService, ResourceService, UtilService } from '../../../shared';
 import { Router } from '@angular/router';
-import { PublicPlayerService } from '@sunbird/public';
+import { PublicPlayerService } from '../../../public';
 import { ContentManagerService } from '../../../public/module/offline/services';
 
 const OFFLINE_ARTIFACT_MIME_TYPES = ['application/epub', 'video/webm', 'video/mp4', 'application/pdf'];

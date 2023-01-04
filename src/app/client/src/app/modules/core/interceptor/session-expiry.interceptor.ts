@@ -3,7 +3,7 @@ import { Injectable } from '@angular/core';
 import { HttpInterceptor, HttpRequest, HttpHandler, HttpEvent } from '@angular/common/http';
 import { Observable, throwError, of } from 'rxjs';
 import { map, catchError, skipWhile } from 'rxjs/operators';
-import { UtilService } from '@sunbird/shared';
+import { UtilService } from '../../shared';
 import { ResourceService } from '../../shared/services/resource/resource.service';
 import { ToasterService } from '../../shared/services/toaster/toaster.service';
 import * as _ from 'lodash-es';

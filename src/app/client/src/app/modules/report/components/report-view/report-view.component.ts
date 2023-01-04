@@ -1,7 +1,7 @@
 import { Component, OnInit, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Location, LocationStrategy } from '@angular/common';
-import { DhitiService } from '@sunbird/core';
+import { DhitiService } from '../../../core';
 import {
   ConfigService,
   LayoutService,
@@ -10,7 +10,7 @@ import {
   ToasterService,
   ILoaderMessage,
   NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import * as _ from 'lodash-es';
 import { ChangeDetectorRef } from '@angular/core';
 import { Subject } from 'rxjs';

@@ -4,8 +4,8 @@ import {
   ResourceService, ILoaderMessage, PlayerConfig, ContentData,
   WindowScrollService, ToasterService, NavigationHelperService,
   ConfigService, RouterNavigationService
-} from '@sunbird/shared';
-import { PlayerService, ContentService } from '@sunbird/core';
+} from '../../../shared';
+import { PlayerService, ContentService } from '../../../core';
 @Component({
   selector: 'app-reviewsubmissions-contentplayer',
   templateUrl: './reviewsubmissions-contentplayer.component.html',

@@ -1,10 +1,10 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ResourceService, ToasterService } from '@sunbird/shared';
-import { ProfileService } from '@sunbird/profile';
+import { ResourceService, ToasterService } from '../../../../../shared';
+import { ProfileService } from '../../../../../../plugins/profile/services/profile/profile.service';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import * as _ from 'lodash-es';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../../telemetry';
 import { ActivatedRoute } from '@angular/router';
 
 @Component({

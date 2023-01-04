@@ -1,7 +1,7 @@
 import { UploadCertificateService } from "../../services/upload-certificate/upload-certificate.service";
 import { CreateTemplateComponent } from "./create-template.component";
-import { UserService, CertRegService } from '@sunbird/core';
-import { ToasterService, ResourceService, NavigationHelperService, LayoutService, COLUMN_TYPE } from '@sunbird/shared';
+import { UserService, CertRegService } from '../../../core';
+import { ToasterService, ResourceService, NavigationHelperService, LayoutService, COLUMN_TYPE } from '../../../shared';
 import { DomSanitizer } from '@angular/platform-browser';
 import { CertConfigModel } from './../../models/cert-config-model/cert-config-model';
 import * as _ from 'lodash-es';
@@ -166,7 +166,7 @@ describe("CreateTemplateComponent", () => {
             component.images = MockData.imagesArray;
             const image = `<image></image>`;
             jest.spyOn(component, 'certificateCreation').mockImplementation();
-            jest.spyOn(component, 'editSVG').mockImplementation(() => Promise.resolve({}));
+            jest.spyOn(component, 'editSVG').mockImplementation(() => Promise.resolve<any>({}));
             const state = new DOMParser().parseFromString(image, 'text/html');
             component.updateStateLogos(state);
             expect(component.editSVG).toHaveBeenCalled();

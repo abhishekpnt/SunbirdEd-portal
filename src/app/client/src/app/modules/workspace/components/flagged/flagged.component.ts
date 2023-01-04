@@ -1,15 +1,15 @@
 import { Component, OnInit, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkSpace } from '../../classes/workspace';
-import { SearchService, UserService } from '@sunbird/core';
+import { SearchService, UserService } from '../../../core';
 import {
   ServerResponse, PaginationService, ToasterService,
   ResourceService, ConfigService, IContents, ILoaderMessage, INoResultMessage,
   NavigationHelperService, IPagination
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService } from '../../services';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 
 /**
  * The flagged submission  component

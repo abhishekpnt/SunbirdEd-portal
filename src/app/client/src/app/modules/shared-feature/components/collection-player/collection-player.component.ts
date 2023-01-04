@@ -1,7 +1,7 @@
 
 import { mergeMap, filter, map, catchError, takeUntil } from 'rxjs/operators';
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
-import { PlayerService, CollectionHierarchyAPI, PermissionService, CopyContentService, UserService, GeneraliseLabelService, CoursesService } from '@sunbird/core';
+import { PlayerService, CollectionHierarchyAPI, PermissionService, CopyContentService, UserService, GeneraliseLabelService, CoursesService } from '../../../core';
 import { Observable, Subscription, Subject } from 'rxjs';
 import { ActivatedRoute, Router, NavigationExtras } from '@angular/router';
 import * as _ from 'lodash-es';
@@ -9,12 +9,12 @@ import {
   WindowScrollService, ILoaderMessage, PlayerConfig, ICollectionTreeOptions, NavigationHelperService,
   ToasterService, ResourceService, ContentData, ContentUtilsServiceService, ITelemetryShare, ConfigService,
   ExternalUrlPreviewService, LayoutService, UtilService, ConnectionService, OfflineCardService,
-} from '@sunbird/shared';
-import { IInteractEventObject, IInteractEventEdata, IImpressionEventInput, IEndEventInput, IStartEventInput, TelemetryService } from '@sunbird/telemetry';
+} from '../../../shared';
+import { IInteractEventObject, IInteractEventEdata, IImpressionEventInput, IEndEventInput, IStartEventInput, TelemetryService } from '../../../telemetry';
 import * as TreeModel from 'tree-model';
 import { DeviceDetectorService } from 'ngx-device-detector';
 import { PopupControlService } from '../../../../service/popup-control.service';
-import { PublicPlayerService } from '@sunbird/public';
+import { PublicPlayerService } from '../../../public';
 import { TocCardType, PlatformType } from '@project-sunbird/common-consumption';
 import { CsGroupAddableBloc } from '@project-sunbird/client-services/blocs';
 import { ContentManagerService } from '../../../public/module/offline/services';

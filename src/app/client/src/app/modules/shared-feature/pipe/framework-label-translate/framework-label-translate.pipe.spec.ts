@@ -1,4 +1,4 @@
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { FrameworkCatLabelTranslatePipe } from './framework-label-translate.pipe';
 
 describe('FrameworkCatLabelTranslatePipe', () => {

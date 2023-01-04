@@ -1,9 +1,9 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormGroup } from '@angular/forms';
-import { ResourceService, ToasterService } from '@sunbird/shared';
+import { ResourceService, ToasterService } from '../../../../../shared';
 import * as _ from 'lodash-es';
 import { Router } from '@angular/router';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../../../plugins/profile/services/profile/profile.service';
 @Component({
   selector: 'app-signup-onboarding-info',
   templateUrl: './signup-onboarding-info.component.html',

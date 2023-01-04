@@ -1,6 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
-import { DeviceRegisterService, FormService, UserService } from '@sunbird/core';
-import { ResourceService } from '@sunbird/shared';
+import { DeviceRegisterService, FormService, UserService } from '../../../core';
+import { ResourceService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

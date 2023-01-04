@@ -1,8 +1,5 @@
-import { RequestParam } from '@sunbird/shared';
-import { of, throwError } from "rxjs";
 import { HttpClient } from "@angular/common/http";
 import { DataService } from './data.service';
-import { now } from 'lodash';
 
 describe('DataService', () => {
   let dataService: DataService;

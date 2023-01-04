@@ -1,9 +1,9 @@
 import { Component, HostListener, OnInit, ViewChild, ViewChildren } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { CacheService } from 'ng2-cache-service';
-import { UtilService, ResourceService, LayoutService, NavigationHelperService, ToasterService, ConfigService, ContentUtilsServiceService } from '@sunbird/shared';
-import { TenantService, PublicDataService } from '@sunbird/core';
-import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { UtilService, ResourceService, LayoutService, NavigationHelperService, ToasterService, ConfigService, ContentUtilsServiceService } from '../../../../../shared';
+import { TenantService, PublicDataService } from '../../../../../core';
+import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '../../../../../telemetry';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { takeUntil } from 'rxjs/operators';

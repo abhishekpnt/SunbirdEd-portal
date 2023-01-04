@@ -1,15 +1,15 @@
 import { Component, OnInit, Input, EventEmitter, Output, OnDestroy } from '@angular/core';
-import { FrameworkService, FormService, UserService, ChannelService, OrgDetailsService } from '@sunbird/core';
+import { FrameworkService, FormService, UserService, ChannelService, OrgDetailsService } from '../../../core';
 import { first, mergeMap, map, filter } from 'rxjs/operators';
 import { of, throwError, Subscription } from 'rxjs';
-import { ResourceService, ToasterService } from '@sunbird/shared';
+import { ResourceService, ToasterService } from '../../../shared';
 import { Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { CacheService } from 'ng2-cache-service';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventObject, IInteractEventEdata } from '../../../telemetry';
 import { PopupControlService } from '../../../../service/popup-control.service';
 import { MatDialog, MatDialogRef } from '@angular/material/dialog';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 @Component({
   selector: 'app-popup',
   templateUrl: './profile-framework-popup.component.html',

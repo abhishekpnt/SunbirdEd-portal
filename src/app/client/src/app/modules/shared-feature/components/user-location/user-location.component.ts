@@ -1,11 +1,11 @@
 import {Component, EventEmitter, Input, OnInit, Output, ViewChild, OnDestroy, AfterViewInit} from '@angular/core';
-import {ResourceService, ToasterService, NavigationHelperService} from '@sunbird/shared';
+import {ResourceService, ToasterService, NavigationHelperService} from '../../../shared';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
-import {DeviceRegisterService, UserService} from '@sunbird/core';
+import {DeviceRegisterService, UserService} from '../../../core';
 import {ActivatedRoute, Router} from '@angular/router';
-import {ProfileService} from '@sunbird/profile';
+import {ProfileService} from '../../../../plugins/profile/services/profile/profile.service';
 import * as _ from 'lodash-es';
-import {IImpressionEventInput, IInteractEventInput, TelemetryService} from '@sunbird/telemetry';
+import {IImpressionEventInput, IInteractEventInput, TelemetryService} from '../../../telemetry';
 import {map} from 'rxjs/operators';
 import {forkJoin, of} from 'rxjs';
 import { PopupControlService } from '../../../../service/popup-control.service';

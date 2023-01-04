@@ -1,12 +1,12 @@
 import { Component, OnInit, AfterViewInit , OnDestroy} from '@angular/core';
 import { GroupsService } from '../../../services';
-import { ResourceService, ToasterService, NavigationHelperService, LayoutService } from '@sunbird/shared';
+import { ResourceService, ToasterService, NavigationHelperService, LayoutService } from '../../../../shared';
 import * as _ from 'lodash-es';
 import { ActivatedRoute, Router } from '@angular/router';
 import { ADD_ACTIVITY_TO_GROUP} from '../../../interfaces';
 import { CsGroupAddableBloc } from '@project-sunbird/client-services/blocs';
 import { CsGroupSupportedActivitiesFormField } from '@project-sunbird/client-services/services/group/interface';
-import { TelemetryService, IImpressionEventInput } from '@sunbird/telemetry';
+import { TelemetryService, IImpressionEventInput } from '../../../../telemetry';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { CONTENT_CATEGORIES, SELECT_CATEGORY } from '../../../interfaces/telemetryConstants';

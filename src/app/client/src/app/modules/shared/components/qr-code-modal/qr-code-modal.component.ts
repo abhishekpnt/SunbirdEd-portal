@@ -2,7 +2,7 @@ import { Component, OnInit, ViewChild, Output, EventEmitter } from '@angular/cor
 import { Router } from '@angular/router';
 import { ResourceService } from '../../services';
 import * as _ from 'lodash-es';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 
 @Component({
   selector: 'app-qr-code-modal',

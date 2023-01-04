@@ -1,6 +1,6 @@
 import { Component, OnInit, Input, ViewChild, Output, EventEmitter } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { ResourceService } from '../../../../../shared';
+import { IInteractEventEdata } from '../../../../../telemetry';
 import { Router } from '@angular/router';
 
 @Component({

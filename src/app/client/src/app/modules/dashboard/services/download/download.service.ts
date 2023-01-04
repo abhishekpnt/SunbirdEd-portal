@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { LearnerService } from '@sunbird/core';
-import { ServerResponse, ConfigService } from '@sunbird/shared';
+import { LearnerService } from '../../../core';
+import { ServerResponse, ConfigService } from '../../../shared';
 import { DashboardUtilsService } from './../dashboard-utils/dashboard-utils.service';
 import { DashboardParams } from './../../interfaces';
 import { Observable } from 'rxjs';

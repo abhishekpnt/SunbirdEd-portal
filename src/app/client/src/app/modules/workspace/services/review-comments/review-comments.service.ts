@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
-import { ConfigService } from '@sunbird/shared';
-import { ExtPluginService } from '@sunbird/core';
+import { ConfigService } from '../../../shared';
+import { ExtPluginService } from '../../../core';
 
 
 @Injectable()

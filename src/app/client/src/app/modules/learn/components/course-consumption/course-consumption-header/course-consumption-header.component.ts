@@ -5,15 +5,15 @@ import { CourseConsumptionService, CourseProgressService } from './../../../serv
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { CoursesService, PermissionService, CopyContentService,
-  OrgDetailsService, UserService, GeneraliseLabelService,  } from '@sunbird/core';
+  OrgDetailsService, UserService, GeneraliseLabelService,  } from '../../../../core';
 import {
   ResourceService, ToasterService, ContentData, ContentUtilsServiceService, ITelemetryShare,
   ExternalUrlPreviewService, UtilService, ConnectionService, OfflineCardService, ServerResponse
-} from '@sunbird/shared';
-import { IInteractEventObject, TelemetryService } from '@sunbird/telemetry';
+} from '../../../../shared';
+import { IInteractEventObject, TelemetryService } from '../../../../telemetry';
 import dayjs from 'dayjs';
 import { GroupsService } from '../../../../groups/services/groups/groups.service';
-import { NavigationHelperService } from '@sunbird/shared';
+import { NavigationHelperService } from '../../../../shared';
 import { CourseBatchService } from './../../../services';
 import { DiscussionService } from '../../../../discussion/services/discussion/discussion.service';
 import { FormService } from '../../../../core/services/form/form.service';

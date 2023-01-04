@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { LayoutService } from '@sunbird/shared';
+import { LayoutService } from '../../../shared';
 
 @Component({
   selector: 'app-landing-page',

@@ -4,12 +4,12 @@ import * as _ from 'lodash-es';
 import * as  iziModal from 'izimodal/js/iziModal';
 import {
   NavigationHelperService, ResourceService, ConfigService, ToasterService, IUserProfile, ServerResponse
-} from '@sunbird/shared';
-import { UserService, TenantService, FrameworkService } from '@sunbird/core';
+} from '../../../../shared';
+import { UserService, TenantService, FrameworkService } from '../../../../core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { EditorService, WorkSpaceService } from './../../../services';
-import { environment } from '@sunbird/environment';
-import { TelemetryService, IInteractEventEdata } from '@sunbird/telemetry';
+import { environment } from '../../../../../../environments/environment';
+import { TelemetryService, IInteractEventEdata } from '../../../../telemetry';
 import { combineLatest, of, throwError } from 'rxjs';
 import { map, mergeMap, tap, delay, first } from 'rxjs/operators';
 jQuery.fn.iziModal = iziModal;

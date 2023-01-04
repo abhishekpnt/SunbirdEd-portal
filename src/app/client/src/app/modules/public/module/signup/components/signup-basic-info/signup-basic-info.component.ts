@@ -1,8 +1,7 @@
 import { Component, EventEmitter, OnInit,Input, Output } from '@angular/core';
-import { ResourceService, UtilService, ConfigService } from '@sunbird/shared';
+import { ResourceService, UtilService, ConfigService } from '../../../../../shared';
 import { Observable } from 'rxjs';
-import { TelemetryService } from '@sunbird/telemetry';
-import { IStartEventInput, IImpressionEventInput, IInteractEventEdata } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../../telemetry';
 import { FormBuilder, Validators, FormGroup } from '@angular/forms';
 import { map, startWith } from 'rxjs/operators';
 import * as _ from 'lodash-es';

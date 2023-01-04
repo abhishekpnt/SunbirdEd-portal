@@ -1,7 +1,7 @@
 import { ActivatedRoute } from '@angular/router';
-import { ResourceService, ConfigService } from '@sunbird/shared';
+import { ResourceService, ConfigService } from '../../../../../shared';
 import { Component, OnInit, Output, EventEmitter, ViewChild, Inject, OnDestroy, ElementRef, ChangeDetectorRef, AfterViewInit } from '@angular/core';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../../../telemetry';
 import { DOCUMENT } from '@angular/common';
 import * as $ from 'jquery';
 import * as _ from 'lodash-es';

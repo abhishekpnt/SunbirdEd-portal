@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy, HostListener } from '@angular/core';
 import { combineLatest as observableCombineLatest, of } from 'rxjs';
-import { ResourceService, ToasterService, ConfigService, UtilService, NavigationHelperService, LayoutService} from '@sunbird/shared';
+import { ResourceService, ToasterService, ConfigService, UtilService, NavigationHelperService, LayoutService} from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
-import { SearchService, PlayerService, CoursesService, UserService } from '@sunbird/core';
-import { PublicPlayerService } from '@sunbird/public';
+import { SearchService, PlayerService, CoursesService, UserService } from '../../../core';
+import { PublicPlayerService } from '../../../public';
 import * as _ from 'lodash-es';
-import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IInteractEventEdata, IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import {mergeMap, tap, retry, catchError, map, finalize, debounceTime, takeUntil} from 'rxjs/operators';
 import { Subject } from 'rxjs';
 import { DialCodeService } from '../../services/dial-code/dial-code.service';

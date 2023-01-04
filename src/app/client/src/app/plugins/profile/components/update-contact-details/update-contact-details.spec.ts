@@ -1,8 +1,8 @@
 import { FormControl, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
-import {  OtpService } from '@sunbird/core';
-import { ProfileService } from '@sunbird/profile';
-import { ResourceService, SharedModule, ToasterService } from '@sunbird/shared';
+import {  OtpService } from '../../../../modules/core';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
+import { ResourceService, SharedModule, ToasterService } from '../../../../modules/shared';
 import { of, throwError } from 'rxjs';
 import { ConfigService } from '../../../../modules/shared';
 import { UserService } from '../../../../modules/core';

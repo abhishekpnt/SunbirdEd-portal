@@ -1,8 +1,8 @@
 import {Component, EventEmitter, OnInit, Output, ViewChild, OnDestroy} from '@angular/core';
 import {ResourceService} from '../../services';
 import {Router} from '@angular/router';
-import {IInteractEventEdata} from '@sunbird/telemetry';
-import {HttpOptions} from '@sunbird/shared';
+import {IInteractEventEdata} from '../../../telemetry';
+import {HttpOptions} from '../../../shared';
 import {HttpClient} from '@angular/common/http';
 
 @Component({

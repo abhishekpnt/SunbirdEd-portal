@@ -1,7 +1,7 @@
 import {Component, Input, OnInit, OnDestroy} from '@angular/core';
-import {ResourceService} from '@sunbird/shared';
+import {ResourceService} from '../../../shared';
 import {Subscription} from 'rxjs';
-import {TenantService} from '@sunbird/core';
+import {TenantService} from '../../../core';
 
 
 @Component({

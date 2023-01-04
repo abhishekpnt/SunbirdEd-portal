@@ -1,5 +1,5 @@
 import { RecoverAccountService } from './recover-account.service';
-import { TenantService } from '@sunbird/core';
+import { TenantService } from '../../../core';
 import { of } from 'rxjs';
 import { LearnerService } from '../../../core';
 import { ConfigService } from '../../../shared';

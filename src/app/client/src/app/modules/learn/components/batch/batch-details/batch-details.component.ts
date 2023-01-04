@@ -4,10 +4,10 @@ import { combineLatest } from 'rxjs';
 import { CourseBatchService, CourseProgressService, CourseConsumptionService } from './../../../services';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Input, OnDestroy, Output, EventEmitter } from '@angular/core';
-import { ResourceService, ServerResponse, ToasterService, ConnectionService } from '@sunbird/shared';
-import { PermissionService, UserService, GeneraliseLabelService } from '@sunbird/core';
+import { ResourceService, ServerResponse, ToasterService, ConnectionService } from '../../../../shared';
+import { PermissionService, UserService, GeneraliseLabelService } from '../../../../core';
 import * as _ from 'lodash-es';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../telemetry';
 import { Subject } from 'rxjs';
 import dayjs from 'dayjs';
 

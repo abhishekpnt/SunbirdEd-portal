@@ -1,6 +1,6 @@
 import {ActivatedRoute} from '@angular/router';
-import {ResourceService} from '@sunbird/shared';
-import {TenantService} from '@sunbird/core';
+import {ResourceService} from '../../../shared';
+import {TenantService} from '../../../core';
 import { MergeAccountStatusComponent } from './merge-account-status.component';
 import { of } from 'rxjs';
 

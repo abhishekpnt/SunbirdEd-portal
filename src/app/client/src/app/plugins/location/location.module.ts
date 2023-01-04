@@ -17,9 +17,9 @@ import { CommonFormElementsModule } from '@project-sunbird/common-form-elements'
     FormsModule,
     ReactiveFormsModule,
     SuiModalModule,
-    SharedModule,
     TelemetryModule,
-    CommonFormElementsModule
+    CommonFormElementsModule,
+    SharedModule
   ],
   exports: [
     LocationSelectionComponent

@@ -1,6 +1,6 @@
 import { SignupOnboardingInfoComponent } from './signup-onboarding-info.component';
 import { ResourceService, ToasterService } from '../../../../../shared';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../../../plugins/profile/services/profile/profile.service';
 import { Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { of } from 'rxjs/internal/observable/of';

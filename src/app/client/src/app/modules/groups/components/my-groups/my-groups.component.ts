@@ -1,13 +1,13 @@
-import { UserService, TncService } from '@sunbird/core';
+import { UserService, TncService } from '../../../core';
 import { IGroupCard, GROUP_DETAILS, MY_GROUPS, CREATE_GROUP, acceptTnc } from './../../interfaces';
 import { Component, OnInit, OnDestroy, EventEmitter } from '@angular/core';
 import { GroupsService } from '../../services';
-import { ResourceService, LayoutService, ToasterService, NavigationHelperService } from '@sunbird/shared';
+import { ResourceService, LayoutService, ToasterService, NavigationHelperService } from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import { takeUntil, map } from 'rxjs/operators';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { CsGroupSearchCriteria } from '@project-sunbird/client-services/services/group/interface';
 import { SELECT_CREATE_GROUP, PAGE_LOADED, SELECT_GROUP } from '../../interfaces/telemetryConstants';
 @Component({

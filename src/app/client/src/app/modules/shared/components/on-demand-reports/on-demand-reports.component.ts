@@ -3,7 +3,7 @@ import {ResourceService, ToasterService} from '../../services';
 import {OnDemandReportService} from '../../services/on-demand-report/on-demand-report.service';
 import * as _ from 'lodash-es';
 import {Validators, FormControl, FormGroup} from '@angular/forms';
-import {TelemetryService} from '@sunbird/telemetry';
+import {TelemetryService} from '../../../telemetry';
 
 @Component({
   selector: 'app-on-demand-reports',

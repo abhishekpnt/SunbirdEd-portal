@@ -7,7 +7,7 @@ import {
 import { ViewAllComponent } from '../../../content-search/components/view-all/view-all.component';
 const routes: Routes = [
   {
-    path: '', loadChildren: () => import('../../../learn/learn.module').then((m) => {return m.LearnModule})
+    path: '', loadChildren: () => import('../../../learn/learn.module').then((m) => {return m.LearnModule}).catch( err => console.log('Oh no!', err) )
   },
   {
     path: 'view-all/:section/:pageNumber', component: ViewAllComponent,

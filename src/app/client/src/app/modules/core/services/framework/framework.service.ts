@@ -4,7 +4,7 @@ import { UserService  } from './../user/user.service';
 import {
   ConfigService, ToasterService, ResourceService, ServerResponse, Framework, FrameworkData,
   BrowserCacheTtlService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { Observable, BehaviorSubject } from 'rxjs';
 import { skipWhile, mergeMap, map } from 'rxjs/operators';
 import { PublicDataService } from './../public-data/public-data.service';

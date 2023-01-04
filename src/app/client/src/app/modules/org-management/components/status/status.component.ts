@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy, ViewChild, AfterViewInit } from '@angular/core';
-import { ResourceService, ToasterService, ServerResponse, NavigationHelperService } from '@sunbird/shared';
+import { ResourceService, ToasterService, ServerResponse, NavigationHelperService } from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FormBuilder, FormGroup } from '@angular/forms';
 import { OrgManagementService } from '../../services';
 import { IUserUploadStatusResponse, IOrgUploadStatusResponse } from '../../interfaces';
-import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject } from '@sunbird/telemetry';
-import { UserService } from '@sunbird/core';
+import { IImpressionEventInput, IInteractEventEdata, IInteractEventObject } from '../../../telemetry';
+import { UserService } from '../../../core';
 import { takeUntil } from 'rxjs/operators';
 import { Subject } from 'rxjs';
 

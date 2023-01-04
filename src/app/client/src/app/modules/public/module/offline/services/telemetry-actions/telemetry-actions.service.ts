@@ -1,7 +1,7 @@
 import { mergeMap } from 'rxjs/operators';
 import { Observable } from 'rxjs';
-import { PublicDataService } from '@sunbird/core';
-import { ConfigService, ServerResponse } from '@sunbird/shared';
+import { PublicDataService } from '../../../../../core';
+import { ConfigService, ServerResponse } from '../../../../../shared';
 import { Injectable } from '@angular/core';
 import { ElectronDialogService } from '../electron-dialog/electron-dialog.service';
 import { map } from 'rxjs/operators';

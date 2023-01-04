@@ -7,9 +7,9 @@ CsGroupSearchCriteria, CsGroupUpdateActivitiesRequest, CsGroupUpdateMembersReque
   CsGroupUpdateGroupGuidelinesRequest,
   CsGroupSupportedActivitiesFormField
 } from '@project-sunbird/client-services/services/group/interface';
-import { UserService, LearnerService, TncService } from '@sunbird/core';
-import { NavigationHelperService, ResourceService, ConfigService } from '@sunbird/shared';
-import { IImpressionEventInput, TelemetryService, IInteractEventInput } from '@sunbird/telemetry';
+import { UserService, LearnerService, TncService } from '../../../core';
+import { NavigationHelperService, ResourceService, ConfigService } from '../../../shared';
+import { IImpressionEventInput, TelemetryService, IInteractEventInput } from '../../../telemetry';
 import * as _ from 'lodash-es';
 import { IGroupCard, IGroupMember, IGroupUpdate, IMember, MY_GROUPS } from '../../interfaces';
 import { CsLibInitializerService } from './../../../../service/CsLibInitializer/cs-lib-initializer.service';

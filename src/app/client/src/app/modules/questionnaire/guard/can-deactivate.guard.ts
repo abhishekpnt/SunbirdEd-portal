@@ -1,6 +1,6 @@
 import { HostListener, Injectable, Directive } from '@angular/core';
 import { CanDeactivate } from '@angular/router';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../shared';
 
 @Injectable()
 export class CanDeactivateGuard

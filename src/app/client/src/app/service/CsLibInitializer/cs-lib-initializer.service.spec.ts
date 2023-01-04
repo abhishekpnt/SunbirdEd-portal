@@ -1,5 +1,5 @@
 import { CsLibInitializerService } from './cs-lib-initializer.service';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../modules/core';
 import { CsModule } from '@project-sunbird/client-services';
 import { of } from 'rxjs';
 

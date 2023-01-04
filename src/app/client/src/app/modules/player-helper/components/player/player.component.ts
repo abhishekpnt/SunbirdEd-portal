@@ -1,20 +1,20 @@
-import { ConfigService, NavigationHelperService, UtilService } from '@sunbird/shared';
+import { ConfigService, NavigationHelperService, UtilService } from '../../../shared';
 import { Component, AfterViewInit, ViewChild, ElementRef, Input, Output, EventEmitter,
 OnChanges, HostListener, OnInit, ChangeDetectorRef } from '@angular/core';
 import * as _ from 'lodash-es';
-import { PlayerConfig } from '@sunbird/shared';
+import { PlayerConfig } from '../../../shared';
 import { Router } from '@angular/router';
-import { ToasterService, ResourceService, ContentUtilsServiceService } from '@sunbird/shared';
+import { ToasterService, ResourceService, ContentUtilsServiceService } from '../../../shared';
 const OFFLINE_ARTIFACT_MIME_TYPES = ['application/epub'];
 import { Subject } from 'rxjs';
 import { DeviceDetectorService } from 'ngx-device-detector';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 import { UserService, FormService } from '../../../core/services';
 import { OnDestroy } from '@angular/core';
 import { takeUntil } from 'rxjs/operators';
 import { CsContentProgressCalculator } from '@project-sunbird/client-services/services/content/utilities/content-progress-calculator';
-import { ContentService } from '@sunbird/core';
-import { PublicPlayerService } from '@sunbird/public';
+import { ContentService } from '../../../core';
+import { PublicPlayerService } from '../../../public';
 
 @Component({
   selector: 'app-player',

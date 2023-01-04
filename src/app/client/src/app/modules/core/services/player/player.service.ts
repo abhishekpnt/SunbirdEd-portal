@@ -8,10 +8,10 @@ import { Injectable } from '@angular/core';
 import {
   ConfigService, ServerResponse, UtilService,
   ContentDetails, PlayerConfig, ContentData, NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { CollectionHierarchyAPI } from '../../interfaces';
 import * as _ from 'lodash-es';
-import { environment } from '@sunbird/environment';
+import { environment } from '../../../../../environments/environment';
 import { PublicDataService } from './../public-data/public-data.service';
 /**
  * helper services to fetch content details and preparing content player config

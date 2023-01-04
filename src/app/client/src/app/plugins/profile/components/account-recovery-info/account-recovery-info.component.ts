@@ -1,8 +1,8 @@
-import { UserService, OtpService } from '@sunbird/core';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { UserService, OtpService } from '../../../../modules/core';
+import { IInteractEventObject, IInteractEventEdata } from '../../../../modules/telemetry';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 import { Component, OnInit, Output, EventEmitter, Input, OnDestroy } from '@angular/core';
-import { ResourceService, ToasterService, ServerResponse, ConfigService } from '@sunbird/shared';
+import { ResourceService, ToasterService, ServerResponse, ConfigService } from '../../../../modules/shared';
 import { ProfileService } from './../../services';
 import * as _ from 'lodash-es';
 import { MatDialog } from '@angular/material/dialog';

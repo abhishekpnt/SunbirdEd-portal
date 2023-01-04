@@ -1,11 +1,11 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
-import { ResourceService, ToasterService, ConfigService, NavigationHelperService } from '@sunbird/shared';
+import { ResourceService, ToasterService, ConfigService, NavigationHelperService } from '../../../../../shared';
 import { timer, Subject, combineLatest } from 'rxjs';
 import { switchMap, map, filter, takeUntil } from 'rxjs/operators';
 import * as _ from 'lodash-es';
 import { ContentManagerService, ElectronDialogService } from '../../services';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ILogEventInput, TelemetryService } from '@sunbird/telemetry';
+import { ILogEventInput, TelemetryService } from '../../../../../telemetry';
 import { UserService } from '../../../../../core/services/user/user.service';
 
 @Component({

@@ -1,11 +1,11 @@
 import { Component, OnInit, SecurityContext } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
-import {InterpolatePipe, ResourceService, ToasterService, ServerResponse, UtilService, NavigationHelperService, LayoutService } from '@sunbird/shared';
+import {InterpolatePipe, ResourceService, ToasterService, ServerResponse, UtilService, NavigationHelperService, LayoutService } from '../../../../modules/shared';
 import { ProfileService } from './../../services';
 import { FormBuilder, Validators, FormGroup, FormControl } from '@angular/forms';
 import * as _ from 'lodash-es';
 import { takeUntil } from 'rxjs/operators';
-import { IInteractEventEdata, IImpressionEventInput } from '@sunbird/telemetry';
+import { IInteractEventEdata, IImpressionEventInput } from '../../../../modules/telemetry';
 import {
   OrgDetailsService,
   ChannelService,
@@ -14,7 +14,7 @@ import {
   FormService,
   TncService,
   ManagedUserService
-} from '@sunbird/core';
+} from '../../../../modules/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { map } from 'rxjs/operators';
 import { Subject } from 'rxjs';

@@ -1,9 +1,9 @@
 import { Location } from '@angular/common';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
-import { SearchService } from '@sunbird/core';
+import { IImpressionEventInput, TelemetryService } from '../../../../../telemetry';
+import { SearchService } from '../../../../../core';
 import { Component, OnInit } from '@angular/core';
 import {
-  ResourceService, ToasterService, NavigationHelperService } from '@sunbird/shared';
+  ResourceService, ToasterService, NavigationHelperService } from '../../../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
 

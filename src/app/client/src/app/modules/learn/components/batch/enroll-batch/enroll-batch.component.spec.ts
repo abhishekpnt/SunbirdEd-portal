@@ -2,7 +2,7 @@ import { Router, ActivatedRoute } from "@angular/router";
 import { ToasterService } from "../../../../shared";
 import { UserService, CoursesService, GeneraliseLabelService } from "../../../../core"
 import { ResourceService, NavigationHelperService, ConfigService } from "../../../../shared"
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../telemetry';
 import { CourseBatchService } from "../../../services";
 import { EnrollBatchComponent } from "./enroll-batch.component"
 import { of, throwError } from "rxjs";

@@ -1,5 +1,5 @@
 import { AccountRecoveryInfoComponent } from './account-recovery-info.component';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../../modules/shared';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ProfileService } from './../../services';
 import { of as observableOf, of, throwError } from 'rxjs';

@@ -2,18 +2,18 @@
 import { Component, OnInit, ViewChild, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkSpace } from '../../classes/workspace';
-import { SearchService, UserService, FrameworkService } from '@sunbird/core';
+import { SearchService, UserService, FrameworkService } from '../../../core';
 import {
   ServerResponse, PaginationService, ConfigService, ToasterService,
   ResourceService, IContents, ILoaderMessage, INoResultMessage, IPagination,
   ContentUtilsServiceService, ITelemetryShare, NavigationHelperService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { WorkSpaceService } from '../../services';
 import * as _ from 'lodash-es';
 import {
   SuiModalService, TemplateModalConfig, ModalTemplate
 } from 'ng2-semantic-ui-v12';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 
 /**
  * The limited publish component to search limited published content

@@ -3,12 +3,12 @@ import { ActivatedRoute, Router, NavigationStart } from '@angular/router';
 import {
   ConfigService, NavigationHelperService, ToasterService, ResourceService,
   UtilService, LayoutService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { Subject } from 'rxjs';
 import { takeUntil, filter } from 'rxjs/operators';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
-import { PublicPlayerService } from '@sunbird/public';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
+import { PublicPlayerService } from '../../../public';
 
 @Component({
   selector: 'app-contentplayer-page',

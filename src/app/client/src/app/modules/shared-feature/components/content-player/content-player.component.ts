@@ -1,17 +1,17 @@
 import { ActivatedRoute } from '@angular/router';
 import { Component, OnInit, AfterViewInit, OnDestroy, HostListener } from '@angular/core';
 import { Router } from '@angular/router';
-import { UserService, PlayerService, CopyContentService, PermissionService } from '@sunbird/core';
+import { UserService, PlayerService, CopyContentService, PermissionService } from '../../../core';
 import * as _ from 'lodash-es';
 import {
   ConfigService, ResourceService, ToasterService, WindowScrollService, NavigationHelperService,
   PlayerConfig, ContentData, ContentUtilsServiceService, ITelemetryShare, LayoutService
-} from '@sunbird/shared';
-import { IInteractEventObject, IInteractEventEdata, IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+} from '../../../shared';
+import { IInteractEventObject, IInteractEventEdata, IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import { PopupControlService } from '../../../../service/popup-control.service';
 import { takeUntil, mergeMap } from 'rxjs/operators';
 import { Subject, of, throwError } from 'rxjs';
-import { PublicPlayerService, ComponentCanDeactivate } from '@sunbird/public';
+import { PublicPlayerService, ComponentCanDeactivate } from '../../../public';
 import { CsGroupAddableBloc } from '@project-sunbird/client-services/blocs';
 
 @Component({

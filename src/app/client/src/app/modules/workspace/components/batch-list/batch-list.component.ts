@@ -1,18 +1,18 @@
 import { Component, OnInit, OnDestroy, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { WorkSpace } from '../../classes/workspace';
-import { SearchService, UserService } from '@sunbird/core';
+import { SearchService, UserService } from '../../../core';
 import {
   ServerResponse, PaginationService, ConfigService, ToasterService, IPagination,
   ResourceService, ILoaderMessage, INoResultMessage, NavigationHelperService, LayoutService
-} from '@sunbird/shared';
+} from '../../../shared';
 import { combineLatest, Subject } from 'rxjs';
 import { takeUntil, map, filter } from 'rxjs/operators';
 import { Ibatch } from './../../interfaces/';
 import { WorkSpaceService, BatchService } from '../../services';
 import * as _ from 'lodash-es';
 import { SuiModalService } from 'ng2-semantic-ui-v12';
-import { IImpressionEventInput, IInteractEventEdata } from '@sunbird/telemetry';
+import { IImpressionEventInput, IInteractEventEdata } from '../../../telemetry';
 
 /**
  * The batch list component

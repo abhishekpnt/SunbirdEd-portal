@@ -1,11 +1,11 @@
 import { GroupsService } from './../../services';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { acceptTnc } from './../../interfaces/group';
 import { Component, Input, EventEmitter, Output, HostListener, AfterViewInit } from '@angular/core';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput, TelemetryService } from '@sunbird/telemetry';
+import { IImpressionEventInput, TelemetryService } from '../../../telemetry';
 import { Router, ActivatedRoute } from '@angular/router';
-import { NavigationHelperService } from '@sunbird/shared';
+import { NavigationHelperService } from '../../../shared';
 import { DELETE_POPUP, POP_DEACTIVATE } from '../../interfaces/telemetryConstants';
 import { MatDialog } from '@angular/material/dialog';
 @Component({

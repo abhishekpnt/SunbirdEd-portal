@@ -1,12 +1,12 @@
 import { Component, OnInit, Input, OnChanges, OnDestroy, ViewChild, ElementRef, Output, EventEmitter } from '@angular/core';
 import { FormControl } from '@angular/forms';
-import { ResourceService, ToasterService, ContentData, ServerResponse } from '@sunbird/shared';
-import { UserService } from '@sunbird/core';
+import { ResourceService, ToasterService, ContentData, ServerResponse } from '../../../shared';
+import { UserService } from '../../../core';
 import { ReviewCommentsService } from '../../services';
 import { Subject } from 'rxjs';
 import { takeUntil, map } from 'rxjs/operators';
 import * as _ from 'lodash-es';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventObject, IInteractEventEdata } from '../../../telemetry';
 import dayjs from 'dayjs';
 
 @Component({

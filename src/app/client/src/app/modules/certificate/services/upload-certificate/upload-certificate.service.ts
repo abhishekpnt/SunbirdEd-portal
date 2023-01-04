@@ -1,9 +1,9 @@
 import { Injectable } from '@angular/core';
-import { ConfigService } from '@sunbird/shared';
-import { PublicDataService } from '@sunbird/core';
+import { ConfigService } from '../../../shared';
+import { PublicDataService } from '../../../core';
 import { HttpClient } from '@angular/common/http';
 import { ContentService } from './../../../../modules/core/services/content/content.service';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../core';
 import { BehaviorSubject } from 'rxjs';
 
 @Injectable({

@@ -1,14 +1,14 @@
 import { Component, EventEmitter, Input, OnInit, Output, ViewChild } from '@angular/core';
 import { SignupService } from './../../services';
-import { ResourceService, ServerResponse, UtilService, ConfigService, ToasterService } from '@sunbird/shared';
+import { ResourceService, ServerResponse, UtilService, ConfigService, ToasterService } from '../../../../../shared';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { DeviceDetectorService } from 'ngx-device-detector';
-import { IEndEventInput, IInteractEventEdata, TelemetryService } from '@sunbird/telemetry';
-import { TncService } from '@sunbird/core';
+import { IEndEventInput, IInteractEventEdata, TelemetryService } from '../../../../../telemetry';
+import { TncService } from '../../../../../core';
 import { RecaptchaComponent } from 'ng-recaptcha';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../../../plugins/profile/services/profile/profile.service';
 
 @Component({
   selector: 'app-otp',

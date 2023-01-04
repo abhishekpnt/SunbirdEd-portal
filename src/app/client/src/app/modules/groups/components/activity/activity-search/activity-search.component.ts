@@ -1,7 +1,7 @@
 import { ADD_ACTIVITY_TO_GROUP } from './../../../interfaces/routerLinks';
-import { CourseConsumptionService } from '@sunbird/learn';
+import { CourseConsumptionService } from '../../../../learn';
 import { Component, OnInit, EventEmitter, OnDestroy } from '@angular/core';
-import { FrameworkService, SearchService, FormService, UserService, OrgDetailsService } from '@sunbird/core';
+import { FrameworkService, SearchService, FormService, UserService, OrgDetailsService } from '../../../../core';
 import {
   ConfigService,
   ResourceService,
@@ -9,7 +9,7 @@ import {
   PaginationService,
   UtilService,
   LayoutService
-} from '@sunbird/shared';
+} from '../../../../shared';
 import * as _ from 'lodash-es';
 import { Subject, of, combineLatest } from 'rxjs';
 import { takeUntil, map, catchError, first, debounceTime, tap, delay, mergeMap } from 'rxjs/operators';
@@ -17,10 +17,10 @@ import { ActivatedRoute, Router } from '@angular/router';
 import { IPagination } from '../../../../shared/interfaces/index';
 import { CacheService } from 'ng2-cache-service';
 import { GroupsService } from '../../../services/groups/groups.service';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../../telemetry';
 import { CsGroupAddableBloc } from '@project-sunbird/client-services/blocs';
 import { VIEW_ACTIVITY, CATEGORY_SEARCH } from '../../../interfaces/telemetryConstants';
-import { ActivityDashboardService } from '@sunbird/shared';
+import { ActivityDashboardService } from '../../../../shared';
 import { sessionKeys } from '../../../interfaces/group';
 
 

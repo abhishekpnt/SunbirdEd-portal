@@ -10,7 +10,7 @@ import {
   LayoutService,
   COLUMN_TYPE,
   OfflineCardService,
-} from '@sunbird/shared';
+} from '../../../shared';
 import {
   SearchService,
   PlayerService,
@@ -20,7 +20,7 @@ import {
   SchemaService,
   KendraService,
   ObservationUtilService
-} from '@sunbird/core';
+} from '../../../core';
 import { Subject } from 'rxjs';
 import {
   Component,
@@ -35,7 +35,7 @@ import {
   IInteractEventEdata,
   IImpressionEventInput,
   TelemetryService,
-} from '@sunbird/telemetry';
+} from '../../../telemetry';
 import {
   takeUntil,
 } from 'rxjs/operators';

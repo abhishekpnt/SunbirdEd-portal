@@ -1,4 +1,4 @@
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { DomSanitizer } from '@angular/platform-browser';
 import { CertPreviewPopupComponent } from './cert-preview-popup.component';
 

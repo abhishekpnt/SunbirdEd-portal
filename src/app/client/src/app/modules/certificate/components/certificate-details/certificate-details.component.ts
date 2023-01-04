@@ -1,11 +1,11 @@
-import { PublicPlayerService } from '@sunbird/public';
-import {CertificateService, UserService, TenantService} from '@sunbird/core';
-import { ServerResponse, ResourceService, ConfigService, PlayerConfig, ToasterService } from '@sunbird/shared';
+import { PublicPlayerService } from '../../../public';
+import {CertificateService, UserService, TenantService} from '../../../core';
+import { ServerResponse, ResourceService, ConfigService, PlayerConfig, ToasterService } from '../../../shared';
 import { Component, OnInit, ViewChild, ElementRef, OnDestroy, Inject } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import * as dayjs from 'dayjs';
-import { IImpressionEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput } from '../../../telemetry';
 import { Subscription} from 'rxjs';
 import { CsCertificateService } from '@project-sunbird/client-services/services/certificate/interface';
 

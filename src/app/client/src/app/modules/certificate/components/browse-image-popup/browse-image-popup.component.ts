@@ -1,8 +1,8 @@
 import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { UploadCertificateService } from '../../services/upload-certificate/upload-certificate.service';
-import { ToasterService, ResourceService } from '@sunbird/shared';
+import { ToasterService, ResourceService } from '../../../shared';
 import * as _ from 'lodash-es';
-import { UserService } from '@sunbird/core';
+import { UserService } from '../../../core';
 import { FormGroup, FormControl, Validators } from '@angular/forms';
 
 

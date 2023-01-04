@@ -1,15 +1,15 @@
 
 import { takeUntil } from 'rxjs/operators';
-import { CourseBatchService, CourseConsumptionService } from '@sunbird/learn';
+import { CourseBatchService, CourseConsumptionService } from '../../../../../../learn';
 import { Router, ActivatedRoute } from '@angular/router';
 import { Component, OnInit, Input, OnDestroy, Output, EventEmitter } from '@angular/core';
-import { ResourceService, ServerResponse, ToasterService, BrowserCacheTtlService, UtilService, ConfigService } from '@sunbird/shared';
+import { ResourceService, ServerResponse, ToasterService, BrowserCacheTtlService, UtilService, ConfigService } from '../../../../../../shared';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import dayjs from 'dayjs';
-import { UserService, GeneraliseLabelService, ElectronService } from '@sunbird/core';
+import { UserService, GeneraliseLabelService, ElectronService } from '../../../../../../core';
 import { CacheService } from 'ng2-cache-service';
-import { IInteractEventObject, IInteractEventEdata, TelemetryService } from '@sunbird/telemetry';
+import { IInteractEventObject, IInteractEventEdata, TelemetryService } from '../../../../../../telemetry';
 
 @Component({
   selector: 'app-public-batch-details',

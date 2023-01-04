@@ -1,7 +1,7 @@
 import { MY_GROUPS } from '../routerLinks';
 import { Component, OnInit } from '@angular/core';
-import { ResourceService, NavigationHelperService, LayoutService } from '@sunbird/shared';
-import { TelemetryService, IImpressionEventInput } from '@sunbird/telemetry';
+import { ResourceService, NavigationHelperService, LayoutService } from '../../../../../shared';
+import { TelemetryService, IImpressionEventInput } from '../../../../../telemetry';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';
 import { takeUntil } from 'rxjs/operators';

@@ -1,5 +1,5 @@
 import { Directive, ElementRef, HostListener, Input, OnDestroy, OnInit, Renderer2 } from '@angular/core';
-import { ConnectionService, ResourceService, ToasterService } from '@sunbird/shared';
+import { ConnectionService, ResourceService, ToasterService } from '../../../shared';
 import * as _ from 'lodash-es';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';

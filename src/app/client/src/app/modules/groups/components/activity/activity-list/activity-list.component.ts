@@ -1,4 +1,4 @@
-import { PlayerService } from '@sunbird/core';
+import { PlayerService } from '../../../../core';
 import { Component, Input, ViewChild, OnInit, OnDestroy } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import * as _ from 'lodash-es';

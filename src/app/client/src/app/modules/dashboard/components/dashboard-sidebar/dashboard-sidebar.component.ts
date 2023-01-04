@@ -1,8 +1,8 @@
-import { CourseConsumptionService } from '@sunbird/learn';
-import { PermissionService } from '@sunbird/core';
-import { IInteractEventEdata, IInteractEventObject } from '@sunbird/telemetry';
+import { CourseConsumptionService } from '../../../learn';
+import { PermissionService } from '../../../core';
+import { IInteractEventEdata, IInteractEventObject } from '../../../telemetry';
 import { Router, ActivatedRoute } from '@angular/router';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import { Component, OnInit } from '@angular/core';
 import * as _ from 'lodash-es';
 @Component({

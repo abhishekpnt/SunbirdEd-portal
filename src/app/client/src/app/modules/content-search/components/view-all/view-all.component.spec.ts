@@ -3,7 +3,7 @@ import { LearnerService, CoursesService, SearchService, PlayerService, FormServi
 import { ActivatedRoute, Router } from '@angular/router';
 import { ViewAllComponent } from './view-all.component';
 import { throwError as observableThrowError, of as observableOf, Observable, of } from 'rxjs';
-import { PublicPlayerService } from '@sunbird/public';
+import { PublicPlayerService } from '../../../public';
 import * as _ from 'lodash-es';
 import { Location } from '@angular/common';
 import { BrowserCacheTtlService, LayoutService, UtilService } from '../../../shared';

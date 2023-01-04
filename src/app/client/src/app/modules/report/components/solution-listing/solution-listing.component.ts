@@ -1,9 +1,9 @@
 import { ConfigService, ResourceService, LayoutService, PaginationService, IPagination,
-  ILoaderMessage, INoResultMessage } from '@sunbird/shared';
+  ILoaderMessage, INoResultMessage } from '../../../shared';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import 'datatables.net';
-import { ObservationService, UserService, TncService, ObservationUtilService } from '@sunbird/core';
+import { ObservationService, UserService, TncService, ObservationUtilService } from '../../../core';
 import { first } from 'rxjs/operators';
 import { Location } from '@angular/common';
 

@@ -16,6 +16,17 @@
             "main": "src/main.ts",
             "tsConfig": "src/tsconfig.app.json",
             "polyfills": "src/polyfills.ts",
+            "allowedCommonJsDependencies": [
+              "@videojs/xhr",
+              "tree-model",
+              "export-to-csv",
+              "rxjs/internal/Subject",
+              "event-emitter",
+              "md5",
+              "ng2-cache-service",
+              "chart.js",
+              "marks-pane"
+            ],
             "assets": [
               "src/assets/images",
               "src/assets/libs",

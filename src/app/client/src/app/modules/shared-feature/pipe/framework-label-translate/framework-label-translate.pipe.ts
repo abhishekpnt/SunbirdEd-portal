@@ -1,6 +1,6 @@
 import { get } from 'lodash-es';
 import { Pipe, PipeTransform } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 
 @Pipe({
   name: 'frameworkCatLabelTranslate'

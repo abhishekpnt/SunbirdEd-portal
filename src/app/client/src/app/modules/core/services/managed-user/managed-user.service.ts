@@ -1,9 +1,9 @@
 import {Injectable} from '@angular/core';
-import {ConfigService, InterpolatePipe, ServerResponse} from '@sunbird/shared';
+import {ConfigService, InterpolatePipe, ServerResponse} from '../../../shared';
 import {HttpClient} from '@angular/common/http';
 import {LearnerService} from '../learner/learner.service';
 import {UserService} from '../user/user.service';
-import {TelemetryService} from '@sunbird/telemetry';
+import {TelemetryService} from '../../../telemetry';
 import * as _ from 'lodash-es';
 import {CacheService} from 'ng2-cache-service';
 import {BehaviorSubject, of} from 'rxjs';

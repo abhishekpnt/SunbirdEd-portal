@@ -1,13 +1,13 @@
-import { ResourceService, IUserData, ToasterService } from '@sunbird/shared';
+import { ResourceService, IUserData, ToasterService } from '../../../shared';
 import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
-import { UserService, OrgDetailsService, RolesAndPermissions, PermissionService, FrameworkService, FormService } from '@sunbird/core';
+import { UserService, OrgDetailsService, RolesAndPermissions, PermissionService, FrameworkService, FormService } from '../../../core';
 import * as _ from 'lodash-es';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 import { map, catchError } from 'rxjs/operators';
 import { of, combineLatest } from 'rxjs';
 import { UserSearchService } from './../../services';
-import { IInteractEventObject, IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventObject, IInteractEventEdata } from '../../../telemetry';
 
 @Component({
   selector: 'app-user-filter',

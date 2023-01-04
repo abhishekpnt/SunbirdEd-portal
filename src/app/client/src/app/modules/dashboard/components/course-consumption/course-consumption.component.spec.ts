@@ -4,11 +4,11 @@ import { Component, OnDestroy, AfterViewInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 // Custom service(s)
 import { RendererService, CourseConsumptionService } from '../../services';
-import { SearchService, GeneraliseLabelService } from '@sunbird/core';
-import { ResourceService, ServerResponse, NavigationHelperService } from '@sunbird/shared';
+import { SearchService, GeneraliseLabelService } from '../../../core';
+import { ResourceService, ServerResponse, NavigationHelperService } from '../../../shared';
 // Interface
 import { DashboardData } from '../../interfaces';
-import { IImpressionEventInput, IInteractEventEdata } from '@sunbird/telemetry';
+import { IImpressionEventInput, IInteractEventEdata } from '../../../telemetry';
 import * as _ from 'lodash-es';
 import { EventEmitter } from "@angular/core";
 import { Subject, of } from 'rxjs';

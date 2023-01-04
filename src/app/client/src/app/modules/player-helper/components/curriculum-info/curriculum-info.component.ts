@@ -1,5 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../shared';
 import * as _ from 'lodash-es';
 
 export interface ICurriculum {

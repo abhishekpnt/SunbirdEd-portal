@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import { ResourceService, ConfigService } from '@sunbird/shared';
-import { PermissionService } from '@sunbird/core';
+import { ResourceService, ConfigService } from '../../../shared';
+import { PermissionService } from '../../../core';
 import {Router} from '@angular/router';
 import { WorkSpaceService } from './../../services';
 /**

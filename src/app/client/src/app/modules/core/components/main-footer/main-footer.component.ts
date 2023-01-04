@@ -10,9 +10,9 @@ import {
   Input,
   OnDestroy
 } from '@angular/core';
-import { ResourceService, ConfigService, LayoutService, COLUMN_TYPE, NavigationHelperService, UtilService } from '@sunbird/shared';
+import { ResourceService, ConfigService, LayoutService, COLUMN_TYPE, NavigationHelperService, UtilService } from '../../../shared';
 import { Router, ActivatedRoute } from '@angular/router';
-import { IInteractEventEdata } from '@sunbird/telemetry';
+import { IInteractEventEdata } from '../../../telemetry';
 import { combineLatest as observableCombineLatest, Subject } from 'rxjs';
 import * as _ from 'lodash-es';
 import {UserService, TenantService} from './../../services';

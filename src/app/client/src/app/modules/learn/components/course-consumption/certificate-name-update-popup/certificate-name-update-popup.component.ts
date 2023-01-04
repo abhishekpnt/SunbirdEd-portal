@@ -1,9 +1,9 @@
 import { Component, Input, Output, OnInit, ViewChild, EventEmitter, ElementRef, OnDestroy } from '@angular/core';
-import { ToasterService, ResourceService} from '@sunbird/shared';
-import { UserService, LearnerService } from '@sunbird/core';
+import { ToasterService, ResourceService} from '../../../../shared';
+import { UserService, LearnerService } from '../../../../core';
 import * as _ from 'lodash-es';
-import { ProfileService } from '@sunbird/profile';
-import { IInteractEventObject } from '@sunbird/telemetry';
+import { ProfileService } from '../../../../../plugins/profile';
+import { IInteractEventObject } from '../../../../telemetry';
 
 @Component({
   selector: 'app-certificate-name-update-popup',

@@ -2,7 +2,7 @@ import { FormBuilder, FormControl, FormGroup } from '@angular/forms';
 import { DomSanitizer } from '@angular/platform-browser';
 import { Router, ActivatedRoute } from '@angular/router';
 import { FrameworkService } from '../../../../modules/core/services/framework/framework.service';
-import { UtilService } from '@sunbird/shared';
+import { UtilService } from '../../../../modules/shared';
 import { UserService, OrgDetailsService, ChannelService, FormService, TncService, ManagedUserService } from '../../../../modules/core';
 import { ResourceService, NavigationHelperService, LayoutService , ToasterService} from '../../../../modules/shared';
 import { ProfileService } from '../../services';

@@ -1,8 +1,8 @@
 import { ActivatedRoute, Router } from '@angular/router';
 import { CsCertificateService } from '@project-sunbird/client-services/services/certificate';
-import { UserService, CertificateService, TenantService } from'@sunbird/core';
-import { ResourceService, ToasterService, ConfigService } from '@sunbird/shared';
-import { PublicPlayerService } from '@sunbird/public';
+import { UserService, CertificateService, TenantService } from'../../../core';
+import { ResourceService, ToasterService, ConfigService } from '../../../shared';
+import { PublicPlayerService } from '../../../public';
 import { CertificateDetailsComponent } from './certificate-details.component';
 import { validateCertMockResponse } from './certificate-details.component.spec.data'
 import { of, throwError } from 'rxjs';

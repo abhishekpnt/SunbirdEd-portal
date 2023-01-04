@@ -1,6 +1,6 @@
-import { ResourceService } from '@sunbird/shared';
+import { ResourceService } from '../../../../../shared';
 import { Component, Output, EventEmitter } from '@angular/core';
-import { TelemetryService } from '@sunbird/telemetry';
+import { TelemetryService } from '../../../../../telemetry';
 import { ActivatedRoute } from '@angular/router';
 import * as _ from 'lodash-es';
 

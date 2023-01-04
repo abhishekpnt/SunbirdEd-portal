@@ -1,4 +1,4 @@
-import { ServerResponse } from '@sunbird/shared';
+import { ServerResponse } from '../../../../shared';
 export interface ITenantInfo {
     err: ServerResponse;
     tenantData: ITenantData;

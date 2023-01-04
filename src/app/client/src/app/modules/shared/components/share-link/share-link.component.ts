@@ -1,4 +1,4 @@
-import { IShareEventData } from '@sunbird/telemetry';
+import { IShareEventData } from '../../../telemetry';
 import { Component, OnInit, Input, ElementRef, ViewChild, Renderer2 } from '@angular/core';
 import { ResourceService } from '../../services/index';
 import { IPopup } from 'ng2-semantic-ui-v12';

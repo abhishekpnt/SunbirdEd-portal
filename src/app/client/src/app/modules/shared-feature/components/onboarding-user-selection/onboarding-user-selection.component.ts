@@ -1,12 +1,12 @@
-import { ResourceService, ToasterService } from '@sunbird/shared';
+import { ResourceService, ToasterService } from '../../../shared';
 import { Component, OnInit, Output, EventEmitter, Input, OnDestroy } from '@angular/core';
-import { TenantService, FormService, UserService } from '@sunbird/core';
+import { TenantService, FormService, UserService } from '../../../core';
 import * as _ from 'lodash-es';
-import { IImpressionEventInput, TelemetryService, IInteractEventEdata, IAuditEventInput } from '@sunbird/telemetry';
+import { IImpressionEventInput, TelemetryService, IInteractEventEdata, IAuditEventInput } from '../../../telemetry';
 import { Router, ActivatedRoute } from '@angular/router';
-import { NavigationHelperService } from '@sunbird/shared';
+import { NavigationHelperService } from '../../../shared';
 import { ITenantData } from './../../../core/services/tenant/interfaces/tenant';
-import { ProfileService } from '@sunbird/profile';
+import { ProfileService } from '../../../../plugins/profile/services/profile/profile.service';
 import { BehaviorSubject, merge, empty, of, Subject } from 'rxjs';
 import { switchMap, retry, tap, skipWhile, catchError, takeUntil, concatMap, take, skip } from 'rxjs/operators';
 
