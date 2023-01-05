@@ -25,7 +25,12 @@
               "md5",
               "ng2-cache-service",
               "chart.js",
-              "marks-pane"
+              "marks-pane",
+              "global/document",
+              "jsonexport/dist",
+              "rxjs/internal/BehaviorSubject",
+              "videojs-vtt.js",
+              "@xmldom/xmldom"
             ],
             "assets": [
               "src/assets/images",
