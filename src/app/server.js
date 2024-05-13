@@ -94,7 +94,7 @@ const app = express()
 app.use(cookieParser())
 app.use(helmet())
 app.use(addLogContext)
-app.use(logFeature.mapFeature())
+
 if(envHelper.KONG_DEVICE_REGISTER_ANONYMOUS_TOKEN === 'true') {
   app.use(session({
     secret: '717b3357-b2b1-4e39-9090-1c712d1b8b64',
@@ -106,6 +106,8 @@ if(envHelper.KONG_DEVICE_REGISTER_ANONYMOUS_TOKEN === 'true') {
     store: memoryStore
   }), registerDeviceWithKong());
 }
+
+app.use(logFeature.mapFeature())
 
 const morganConfig = (tokens, req, res) => {
   let edata = {
