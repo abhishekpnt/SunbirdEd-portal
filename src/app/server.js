@@ -148,7 +148,7 @@ app.all([
   '/content-editor/telemetry', '/discussion/*', '/collection-editor/telemetry', '/v1/user/*', '/sessionExpired', '/logoff', '/logout', '/assets/public/*', '/endSession',
   '/sso/sign-in/*', '/v1/desktop/handleGauth', '/v1/desktop/google/auth/success', '/clearSession', '/kendra/*', '/dhiti/*', '/assessment/*', '/cloudUpload/*', '/apple/auth/*',
   '/uci/*'
-],logFeature.mapFeature(),morgan(morganConfig),session({
+],session({
     secret: envHelper?.PORTAL_SESSION_SECRET_KEY,
     resave: false,
     cookie: {
@@ -199,7 +199,7 @@ app.all('/clearSession', (req, res) => {
 
 app.use(['/api/*', '/user/*', '/merge/*', '/device/*', '/google/*', '/v2/user/*', '/v1/sso/*', '/migrate/*', '/v1/user/*' , '/logoff', '/logout', '/sso/sign-in/*'],
   captureResBodyForLogging,
-  morgan(morganConfig)); // , { skip: (req, res) => !(logger.level === "debug") })); // skip logging if logger level is not debug
+  logFeature.mapFeature(),morgan(morganConfig)); // , { skip: (req, res) => !(logger.level === "debug") })); // skip logging if logger level is not debug
 
 app.get('/enableDebugMode', (req, res, next) => {
   const logLevel = req.query.logLevel || "debug";
