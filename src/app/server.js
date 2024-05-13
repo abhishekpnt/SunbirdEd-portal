@@ -107,7 +107,7 @@ if(envHelper.KONG_DEVICE_REGISTER_ANONYMOUS_TOKEN === 'true') {
   }), registerDeviceWithKong());
 }
 
-app.use(logFeature.mapFeature())
+// app.use(logFeature.mapFeature())
 
 const morganConfig = (tokens, req, res) => {
   let edata = {
@@ -117,6 +117,7 @@ const morganConfig = (tokens, req, res) => {
       "message": "ENTRY LOG: " + req.get('x-msgid'),
       "params": req.body ? JSON.stringify(req.body) : "empty"  }
 
+      // logFeature.mapFeature()  
   if (req.featureName) {
     req.context = req.context || {}; // Initialize req.context if it doesn't exist
     req.context.cdata = req.context.cdata || []; // Initialize req.context.cdata if it doesn't exist
@@ -147,7 +148,7 @@ app.all([
   '/content-editor/telemetry', '/discussion/*', '/collection-editor/telemetry', '/v1/user/*', '/sessionExpired', '/logoff', '/logout', '/assets/public/*', '/endSession',
   '/sso/sign-in/*', '/v1/desktop/handleGauth', '/v1/desktop/google/auth/success', '/clearSession', '/kendra/*', '/dhiti/*', '/assessment/*', '/cloudUpload/*', '/apple/auth/*',
   '/uci/*'
-],morgan(morganConfig),session({
+],logFeature.mapFeature(),morgan(morganConfig),session({
     secret: envHelper?.PORTAL_SESSION_SECRET_KEY,
     resave: false,
     cookie: {
