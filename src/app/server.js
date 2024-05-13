@@ -197,7 +197,7 @@ app.all('/clearSession', (req, res) => {
   req.session.destroy(function (err) { res.sendStatus(200); });
 });
 
-app.use(['/api/*','/action/*', '/user/*', '/merge/*', '/device/*', '/google/*', '/v2/user/*', '/v1/sso/*', '/migrate/*', '/v1/user/*' , '/logoff', '/logout', '/sso/sign-in/*'],
+app.use(['/api/*','/content/*','/action/*', '/user/*', '/merge/*', '/device/*', '/google/*', '/v2/user/*', '/v1/sso/*', '/migrate/*', '/v1/user/*' , '/logoff', '/logout', '/sso/sign-in/*'],
   captureResBodyForLogging,
   logFeature.mapFeature(),morgan(morganConfig)); // , { skip: (req, res) => !(logger.level === "debug") })); // skip logging if logger level is not debug
 
