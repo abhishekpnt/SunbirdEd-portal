@@ -94,7 +94,7 @@ const app = express()
 app.use(cookieParser())
 app.use(helmet())
 app.use(addLogContext)
-
+// app.use(logFeature.mapFeature())
 if(envHelper.KONG_DEVICE_REGISTER_ANONYMOUS_TOKEN === 'true') {
   app.use(session({
     secret: '717b3357-b2b1-4e39-9090-1c712d1b8b64',
@@ -107,8 +107,6 @@ if(envHelper.KONG_DEVICE_REGISTER_ANONYMOUS_TOKEN === 'true') {
   }), registerDeviceWithKong());
 }
 
-// app.use(logFeature.mapFeature())
-
 const morganConfig = (tokens, req, res) => {
   let edata = {
       "type": "system",
@@ -117,7 +115,6 @@ const morganConfig = (tokens, req, res) => {
       "message": "ENTRY LOG: " + req.get('x-msgid'),
       "params": req.body ? JSON.stringify(req.body) : "empty"  }
 
-      // logFeature.mapFeature()  
   if (req.featureName) {
     req.context = req.context || {}; // Initialize req.context if it doesn't exist
     req.context.cdata = req.context.cdata || []; // Initialize req.context.cdata if it doesn't exist
@@ -148,7 +145,7 @@ app.all([
   '/content-editor/telemetry', '/discussion/*', '/collection-editor/telemetry', '/v1/user/*', '/sessionExpired', '/logoff', '/logout', '/assets/public/*', '/endSession',
   '/sso/sign-in/*', '/v1/desktop/handleGauth', '/v1/desktop/google/auth/success', '/clearSession', '/kendra/*', '/dhiti/*', '/assessment/*', '/cloudUpload/*', '/apple/auth/*',
   '/uci/*'
-],session({
+], morgan(morganConfig),session({
     secret: envHelper?.PORTAL_SESSION_SECRET_KEY,
     resave: false,
     cookie: {
@@ -197,9 +194,9 @@ app.all('/clearSession', (req, res) => {
   req.session.destroy(function (err) { res.sendStatus(200); });
 });
 
-app.use(['/api/*','/content/*','/action/*', '/user/*', '/merge/*', '/device/*', '/google/*', '/v2/user/*', '/v1/sso/*', '/migrate/*', '/v1/user/*' , '/logoff', '/logout', '/sso/sign-in/*'],
+app.use(['/api/*', '/user/*', '/merge/*', '/device/*', '/google/*', '/v2/user/*', '/v1/sso/*', '/migrate/*', '/v1/user/*' , '/logoff', '/logout', '/sso/sign-in/*'],
   captureResBodyForLogging,
-  logFeature.mapFeature(),morgan(morganConfig)); // , { skip: (req, res) => !(logger.level === "debug") })); // skip logging if logger level is not debug
+  morgan(morganConfig)); // , { skip: (req, res) => !(logger.level === "debug") })); // skip logging if logger level is not debug
 
 app.get('/enableDebugMode', (req, res, next) => {
   const logLevel = req.query.logLevel || "debug";
